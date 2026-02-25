@@ -1,7 +1,7 @@
-ʔjitinu
-ʔjiti-hjitinu
-ʔjitinu-isuru
-ʔjitinu-nu
+ʔyitinu
+ʔyiti-hyitinu
+ʔyitinu-isuru
+ʔyitinu-nu
 
 hiweka
 hi-hiweka

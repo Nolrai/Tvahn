@@ -1,7 +1,7 @@
-ʔjitinu            => ʔjtĩ
-ʔjiti-hjitinu      => ʔjtɪhjtĩ
-ʔjitinu-isuru      => ʔjɪtsəsʌr
-ʔjitinu-nu         => ʔjɪtãnũ
+ʔyitinu            => ʔɪtĩ
+ʔyiti-hyitinu      => ʔɪtihitĩ
+ʔyitinu-isuru      => ʔyɪtsəsʌr
+ʔyitinu-nu         => ʔyɪtãnũ
 
 hiweka             => hʌwek
 hi-hiweka          => hɪwek
@@ -10,8 +10,8 @@ hiweka-nu          => hɪwkã
 
 wunki              => wãk
 wu-wunki           => wʌwãk
-wunki-isuru        => wũkisʌr
-wunki-nu           => wũkĩ
+wunki-isuru        => ũkisʌr
+wunki-nu           => ũkĩ
 
 kaitui             => kʌituɪ
 kai-kaitui         => kʌikaɪtʌi
@@ -65,9 +65,9 @@ sen                => sĩ
 sennun             => sɜnã
 seniru             => sãnir
 
-yaisauten          => ysãt
-yaisautit          => ysɪtʌt
-yaisautentit       => yʌisaʌtɜnətsi
-yaisau             => yʌisau
-yaisaunun          => ysãnã
-yaisauiru          => yʌisaʌir
+yaisauten          => isãt
+yaisautit          => isɪtʌt
+yaisautentit       => yisaʌtɜnətsi
+yaisau             => yisau
+yaisaunun          => isãnã
+yaisauiru          => yisair

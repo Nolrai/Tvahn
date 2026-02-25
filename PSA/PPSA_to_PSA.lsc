@@ -31,6 +31,11 @@ Deromanizer:
   ' => ʔ
   \? => ʔ
   \- => *
+  y => j
+
+glide-simplificattion cleanup:
+ j => i / _ [cons]
+ w => u / {[cons] _ [cons], $ _ [cons]}
 
 primary-stress-second-last-syllable [vowel]:
   [] => [primary] / _ [] $
@@ -123,9 +128,10 @@ rs-epentisis:
 
 Tri:
   [central] w [vowel] r => ur
-  ii => yi
+  ii => ji
   ww => wu / _ [!vowel]
   ww [vowel]$1 => w $1 w $1
+  {ʌ,ə,ɜ,ɪ} => * / [!cons] _ [!cons]
 
 nasalization:
   [vowel front] => ĩ / _ n
@@ -137,5 +143,6 @@ nasal-syncope:
   n => * / _ [cons]
   n => * / _ $
 
-glottal-loss:
+romanizer:
   ʔ => * / {[cons] _, _ [cons]}
+  j => y

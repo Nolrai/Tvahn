@@ -1,7 +1,7 @@
-ʔjtĩ
-ʔjtɪhjtĩ
-ʔjɪtsəsʌr
-ʔjɪtãnũ
+ʔɪtĩ
+ʔɪtihitĩ
+ʔyɪtsəsʌr
+ʔyɪtãnũ
 
 hʌwek
 hɪwek
@@ -10,8 +10,8 @@ hɪwkã
 
 wãk
 wʌwãk
-wũkisʌr
-wũkĩ
+ũkisʌr
+ũkĩ
 
 kʌituɪ
 kʌikaɪtʌi
@@ -65,9 +65,9 @@ sĩ
 sɜnã
 sãnir
 
-ysãt
-ysɪtʌt
-yʌisaʌtɜnətsi
-yʌisau
-ysãnã
-yʌisaʌir
+isãt
+isɪtʌt
+yisaʌtɜnətsi
+yisau
+isãnã
+yisair
