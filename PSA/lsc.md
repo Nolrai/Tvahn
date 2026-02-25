@@ -31,8 +31,8 @@ Deromanizer:
   ' => ʔ
 
 primary-stress-second-last-syllable [vowel]:
-  [] => [primary] / _ [] $ Else:
-  [] => [primary]
+  [] => [primary] / _ [] $
+  Else: [] => [primary]
 
 add-secondary-stress [vowel] propagate:
   [unstressed] => [secondary] / _ [] {[primary], [secondary]}
@@ -46,14 +46,18 @@ styncopate:
   [unstressed vowel] => * // [vowel] _
 
 unstress:
-[] => [unstressed]
+  [] => [unstressed]
 
 diphthong-simplify-near-cluster:
-ai => a / _ [cons] [cons] au => a / _ [cons] [cons] oi => o / _ [cons] [cons] ui => u / _ [cons] [cons]
+  ai => a / _ [cons] [cons]
+  au => a / _ [cons] [cons]
+  oi => o / _ [cons] [cons]
+  ui => u / _ [cons] [cons]
 
 nasal-metathesis:
-[cons]$1 n => n $1 / _ $ then:
-{j,y,w} n => {jĩ, jĩ, wũ} *
+  [cons]$1 n => n $1 / _ $
+  then:
+    {j,y,w} n => {jĩ, jĩ, wũ} *
 
 epenthesis:
   t s => ts / _ # don't seperate ts
@@ -65,10 +69,14 @@ special-ts:
   t => ts / _ [vowel] s [vowel]
 special-s:
   n => s / _ [vowel] s [vowel]
+
 syncope-sufix:
-  [vowel] r => * / _ [vowel] s [vowel] r s [vowel] => * / _ s [vowel] r
+  [vowel] r => * / _ [vowel] s
+  [vowel] r s => * / _ [vowel] s [vowel] r
+
 vowel-harmony:
   [vowel]$1 s u => $1 s $1 / _
+
 final-lention:
   ʌ => u / _ $
 
@@ -79,6 +87,7 @@ degemination:
 Tri:
   [central] w [vowel] r => ur
   ii => yi
+
 nasalization:
   [vowel front] => ĩ / _ n
   [vowel back high] => ũ / _ n
@@ -86,7 +95,8 @@ nasalization:
 
 nasal-syncope:
   n [central] => * / [nasalized] _
-  n => * / _ [cons] n => * / _ $
+  n => * / _ [cons]
+  n => * / _ $
 
 glottal-loss:
   ʔ => * / {[cons] _, _ [cons]}
