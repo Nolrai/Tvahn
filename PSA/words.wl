@@ -25,7 +25,7 @@ lanatətsuni-nu
 
 miwten
 miwtit
-miwtɜntit
+miwtentit
 miw
 miwnun
 miwiru

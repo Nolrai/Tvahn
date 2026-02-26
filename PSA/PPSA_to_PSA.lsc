@@ -5,9 +5,9 @@ Feature manner(stop, fricative, nasal, lateral)
 Feature height(low, mid, high)
 Feature frontness(front, central, back)
 Feature nasalized(nasalized)
-Feature stress(*unstressed, secondary, primary)
-Diacritic ˈ (floating) [primary]
-Diacritic ˌ (floating) [secondary]
+Feature (syllable) stress(*unstressed, secondary, primary)
+Diacritic ˈ (floating) (before) [primary]
+Diacritic ˌ (floating) (before) [secondary]
 Symbol a [low back vowel]
 Symbol ã [low back nasalized vowel]
 Symbol e [mid front vowel]
@@ -22,8 +22,8 @@ Symbol ʌ [low central vowel]
 Symbol s [alveolar fricative cons]
 Symbol r [alveolar lateral cons] # or whatever you want it to be
 Symbol h [glottal fricative cons]
-Symbol w [bilabial semivowel]
-Symbol j [alveolar semivowel]
+symbol j [high semivowel]
+symbol w [low semivowel]
 Class sonorant {m, n, l, r, w, j}
 Class stop {p, t, k}
 
@@ -33,16 +33,32 @@ Deromanizer:
   \- => *
   y => j
 
-glide-simplificattion cleanup:
- j => i / _ [cons]
- w => u / {[cons] _ [cons], $ _ [cons]}
+glide-simplificattion propagate cleanup:
+ {w, j} => {u, i}
 
-primary-stress-second-last-syllable [vowel]:
-  [] => [primary] / _ [] $
-  Else: [] => [primary]
+glide-reintroduction propagate cleanup:
+  u => w / [vowel] _ [vowel]
+  else:
+  i => j / [vowel] _ [vowel]
+  else:
+  i => j / _ [vowel] // {[semivowel] _, _ [semivowel]}
+  else:
+  u => w / _ [vowel] // {[semivowel] _, _ [semivowel]}
 
-add-secondary-stress [vowel] propagate:
-  [unstressed] => [secondary] / _ [] {[primary], [secondary]}
+Syllables:
+  [vowel]+ / $ _
+  [cons]+ [semivowel]? [vowel]+
+  [semivowel]+ [vowel]+
+  [semivowel]+ [vowel]+ [cons]+ / _ $
+  [cons]+ [semivowel]? [vowel]+ [cons]+ / _ $
+  [cons]+ / $ _ $
+
+primary-stress-second-last-syllable:
+  <syl> => [primary] / _ <syl> $
+  Else: <syl> => [primary]
+
+add-secondary-stress propagate:
+  <syl>&[unstressed] => [secondary] / _ <syl>&{[primary], [secondary]}
 
 long-vowels-to-diphthongs:
     aa => aw
@@ -86,11 +102,14 @@ syncope-sufix:
   ([!cons])+ r => * / _ ([!cons])+ s
   ([!cons])+ r s => * / _ ([!cons])+ s ([!cons])+ r
 
-primary-stress-second-syllable [vowel]:
-  [] => [primary] / $ [] _
-  Else: [] => [primary]
+unstress-2:
+  [] => [unstressed]
 
-add-secondary-stress2 propagate:
+primary-stress-second-syllable:
+  [] => [primary] / $ [] _
+  [] => [primary] / $ _ $
+
+add-secondary-stress2 ltr:
   [unstressed] => [secondary] / {[primary], [secondary]} [unstressed] _
 
 add-secondary-stress-first:
@@ -103,35 +122,33 @@ weaken-unstressed-vowels:
   ui&[unstressed] => i
   i&[unstressed] => ɪ
   {u,a,o}&[unstressed] => ʌ
-  e&[unstressed] => ɜ
+  e&[unstressed] => ə
 
-vowel-harmony:
-  [vowel]$1 {s,r} u => $1 {s,r} $1 / _
-
-unstress-2:
-  [] => [unstressed]
+vowel-harmony ltr:
+  [vowel]$1 ({s,r}+)$2 u => $1 $2 $1
 
 remove-weak:
-  {ɪ, ʌ, ɜ, ə} => * / _ s
+  {ɪ, ʌ, ə} => * / _ s
 
 final-lention:
-  ʌ => u / _ $
+  {ɪ, ʌ, ə} => {i, u, o} / _ $
 
 degemination propagate:
   ss => s
-  tt => ts / _ [vowel]
-  tt => tsi / _
+  tt => ts
 
 rs-epentisis:
-  rs [vowel]$1 => r $1 s / _ $
-  rs [vowel]$1 => r $1 s $1 / _
+  r s [vowel]$1 => r $1 s / _ $
+  r s [vowel]$1 => r $1 s $1 / _
+  r st [vowel]$1 => r $1 st / _ $
+  r st [vowel]$1 => r $1 st $1 / _
 
-Tri:
-  [central] w [vowel] r => ur
-  ii => ji
-  ww => wu / _ [!vowel]
-  ww [vowel]$1 => w $1 w $1
-  {ʌ,ə,ɜ,ɪ} => * / [!cons] _ [!cons]
+vowel-simplify propagate:
+  [central] u [vowel] r => ur
+  ɪi => i
+  {ʌ,ə} i => ai
+  uu [vowel]$1 => w $1 w $1
+  {ʌ,ə,ɪ} => * / [!cons] _ [!cons]
 
 nasalization:
   [vowel front] => ĩ / _ n
@@ -142,6 +159,9 @@ nasal-syncope:
   n [central] => * / [nasalized] _
   n => * / _ [cons]
   n => * / _ $
+
+unstress-3:
+  [] => [unstressed]
 
 romanizer:
   ʔ => * / {[cons] _, _ [cons]}
