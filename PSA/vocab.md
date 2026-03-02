@@ -1,112 +1,188 @@
-PPSA Root Lexicon (Working Canon)
+# PPSA Root Lexicon (Working Canon)
 
-This canvas collects the current canon roots and key derivational class markers we’ve defined for Proto‑PSA (PPSA), plus a few high‑priority derived compounds already specified.
+This document collects the current canon roots and key derivational class markers defined for Proto-PSA (PPSA), plus selected high-priority derived compounds, kinship terms, and core relational constructions.
 
-Noun‑class / life‑stage markers
+---
 
-te‑ = Bearing class (early / fertile / initiating / trickster / smallish)
+## Noun-Class / Life-Stage Markers
 
-Ø (unmarked) = Traveling class (moving / ambitious / active default)
+* **te-** = Bearing class (early / fertile / initiating / trickster / smallish)
+* **Ø (unmarked)** = Traveling class (moving / ambitious / active default)
+* **so-** = Nursing class (completed / containing / nurturing / respected / commanding)
 
-so‑ = Nursing class (completed / containing / nurturing / respected / commanding)
+**Historical note:** The prefix **te-** did not originally exist as an independent morpheme. It was later reanalyzed from the word **tesint** (see below). Only after this reanalysis did *te-* become a productive bearing-class marker.
 
-Core roots (canon)
+Class marking is usually lexicalized, but in some kinship terms it may remain semantically productive (e.g., *te-sikimani* vs *sikimani* vs *so-sikimani*).
 
-Terrain & materials
+---
 
-hu = water (default / flowing)
+## Core Roots (Canon)
 
-astro = earth / ground / floor / forest (general terrain)
+### Terrain & Materials
 
-iman = breast
+* **hu** = water (default / flowing)
+* **astro** = earth / ground / floor / forest (general terrain)
+* **iman** = breast
+* **tsan** = textile / rope / woven material
+* **pak** = big-toe claw / kicking claw (historically also stake/post)
+* **se** = wood / branch (material head in compounds)
 
-tsan = textile / rope / woven material
+### Animals & Body Substances
 
-pak = big‑toe claw / kicking claw (historically also stake/post)
+* **ram** = domestic pig (pig-analog; aquatic eutransdontid)
+* **ʔhas** = fish (generic)
+* **ʔrom** = fat / grease
+* **ʔank** = bone
+* **upon** = (semi-)edible plant matter (leaf / tuber / nut / grain; not wood)
+* **pum** = hand claw (deep semantic category; distinct from **pak** ‘foot claw’)
 
-ze = wood / branch (material head in compounds)
+### Core Verbs / Light Verbs
 
-Animals & body substances
+* **mus** = give
+* **sik** = take
+* **kemi** = use / employ
+* **luma** = general motion verb (go / come / carry / throw / enter / leave; meaning determined by relational marking)
+* **lante** = settle / lower oneself
+* **ʔen** = rise / stand
+* **rokunk** = hunt
+* **utun** = home (dwelling / place of return; distinct from built structure)
+* **ronst** = cook / apply fire (base for boil / roast / smoke / salt compounds)
+* **u:kani** = push against / clutch (later evolves into PSA event-frame verb *miw wukani*)
 
-ram = domestic pig (pig‑analog; aquatic eutransdontid)
+### Social / Relational Roots
 
-ʔhas = fish (generic)
+* **tesint** = belly → later “person who was pregnant (with me).”
+  This form is the historical source of the **te-** prefix. Only later was *tesint* reanalyzed folk-etymologically as *te-sint*, allowing *te-* to spread as a productive bearing marker.
+  The reduced element **sint** is sometimes used poetically to mean “catgirl,” but never becomes the default term.
 
-ʔrom = fat / grease
+* **mank** = obligation / debt (final *nk* realized [ŋk] → [ŋ]; emphatic reduplicated form *mankank* /maŋgaŋ/ bleached into basic lexical form)
 
-ʔank = bone
+---
 
-Core verbs / light verbs
+## Core Relational Markers (PPSA)
 
-mus = give
+* **miw** = upward / above / upright / superior orientation (structurally central adposition)
+* **pai** = interior / between / within relation
+* **kun** = toward / to
+* **ʔrap** = away from / from
+* **kent** = by holding / carried-by
+* **kept** = by propelling / thrown-by
 
-rokunk = hunt
+(Note: In motion constructions, the carried/thrown entity receives topic marking.)
 
-utun = home
+---
 
-ronst = cook / apply fire (base for boil/roast/smoke/salt compounds)
+## Selected Derived Lexemes (PPSA Stage)
 
-Deictic/adpositional base (for later PSA development)
+### Water System
 
-miw = up/below
+* **river** = *hu-hu* → **huhu**
+* **pond / containing water** = *so-hu* → **sohu**
 
-pai = down/up-to/agains
+### Boundaries / Enclosures
 
-yaisau = envelouped-by/penetrating-into/interwoven
+* **boundary / bank** = *tsan-pak* → **tsanpak**
+* **fence / enclosure** (wood as head; containing boundary)
+  = *se-so-tsanpak* → **sesotsanpak**
 
-Selected derived lexemes (already specified)
+### Landforms
 
-Water system
+* **hill** = *iman-astro* → **imanastro** (“earth-breast,” breast as head)
+* **open ground / meadow** = *astro-so-hu* → **astrosohu** (earth-pond logic)
+* **mud** = *so-hu-ram* → **sohuram** (pond-pig logic)
+* **stone** = *astro-astro* → **astrostro**
 
-river = hu‑hu → huhu
+### Dwelling & Fire
 
-pond / contained water = so‑hu (previous draft hun replaced)
+* **house (built structure)** = *so-se-so-se* → **sosese** (archetypal “finished wood,” reduced form)
+* **hearth** = *so-se-ronst* → **soseronst** (finished wood-fire place)
 
-Boundaries / enclosures
+### Fishing & Hunting Toolkit
 
-boundary / bank = tsan‑pak → tsanpak
+* **hook for fish** = *pum-ʔhas* → **pumahas**
+* **trap / snare** = *tsan-(u)-rokunk* → **tsanurokunk**
+* **butcher / cut meat** = *rokunk-utun* → **rokunkutun**
 
-fence / enclosure (wood as head; containing boundary) = ze‑so‑tsanpak → zesotsanpak
+### Feeding & Exchange
 
-Landforms
+* **feed (animals)** = *mus-upon* → **musupon**
+* **trade** = *mus-sik* → **musisik** (give-take)
 
-hill = iman‑astro → imanastro (“earth‑breast” with breast as head)
+### Kinship Terms
 
-open ground / meadow = astro‑so‑hu → astrosohu (earth‑pond logic)
+* **woman who bore me** = **tesint** (historically unanalyzable at earliest stage; only later reinterpreted as *te-sint*)
+* **woman who nursed me** = *so-kemi-iman* → **sokemiman** (nursing breast-user)
+* **child (actual child stage)** = *te-kemi-iman-i* → **tekemimani** (bearing breast-user-DIM)
+* **younger / same-age sibling (traveling stage default)** = *sik-iman-i* → **sikimani** (breast-taker-DIM)
 
-mud = so‑hu‑ram → sohuram (pond/pig)
+  * may appear as **te-sikimani** (young child stage)
+  * may appear as **so-sikimani** (elder reference)
+* **older sibling** = *mus-iman* → **musiman** (breast-giver)
+* **guest** = *kemi-huhu* → **kemihuhu** (river-user)
 
-stone = astro‑astro → astrostro
+### Motion & Posture Constructions
 
-Fishing & hunting toolkit
+* **go / come toward** = *luma kun*
+* **go / leave from** = *luma ʔrap*
+* **carry (by holding)** = *luma kent*
+* **throw (by propelling)** = *luma kept*
+* **settle / sit / calm** = *lante pai*
+* **sit upright** = *lante miw*
+* **stand up** = *ʔen miw*
 
-hook for fish = pum‑ʔhas → pumahas (pum = “claws” category; not yet added as a root)
+### Cooking
 
-trap / snare = tsan‑(u)‑rokunk → tsanurokunk
+* **boil** = *ronst-hu* → **ronstuhu**
+* **roast / bake** (dry cook; fire-fire) = *ronst-ronst* → **ronstonst**
+* **salt** = *ronst-astro-(sea)* where sea = *so-huhu* (exact compound to be finalized)
+* **smoke** = *ronst-astro-ronst* (exact surface to be finalized)
 
-butcher / cut meat = rokunk‑utun → rokunkutun
+---
 
-Feeding
+## Body & Vitality
 
-feed (animals) = mus‑upon → musupon (upon = edible plant matter; not wood)
+* **ro** = blood
+* **tsotan** = breath
+* **nen** = hand
+* **amant** = foot
+* **nepant** = hunger
+* **sun** = sleep
 
-feed (catgirls) = “give meat / give fat / nurse / give fire” (lexicalized by context)
+---
 
-Cooking
+## Weather & Time
 
-boil = ronst‑hu → ronstuhu
+* **rain** = *miw-hu* → **miwhu** (water from above)
+* **hanst** = dry / drought
+* **etna** = wind
+* **cold (noun)** = *etna-hu* → **etnahu** (wet-wind)
+* **cold (adjectival construction)** = *[noun] etnahu kent iru* (cold-carrying; with free relativizer **iru**)
+* **atup** = dawn
+* **hetnos** = night
 
-roast/bake (dry cook; fire‑fire) = ronst‑ronst → ronstonst
+---
 
-salt = ronst‑astro‑(sea) where sea = so‑huhu (exact compound to be finalized)
+## Speech, Law & the Unseen
 
-smoke = ronst‑astro‑ronst (exact surface to be finalized)
+* **tsene** = name / word
 
-upon = edible plant matter (leaf/tuber/nut/grain; not wood)
+* **oath** = *tsene-mank* → **tsenemank** (name of debt)
 
-pum = hand claw (deep semantic category; distinct from pak ‘foot claw’)
+* **taboo / prohibition / mistake** = *tsan-ro* → **tsanro** (blood-rope)
 
-u:kani = push against / clutch (later evolves into PSA event-frame verb miw wukani)
+* **forbidden** = *pai tsanro*
 
-Keep compounding rule: head-first, with a strong tendency for material heads (e.g., ze-…).
+* **ancestor** = lexicalized compound from “nursing breast-user (burned) within” → provisional form **sokemimanpai** (historically cremation-based; exact reduction to be determined)
 
+* **spirit** = *uuki miw iru* (they who lurk above; **iru** present in PPSA as free relativizing element, not yet fused)
+
+---
+
+## Structural Notes
+
+* **iru** exists in PPSA as an independent relativizing / clause-linking element; fusion and suffixal behavior develop later in PSA.
+* Compounding rule: **head-first**, with a strong tendency for **material heads** (e.g., *se-…*).
+* Life-stage markers (*te- / Ø / so-*) are derivational noun-class prefixes tied to cultural life stages.
+* In some kinship terms, class marking may remain semantically productive rather than strictly lexicalized.
+* Relational meaning is largely carried by adpositions rather than verb roots.
+* PPSA compounds are morphologically transparent; opacity emerges later in PSA through sound change.
