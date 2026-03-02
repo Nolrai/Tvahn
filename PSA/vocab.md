@@ -1,77 +1,3 @@
-ʔjitinu
-ʔjiti-hjitinu
-ʔjitinu-isuru
-ʔjitinu-nu
-
-hiweka
-hi-hiweka
-hiweka-isuru
-hiweka-nu
-
-wunki
-wu-wunki
-wunki-isuru
-wunki-nu
-
-kaitui
-kai-kaitui
-kaitui-isuru
-kaitui-nu
-
-lanatətsuni
-lanatə-lanatətsuni
-lanatətsuni-isuru
-lanatətsuni-nu
-
-miwten
-miwtit
-miwtɜntit
-miw
-miwnun
-miwiru
-
-paiten
-paitit
-paitentit
-pai
-painun
-paiiru
-
-patten
-pattit
-pattentit
-pat
-patnun
-patiru
-
-ranten
-rantit
-rantentit
-ran
-rannun
-raniru
-
-rusten
-rustit
-rustentit
-rus
-rusnun
-rusiru
-
-senten
-sentit
-sententit
-sen
-sennun
-seniru
-
-yaisauten
-yaisautit
-yaisautentit
-yaisau
-yaisaunun
-yaisauiru
-
 PPSA Root Lexicon (Working Canon)
 
 This canvas collects the current canon roots and key derivational class markers we’ve defined for Proto‑PSA (PPSA), plus a few high‑priority derived compounds already specified.
@@ -122,11 +48,11 @@ ronst = cook / apply fire (base for boil/roast/smoke/salt compounds)
 
 Deictic/adpositional base (for later PSA development)
 
-miw = heavy/common adposition (kept irregular later)
+miw = up/below
 
-pai = adposition base (used in “between/press” compounds)
+pai = down/up-to/agains
 
-jaisau = place / site (used as nominal “place” element)
+yaisau = envelouped-by/penetrating-into/interwoven
 
 Selected derived lexemes (already specified)
 

@@ -9,7 +9,7 @@ hiweka-isuru
 hiweka-nu
 
 wunki
-wu-wunki
+wun-wunki
 wunki-isuru
 wunki-nu
 

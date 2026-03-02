@@ -1,4 +1,4 @@
-ʔi.tĩ
+ʔi.tĩ : 
 ʔi.tɪ.hi.tĩ
 ʔi.tsər
 ʔi.tã.nũ
@@ -9,7 +9,7 @@ hu.ki.sir
 hu.kã
 
 wũk
-u.wũk
+ũ.nwũk
 ũ.ki.sir
 ũ.kĩ
 
