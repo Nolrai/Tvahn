@@ -23,6 +23,11 @@ lanatə-lanatətsuni
 lanatətsuni-isuru
 lanatətsuni-nu
 
+luma
+luma-luma
+luma-isuru
+luma-nu
+
 miwten
 miwtit
 miwtentit
@@ -71,3 +76,4 @@ yaisautentit
 yaisau
 yaisaunun
 yaisauiru
+

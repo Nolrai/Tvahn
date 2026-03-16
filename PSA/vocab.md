@@ -141,39 +141,34 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 
 ## Body & Vitality
 
-* **ro** = blood
-* **tsotan** = breath
-* **nen** = hand
-* **amant** = foot
-* **nepant** = hunger
-* **sun** = sleep
+* **blood** = ro
+* **breath** = tsotan
+* **hand** = nen
+* **foot** = amant
+* **hunger** = nepant
+* **sleep** = sun
 
 ---
 
 ## Weather & Time
 
 * **rain** = *miw-hu* → **miwhu** (water from above)
-* **hanst** = dry / drought
-* **etna** = wind
+* **dry / drought** = hanst
+* **wind** = etna
 * **cold (noun)** = *etna-hu* → **etnahu** (wet-wind)
 * **cold (adjectival construction)** = *[noun] etnahu kent iru* (cold-carrying; with free relativizer **iru**)
-* **atup** = dawn
-* **hetnos** = night
+* **dawn** = atup
+* **night** = hetnos
 
 ---
 
 ## Speech, Law & the Unseen
 
-* **tsene** = name / word
-
+* **name / word** = tsene
 * **oath** = *tsene-mank* → **tsenemank** (name of debt)
-
 * **taboo / prohibition / mistake** = *tsan-ro* → **tsanro** (blood-rope)
-
 * **forbidden** = *pai tsanro*
-
 * **ancestor** = lexicalized compound from “nursing breast-user (burned) within” → provisional form **sokemimanpai** (historically cremation-based; exact reduction to be determined)
-
 * **spirit** = *uuki miw iru* (they who lurk above; **iru** present in PPSA as free relativizing element, not yet fused)
 
 ---

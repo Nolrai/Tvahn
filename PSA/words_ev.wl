@@ -1,73 +1,78 @@
-ʔi.tĩ : 
-ʔi.tɪ.hi.tĩ
-ʔi.tsər
-ʔi.tã.nũ
+ʔɪ.tĩ
+ʔɪ.ti.yɪ.tĩ
+ʔyɪ.tsʌ.r
+ʔyɪ.tã.nã
 
-hu.wek
-hwek
-hu.ki.sir
-hu.kã
+hɪ.we.k
+hi.we.k
+hɪ.we.ksə.r
+hɪ.we.kã
 
-wũk
-ũ.nwũk
-ũ.ki.sir
-ũ.kĩ
+ã.k
+ã.nũ.k
+ã.ksɪ.r
+wã.kã
 
 kai.tu
-ki.kai.tu
-ki.tsi.sir
-ki.twĩ
+kə.kai.tu
+kə.tswi.sʌ.r
+kə.twĩ
 
-lã.tsũ
-lã.tə.lnə.tsũ
-lã.tsi.sir
-lã.tsnĩ
+lã.na.tə.tsũ
+lã.tə.lã.tə.tsã
+lã.tə.tsɪ.r
+lã.tə.tsã.nã
 
-myũt
-myu.tʌt
-mi.tĩts
+lu.m
+lʌ.mʌ.lʌ.m
+lʌ.msʌ.r
+lə.mã
+
+mɪ.tĩ
+mɪ.ti.t
+mɪ.tĩ.ti.t
 myu
-myũ.nã
-mwir
+mã.nũ
+mwi.r
 
-pãt
-pa.tət
-pi.tĩts
+pə.tĩ
+pɪ.ti.t
+pə.tĩ.ti.t
 pai
-pã.nã
-pyir
+pã.nũ
+pyi.r
 
-pa.tãt
-pa.təts
-pə.tsĩts
-pat
-pa.tã
-pɪ.tir
+pə.tə.tã
+pə.tɪ.tɪ.t
+pə.tə.tã.tɪ.t
+pa.t
+pə.tã.nã
+pɪ.ti.r
 
-rã.nãt
-rãts
-rã.tĩts
+rã.tã
+rã.tɪ.t
+rã.tã.tɪ.t
 rã
-rã.nã
-rã.nir
+rã.nã.nã
+rã.ni.r
 
-ru.sãt
-ru.sʌts
-re.stĩts
-rus
-ru.sã
-ri.sir
+rə.sə.tã
+rɪ.sɪ.tɪ.t
+rə.sə.tã.tɪ.t
+ru.s
+rə.sã.nã
+ri.si.r
 
-sĩ.nãt
-sĩts
-sã.tĩts
+sã.tã
+sã.tɪ.t
+sã.tã.tɪ.t
 sĩ
-sĩ.nã
-sã.nir
+sã.nã.nã
+sã.ni.r
 
-yi.sãt
-yi.sa.tət
-yi.si.tĩts
-yai.si
-yi.sã.nã
-yi.swir
+i.sə.tã
+i.sɪ.tɪ.t
+i.sə.tã.tɪ.t
+yai.s
+i.sã.nã
+yi.swi.r

@@ -1,7 +1,7 @@
 
 Feature type(*cons, vowel, semivowel)
 Feature place(bilabial, alveolar, velar, glottal)
-Feature manner(stop, fricative, nasal, lateral)
+Feature manner(stop, fricative, affricate, nasal, lateral)
 Feature height(low, mid, high)
 Feature frontness(front, central, back)
 Feature nasalized(nasalized)
@@ -19,19 +19,29 @@ Symbol ũ [high back nasalized vowel]
 Symbol ə [mid central vowel]
 Symbol ɪ [high central vowel]
 Symbol ʌ [low central vowel]
+
+# consonants /p t k ts s h m n l r j w ʔ/
+Symbol p [bilabial stop cons]
+Symbol t [alveolar stop cons]
+Symbol k [velar stop cons]
+Symbol ts [alveolar affricate cons]
 Symbol s [alveolar fricative cons]
-Symbol r [alveolar lateral cons] # or whatever you want it to be
+Symbol m [bilabial nasal cons]
+Symbol n [alveolar nasal cons]
+Symbol l [alveolar lateral cons]
+Symbol r [velar lateral cons]
+
 Symbol h [glottal fricative cons]
+Symbol ʔ [glottal stop cons]
 symbol j [high semivowel]
 symbol w [low semivowel]
-Class sonorant {m, n, l, r, w, j}
-Class stop {p, t, k}
 
 Deromanizer:
   ' => ʔ
   \? => ʔ
   \- => *
   y => j
+  {Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M} => * # uppercase letters are used for glossing. They are removed by the deromanizer.
 
 glide-simplificattion propagate cleanup:
  {w, j} => {u, i}
@@ -45,36 +55,35 @@ glide-reintroduction propagate cleanup:
   else:
   u => w / _ [vowel] // {[semivowel] _, _ [semivowel]}
 
+merge-ts cleanup:
+  t s => ts
+
 Syllables:
+  [!vowel]+ [vowel]+
   [vowel]+ / $ _
-  [cons]+ [semivowel]? [vowel]+
-  [semivowel]+ [vowel]+
-  [semivowel]+ [vowel]+ [cons]+ / _ $
-  [cons]+ [semivowel]? [vowel]+ [cons]+ / _ $
-  [cons]+ / $ _ $
+  [!vowel]+ / _ $
+  n // _ [vowel]
 
 primary-stress-second-last-syllable:
   <syl> => [primary] / _ <syl> $
   Else: <syl> => [primary]
 
-add-secondary-stress propagate:
-  <syl>&[unstressed] => [secondary] / _ <syl>&{[primary], [secondary]}
+add-secondary-stress rtl:
+  <syl>&[unstressed] => [secondary] / _ <syl>&[unstressed] <syl>&[!unstressed]
 
+# uu and ii are turned into dipthongs by the clean up rules.
 long-vowels-to-diphthongs:
-    aa => aw
-    uu => uw
-    ee => ej
-    oo => ow
+    aa => au
+    ee => ei
+    oo => ou
 
 styncopate:
-  [unstressed vowel] => * // [vowel] _
+  [unstressed vowel] => * // h [!cons]* _
+  h&[unstressed] => * / [!cons] _ [!cons]
 
 hw-epenthesis:
   hw => huw / $ _
   hw => w
-
-unstress:
-  [] => [unstressed]
 
 diphthong-simplify-near-cluster:
   ai => a / _ [cons] [cons]
@@ -83,18 +92,24 @@ diphthong-simplify-near-cluster:
   ui => u / _ [cons] [cons]
 
 nasal-metathesis:
-  [cons]$1 n => n $1 / _ $
+  [cons]$1 {n, m}$2 => $2 $1 / _ $
   then:
-    {j,y,w} n => {jĩ, jĩ, wũ} *
+    {j,y,w} {n, m} => {jĩ, jĩ, wũ} *
 
-epenthesis:
-  t s => ts / _ # don't seperate ts
+epenthesis-ih ltr:
+  n [cons] => n [cons] # don't seperate n and cons
+  [cons] n => [cons] n # don't seperate n and cons
   [cons]$1 [cons]$2 => $1 ɪ $2 / _ {j, i, ɪ}
+
+epenthesis-uh rtl:
   [cons]$1 [cons]$2 => $1 ʌ $2 / {w, u, ʌ} _
+
+epenthesis-centered propagate:
   [cons]$1 [cons]$2 => $1 ə $2 / _
 
 special-ts:
   t => ts / _ ([!cons])+ s ([!cons])
+
 special-s:
   n => s / _ ([!cons])+ s ([!cons])
 
@@ -103,26 +118,28 @@ syncope-sufix:
   ([!cons])+ r s => * / _ ([!cons])+ s ([!cons])+ r
 
 unstress-2:
-  [] => [unstressed]
+  <syl> => [unstressed]
 
 primary-stress-second-syllable:
-  [] => [primary] / $ [] _
-  [] => [primary] / $ _ $
+  <syl> => [primary] / $ <syl> _ // $ <syl> _ $
+
+primary-only-syllable:
+  <syl> => [primary] / $ _ $
+
+primary-stress-first-syllable-in-two-syllable-word:
+  <syl> => [primary] / $ _ <syl> $
 
 add-secondary-stress2 ltr:
-  [unstressed] => [secondary] / {[primary], [secondary]} [unstressed] _
-
-add-secondary-stress-first:
-  [unstressed] => [secondary] / $ _
+  <syl>&[unstressed] => [secondary] / <syl>&[!unstressed] <syl>&[unstressed] _
 
 weaken-unstressed-vowels:
-  ai&[unstressed] => i
-  au&[unstressed] => u
-  oi&[unstressed] => o
-  ui&[unstressed] => i
-  i&[unstressed] => ɪ
-  {u,a,o}&[unstressed] => ʌ
-  e&[unstressed] => ə
+  (ai)&[unstressed] => i
+  (au)&[unstressed] => u
+  (oi)&[unstressed] => o
+  (ui)&[unstressed] => i
+  (i)&[unstressed] => ɪ
+  ({u,a,o})&[unstressed] => ʌ
+  (e)&[unstressed] => ə
 
 vowel-harmony ltr:
   [vowel]$1 ({s,r}+)$2 u => $1 $2 $1
@@ -136,6 +153,7 @@ final-lention:
 degemination propagate:
   ss => s
   tt => ts
+  tss => ts
 
 rs-epentisis:
   r s [vowel]$1 => r $1 s / _ $
@@ -149,6 +167,13 @@ vowel-simplify propagate:
   {ʌ,ə} i => ai
   uu [vowel]$1 => w $1 w $1
   {ʌ,ə,ɪ} => * / [!cons] _ [!cons]
+
+long-central-vowel-simplify:
+  ʌ {ʌ,ə} => a
+  {ʌ,ə} ʌ => a
+  ɪ {ə,ɪ} => i
+  {ə,ɪ} ɪ => i
+  ə ə => ʌ
 
 nasalization:
   [vowel front] => ĩ / _ n
