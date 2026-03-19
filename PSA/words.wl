@@ -33,14 +33,14 @@ miwtit
 miwtentit
 miw
 miwnun
-miwiru
+miwiiru
 
 paiten
 paitit
 paitentit
 pai
 painun
-paiiru
+paiiiru
 
 patten
 pattit
@@ -48,6 +48,7 @@ pattentit
 pat
 patnun
 patiru
+patiiru
 
 ranten
 rantit
@@ -55,6 +56,7 @@ rantentit
 ran
 rannun
 raniru
+raniiru
 
 rusten
 rustit
@@ -62,6 +64,7 @@ rustentit
 rus
 rusnun
 rusiru
+rusiiru
 
 senten
 sentit
@@ -69,6 +72,7 @@ sententit
 sen
 sennun
 seniru
+seniiru
 
 yaisauten
 yaisautit
@@ -76,4 +80,4 @@ yaisautentit
 yaisau
 yaisaunun
 yaisauiru
-
+yaisauiiru

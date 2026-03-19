@@ -1,78 +1,83 @@
-ʔɪ.tĩ
-ʔɪ.ti.yɪ.tĩ
-ʔyɪ.tsʌ.r
-ʔyɪ.tã.nã
+ʔi.tĩ
+tyi.tĩ
+ʔi.tə.sʌ.r
+ʔi.tã.nã
 
 hɪ.we.k
 hi.we.k
-hɪ.we.ksə.r
+hɪ.we.sə.r
 hɪ.we.kã
 
 ã.k
 ã.nũ.k
-ã.ksɪ.r
+ã.sɪ.r
 wã.kã
 
 kai.tu
 kə.kai.tu
-kə.tswi.sʌ.r
-kə.twĩ
+ki.tswi.sʌ.r
+ki.twĩ
 
-lã.na.tə.tsũ
-lã.tə.lã.tə.tsã
-lã.tə.tsɪ.r
-lã.tə.tsã.nã
+lã.na.ti.tsũ
+lã.tə.lã.ni.ti.tsã
+lã.ti.tsɪ.r
+lã.ti.tsã.nã
 
 lu.m
 lʌ.mʌ.lʌ.m
-lʌ.msʌ.r
+lʌ.mʌ.sʌ.r
 lə.mã
 
-mɪ.tĩ
-mɪ.ti.t
-mɪ.tĩ.ti.t
+me.tĩ
+mi.ti.t
+me.tĩ.ni.ti.t
 myu
 mã.nũ
-mwi.r
+mʌ.yi.r
 
-pə.tĩ
-pɪ.ti.t
-pə.tĩ.ti.t
+pe.tĩ
+pi.ti.t
+pe.tĩ.ni.ti.t
 pai
 pã.nũ
-pyi.r
+pɪ.yi.r
 
 pə.tə.tã
-pə.tɪ.tɪ.t
-pə.tə.tã.tɪ.t
+pɪ.tɪ.ts
+pə.tə.tã.ni.ts
 pa.t
 pə.tã.nã
-pɪ.ti.r
+pi.ti.r
+pe.tyi.r
 
 rã.tã
-rã.tɪ.t
-rã.tã.tɪ.t
+rã.ts
+rã.tã.ni.ts
 rã
 rã.nã.nã
 rã.ni.r
+rã.n.yɪ.r
 
-rə.sə.tã
-rɪ.sɪ.tɪ.t
-rə.sə.tã.tɪ.t
+sə.tã
+sɪ.ts
+sə.tã.ni.ts
 ru.s
-rə.sã.nã
-ri.si.r
+sã.nã
+si.r
+syi.r
 
 sã.tã
-sã.tɪ.t
-sã.tã.tɪ.t
+sã.ts
+sã.tã.ni.ts
 sĩ
 sã.nã.nã
 sã.ni.r
+sã.n.yɪ.r
 
 i.sə.tã
-i.sɪ.tɪ.t
-i.sə.tã.tɪ.t
+i.sɪ.ts
+i.sə.tã.ni.ts
 yai.s
 i.sã.nã
 yi.swi.r
+yi.si.yɪ.r

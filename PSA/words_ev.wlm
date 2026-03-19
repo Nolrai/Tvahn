@@ -1,78 +1,83 @@
-ʔyitinu            => ʔɪ.tĩ
-ʔyiti-hyitinu      => ʔɪ.ti.yɪ.tĩ
-ʔyitinu-isuru      => ʔyɪ.tsʌ.r
-ʔyitinu-nu         => ʔyɪ.tã.nã
+ʔyitinu            => ʔi.tĩ
+ʔyiti-hyitinu      => tyi.tĩ
+ʔyitinu-isuru      => ʔi.tə.sʌ.r
+ʔyitinu-nu         => ʔi.tã.nã
 
 hiweka             => hɪ.we.k
 hi-hiweka          => hi.we.k
-hiweka-isuru       => hɪ.we.ksə.r
+hiweka-isuru       => hɪ.we.sə.r
 hiweka-nu          => hɪ.we.kã
 
 wunki              => ã.k
 wun-wunki          => ã.nũ.k
-wunki-isuru        => ã.ksɪ.r
+wunki-isuru        => ã.sɪ.r
 wunki-nu           => wã.kã
 
 kaitui             => kai.tu
 kai-kaitui         => kə.kai.tu
-kaitui-isuru       => kə.tswi.sʌ.r
-kaitui-nu          => kə.twĩ
+kaitui-isuru       => ki.tswi.sʌ.r
+kaitui-nu          => ki.twĩ
 
-lanatətsuni        => lã.na.tə.tsũ
-lanatə-lanatətsuni => lã.tə.lã.tə.tsã
-lanatətsuni-isuru  => lã.tə.tsɪ.r
-lanatətsuni-nu     => lã.tə.tsã.nã
+lanatətsuni        => lã.na.ti.tsũ
+lanatə-lanatətsuni => lã.tə.lã.ni.ti.tsã
+lanatətsuni-isuru  => lã.ti.tsɪ.r
+lanatətsuni-nu     => lã.ti.tsã.nã
 
 luma               => lu.m
 luma-luma          => lʌ.mʌ.lʌ.m
-luma-isuru         => lʌ.msʌ.r
+luma-isuru         => lʌ.mʌ.sʌ.r
 luma-nu            => lə.mã
 
-miwten             => mɪ.tĩ
-miwtit             => mɪ.ti.t
-miwtentit          => mɪ.tĩ.ti.t
+miwten             => me.tĩ
+miwtit             => mi.ti.t
+miwtentit          => me.tĩ.ni.ti.t
 miw                => myu
 miwnun             => mã.nũ
-miwiru             => mwi.r
+miwiiru            => mʌ.yi.r
 
-paiten             => pə.tĩ
-paitit             => pɪ.ti.t
-paitentit          => pə.tĩ.ti.t
+paiten             => pe.tĩ
+paitit             => pi.ti.t
+paitentit          => pe.tĩ.ni.ti.t
 pai
 painun             => pã.nũ
-paiiru             => pyi.r
+paiiiru            => pɪ.yi.r
 
 patten             => pə.tə.tã
-pattit             => pə.tɪ.tɪ.t
-pattentit          => pə.tə.tã.tɪ.t
+pattit             => pɪ.tɪ.ts
+pattentit          => pə.tə.tã.ni.ts
 pat                => pa.t
 patnun             => pə.tã.nã
-patiru             => pɪ.ti.r
+patiru             => pi.ti.r
+patiiru            => pe.tyi.r
 
 ranten             => rã.tã
-rantit             => rã.tɪ.t
-rantentit          => rã.tã.tɪ.t
+rantit             => rã.ts
+rantentit          => rã.tã.ni.ts
 ran                => rã
 rannun             => rã.nã.nã
 raniru             => rã.ni.r
+raniiru            => rã.n.yɪ.r
 
-rusten             => rə.sə.tã
-rustit             => rɪ.sɪ.tɪ.t
-rustentit          => rə.sə.tã.tɪ.t
+rusten             => sə.tã
+rustit             => sɪ.ts
+rustentit          => sə.tã.ni.ts
 rus                => ru.s
-rusnun             => rə.sã.nã
-rusiru             => ri.si.r
+rusnun             => sã.nã
+rusiru             => si.r
+rusiiru            => syi.r
 
 senten             => sã.tã
-sentit             => sã.tɪ.t
-sententit          => sã.tã.tɪ.t
+sentit             => sã.ts
+sententit          => sã.tã.ni.ts
 sen                => sĩ
 sennun             => sã.nã.nã
 seniru             => sã.ni.r
+seniiru            => sã.n.yɪ.r
 
 yaisauten          => i.sə.tã
-yaisautit          => i.sɪ.tɪ.t
-yaisautentit       => i.sə.tã.tɪ.t
+yaisautit          => i.sɪ.ts
+yaisautentit       => i.sə.tã.ni.ts
 yaisau             => yai.s
 yaisaunun          => i.sã.nã
 yaisauiru          => yi.swi.r
+yaisauiiru         => yi.si.yɪ.r

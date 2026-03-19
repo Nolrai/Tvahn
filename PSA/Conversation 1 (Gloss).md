@@ -1,5 +1,9 @@
 Mother:
-This-water carry[immersive]?
+hu pətətã mitit-lʌmʌsʌr sãtã pãnũ kɪmitsɪsã petyir
+
+[This-water from-you move[reportive] to1] TOP5 say accross-what
+
+Have you brought the water in?
 
 Daughter:
 Carry not.
