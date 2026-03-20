@@ -11,6 +11,7 @@ se WOOD
 ram DOMESTIC-PIG
 ʔhas FISH
 ʔrom GREASE
+sorom RANCID
 ʔank BONE
 upon EDIBLE-PLANT-MATTER
 pum HANDCLAW
@@ -47,11 +48,13 @@ sohuram MUD
 astrostro STONE
 sosesose HOUSE
 soseronst HEARTH
+
 pumahas FISH-HOOK
 tsanurokunk TRAP/SNARE
 rokunkutun BUTCHER
 musupon FEED
 musisik TRADE
+astrostrokimi CRUSH
 
 sokemiman NURSE-MOTHER
 tekemimani CHILD

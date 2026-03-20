@@ -1,29 +1,34 @@
-ʔyitinu
+ʔyitinu FINISH MIW -- USE-UP PAT
 ʔyiti-hyitinu
 ʔyitinu-isuru
 ʔyitinu-nu
 
-hiweka
+hiweka SUPPORT RUS
 hi-hiweka
 hiweka-isuru
 hiweka-nu
 
-wunki
+wunki LURK MIW
 wun-wunki
 wunki-isuru
 wunki-nu
 
-kaitui
+kaitui START YAISAU -- ELSE-WHERE-PREVENT RUS
 kai-kaitui
 kaitui-isuru
 kaitui-nu
 
-lanatətsuni
+lanatətsuni DESTROY YAISAU -- CAUSE MIW RA RUS
 lanatə-lanatətsuni
 lanatətsuni-isuru
 lanatətsuni-nu
 
-luma
+isuru SAY
+isuru-isuru
+isuru-isuru
+isuru-nu
+
+luma MOVE
 luma-luma
 luma-isuru
 luma-nu
@@ -31,21 +36,23 @@ luma-nu
 miwten
 miwtit
 miwtentit
-miw
+miw MIW
 miwnun
+miwiru
 miwiiru
 
 paiten
 paitit
 paitentit
-pai
+pai TOPIC
 painun
+paiiru
 paiiiru
 
 patten
 pattit
 pattentit
-pat
+pat DOWN-TO
 patnun
 patiru
 patiiru
@@ -53,7 +60,7 @@ patiiru
 ranten
 rantit
 rantentit
-ran
+ran ONTOP-OF
 rannun
 raniru
 raniiru
@@ -61,7 +68,7 @@ raniiru
 rusten
 rustit
 rustentit
-rus
+rus AWAY-FROM
 rusnun
 rusiru
 rusiiru
@@ -69,7 +76,7 @@ rusiiru
 senten
 sentit
 sententit
-sen
+sen AT/INTO
 sennun
 seniru
 seniiru
@@ -77,7 +84,31 @@ seniiru
 yaisauten
 yaisautit
 yaisautentit
-yaisau
+yaisau INTO/ENVPLUPTING
 yaisaunun
 yaisauiru
 yaisauiiru
+
+ketiten
+ketitit
+ketitentit
+keti HOLDING
+ketinun
+ketiiru
+ketiiiru
+
+kunten
+kuntit
+kuntentit
+kun TO
+kunnun
+kuniru
+kuniiru
+
+pawauten
+pawautit
+pawautentit
+pawau ACCROSS
+pawaunun
+pawauiru
+pawauiiru

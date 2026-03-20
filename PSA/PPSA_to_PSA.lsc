@@ -55,6 +55,11 @@ glide-reintroduction propagate cleanup:
   else:
   u => w / _ [vowel] // {[semivowel] _, _ [semivowel]}
 
+glide-degeminate propagate cleanup:
+  ww => uw
+  jj => ij
+  wii => wiji
+
 merge-ts cleanup:
   t s => ts
 
@@ -146,6 +151,9 @@ vowel-harmony ltr:
 
 remove-weak:
   {ɪ, ʌ, ə}&{[!primary]} => * / _ {s, ts, t}
+
+strengthen-before-r:
+  {ɪ, ʌ, ə} => {i, a, e} / _ r
 
 final-lention:
   {ɪ, ʌ, ə} => {i, u, o} / _ $
