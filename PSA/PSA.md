@@ -217,6 +217,7 @@ Not distance-based; **sphere-of-control-based**.
   * noun class
   * person
   * gender
+
 * All relational meaning is elsewhere.
 
 ---

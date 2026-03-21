@@ -10,9 +10,9 @@ Daughter:
   I have not.
 
 Mother:
-  kɪtɪts lʌmʌ myu ʔitãnã pat təs pãnũ sun petĩnitit tsãr.
-  ((kɪtɪts lʌmʌ myu) ʔitãnã (pat təs) pãnũ) (sun petĩnitit) tsãr.
-  [[HELD-BY.2 MOVE MIW.Default] BURN.Proj [DOWNTO.Default NIGHT] TOP.5] [SLEEP TOP.1&2] TABOO
+  kɪtɪts lʌmʌ myu ʔitãnã pat təs pãnũ sũ petĩnitit tsãr.
+  ((kɪtɪts lʌmʌ myu) ʔitãnã (pat təs) pãnũ) (sũ petĩnitit) tsãr.
+  [[HELD-BY.2 MOVE FROM.Default] BURN.Proj [DOWNTO.Default NIGHT] TOP.5] [SLEEP TOP.1&2] TABOO
   fishing carrying using up [time] until night, is bad for sleeping.
   We can't sleep until you bring the water in.
 
@@ -20,7 +20,7 @@ Daughter:
 
   stosterɪkim petĩ metĩ ãnũk. metĩ ʔitãnã petĩ kitswisar sətã lʌmʌ.
   ((stosterɪkim petĩ) metĩ ãnũk). ((metĩ ʔitãnã petĩ)  (sətã lʌmʌ)).
-  ((GRIND TOP.1) MIW.1 LURK.Red) ; ((MIW1 BURN.Proj TOP1) CUT.Gnomic (AWAYFROM MOVE))
+  ((GRIND TOP.1) FROM.1 LURK.Red) ; ((MIW1 BURN.Proj TOP1) CUT.Gnomic (AWAYFROM MOVE))
   Grinding is relevent. Finishing allows movement.
   I'm griding right now, after I finish I'll get it.
 

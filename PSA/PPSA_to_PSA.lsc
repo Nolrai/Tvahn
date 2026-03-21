@@ -152,9 +152,6 @@ vowel-harmony ltr:
 remove-weak:
   {ɪ, ʌ, ə}&{[!primary]} => * / _ {s, ts, t}
 
-strengthen-before-r:
-  {ɪ, ʌ, ə} => {i, a, e} / _ r
-
 final-lention:
   {ɪ, ʌ, ə} => {i, u, o} / _ $
 
@@ -204,6 +201,9 @@ nasal-syncope:
   n [central] => * / [nasalized] _
   n => * / _ [cons]
   n => * / _ $
+
+strengthen-before-r:
+  {ɪ, ʌ, ə} => {i, a, e} / _ r
 
 unstress-3:
   [] => [unstressed]

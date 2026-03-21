@@ -1,5 +1,3 @@
-Yes, that makes sense.
-
 You’re asking for **semantic slots**, not words — a core lexeme inventory for PPSA at the stage just before perfected pig + fish farming. So:
 
 * settled or semi-settled
@@ -34,13 +32,12 @@ You can decide which are simple roots vs compounds later.
 1. water (generic)
 2. river / flowing water
 3. still water / pond
-4. shore / edge of water
-5. hill / rise
-6. forest / wooded land
-7. open ground / clearing
-8. mud / wet earth
-9. stone / rock
-10. fire (controlled)
+4. hill / rise
+5. forest / wooded land
+6. open ground / clearing
+7. mud / wet earth
+8. stone / rock
+9.  fire (controlled)
 
 ---
 

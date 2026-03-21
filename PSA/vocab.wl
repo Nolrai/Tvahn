@@ -31,7 +31,7 @@ u:kani CLUTCH
 tesint BELLY / BIRTH-MOTHER
 mank OBLIGATION/DEBT
 
-miw UP/ABOVE/BACKING
+miw ABOVE/FROM
 pai INTERIOR/WITHIN
 kun TOWARD
 ʔrap AWAY/FROM
@@ -66,6 +66,8 @@ kemihuhu GUEST
 
 ronstuhu BOIL
 ronstonst ROAST/BAKE
+ronstastrosohuhu SALT
+ronstastroronst SMOKE
 
 ro BLOOD
 tsotan BREATH

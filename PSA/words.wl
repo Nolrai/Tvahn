@@ -36,7 +36,7 @@ luma-nu
 miwten
 miwtit
 miwtentit
-miw MIW
+miw FROM
 miwnun
 miwiru
 miwiiru

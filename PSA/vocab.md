@@ -32,6 +32,7 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 * **ram** = domestic pig (pig-analog; aquatic eutransdontid)
 * **ʔhas** = fish (generic)
 * **ʔrom** = fat / grease
+* **sorom** = rancid / spoiled / gone bad (especially of food, grease, or preserved matter)
 * **ʔank** = bone
 * **upon** = (semi-)edible plant matter (leaf / tuber / nut / grain; not wood)
 * **pum** = hand claw (deep semantic category; distinct from **pak** ‘foot claw’)
@@ -41,6 +42,7 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 * **mus** = give
 * **sik** = take
 * **kemi** = use / employ
+* **kemitsotan** = speak / use breath / speak aloud
 * **luma** = general motion verb (go / come / carry / throw / enter / leave; meaning determined by relational marking)
 * **lante** = settle / lower oneself
 * **ʔen** = rise / stand
@@ -94,8 +96,9 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 
 ### Dwelling & Fire
 
-* **house (built structure)** = *so-se-so-se* → **sosese** (archetypal “finished wood,” reduced form)
+* **house (built structure)** = *so-se-so-se* → **sosesose** (archetypal “finished wood,” reduced form)
 * **hearth** = *so-se-ronst* → **soseronst** (finished wood-fire place)
+* **mayor / village head / lord** = *so-se-so-se-tsene* → **sosesosetsene** (“house-name,” the house by which the settlement is known; later broadens toward “ruler”)
 
 ### Fishing & Hunting Toolkit
 
@@ -107,6 +110,7 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 
 * **feed (animals)** = *mus-upon* → **musupon**
 * **trade** = *mus-sik* → **musisik** (give-take)
+* **crush / grind** = *astro-stro-kimi* → **astrostrokimi** (“stone-use,” i.e. reduce by working against stone)
 
 ### Kinship Terms
 
@@ -134,8 +138,8 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 
 * **boil** = *ronst-hu* → **ronstuhu**
 * **roast / bake** (dry cook; fire-fire) = *ronst-ronst* → **ronstonst**
-* **salt** = *ronst-astro-(sea)* where sea = *so-huhu* (exact compound to be finalized)
-* **smoke** = *ronst-astro-ronst* (exact surface to be finalized)
+* **salt** = *ronst-astro-so-huhu* → **ronstastrosohuhu**
+* **smoke** = *ronst-astro-ronst* → **ronstastroronst**
 
 ---
 
@@ -170,7 +174,7 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 * **forbidden** = *pai tsanro*
 * **ancestor** = lexicalized compound from “nursing breast-user (burned) within” → provisional form **sokemimanpai** (historically cremation-based; exact reduction to be determined)
 * **spirit** = *uuki miw iru* (they who lurk above; **iru** present in PPSA as free relativizing element, not yet fused)
-
+* **Nicaragua** = **sohuhumanki** (“the promised river”; lexicalized place-name)
 ---
 
 ## Structural Notes
