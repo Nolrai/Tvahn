@@ -164,7 +164,6 @@ This occurs only in rare cases (primarily {l, r} + u)
 Ambiguity between onset-only and nucleus-only forms is resolved by:
 
 * Vertical position in ribbon
-* Word boundary constraints - nucleus-only is limited to word beginings, onset-only to word ends.
 
 ---
 
@@ -202,14 +201,3 @@ The system is:
 * Spatial (non-linear ribbon layout)
 * Physically grounded (finger-thread manipulation)
 * Partially under-specified (reduced vowels omitted)
-
----
-
-## Key Design Principles
-
-1. **Rare collisions are tolerated if structured**
-2. **Formal writing prioritizes completeness over accuracy**
-
----
-
-This represents the stable late-PSA writing system derived in this thread.
