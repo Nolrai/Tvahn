@@ -45,16 +45,16 @@ Bands are ordered sequences of these values.
 
 All full nuclei use **3 bands**.
 
-| Pattern | Value |
-| ------- | ----- |
-| 119     | i     |
-| 111     | ĩ     |
-| 199     | a     |
-| 191     | ã     |
-| 919     | o     |
-| 911     | e     |
-| 999     | u     |
-| 991     | ũ     |
+| Pattern | Value | Symbol  |
+| ------- | ----- | -----   |
+| 111     | i     | ☰      |
+| 119     | ĩ     | ☴      |
+| 191     | a     | ☲      |
+| 199     | ã     | ☶      |
+| 911     | o     | ☱      |
+| 919     | e     | ☵      |
+| 991     | u     | ☳      |
+| 999     | ũ     | ☷      |
 
 ### System Logic
 
@@ -87,18 +87,19 @@ Formal writing prefers filling all nuclei using:
 
 Onsets are encoded as **variable-length band patterns** before the nucleus.
 
-| Pattern | Onset |
-| ------- | ----- |
-| 1       | p     |
-| 9       | k     |
-| 11      | t     |
-| 119     | ts    |
-| 19      | s     |
-| 111     | h     |
-| 91      | m     |
-| 911     | n     |
-| 99      | l     |
-| 199     | r     |
+| Pattern | Onset | Symbol |
+| ------- | ----- | ------ |
+| 1       | p     | ⚊      |
+| 11      | t     | ⚌      |
+| 91      | m     | ⚍      |
+| 191     | n     | ☲      |
+| 111     | h     | ☰      |
+| 9       | k     | ⚋      |
+| 19      | s     | ⚎      |
+| 119     | ts    | ☴      |
+| 99      | l     | ⚏      |
+| 199     | r     | ☶      |
+
 
 ### Notes
 
@@ -201,12 +202,6 @@ The system is:
 * Spatial (non-linear ribbon layout)
 * Physically grounded (finger-thread manipulation)
 * Partially under-specified (reduced vowels omitted)
-
-It encodes **structure over phonetic detail**, prioritizing:
-
-* syllable shape
-* event rhythm
-* visual patterning
 
 ---
 
