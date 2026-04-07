@@ -4,7 +4,7 @@
 <svg
    width="40"
    height="60"
-   viewBox="0 0 12.871 19.3065"
+   viewBox="0 0 40 60"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -29,23 +29,23 @@
      showgrid="true"
      showguides="true"
      inkscape:zoom="9.0508081"
-     inkscape:cx="17.401761"
-     inkscape:cy="32.262313"
-     inkscape:window-width="1920"
-     inkscape:window-height="1007"
-     inkscape:window-x="1080"
-     inkscape:window-y="327"
-     inkscape:window-maximized="1"
+     inkscape:cx="21.821256"
+     inkscape:cy="40.659353"
+     inkscape:window-width="1280"
+     inkscape:window-height="661"
+     inkscape:window-x="1486"
+     inkscape:window-y="501"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      inkscape:lockguides="false">
     <inkscape:grid
        type="xygrid"
        id="grid9"
-       spacingx="1.2871"
-       spacingy="0.965325"
+       spacingx="4"
+       spacingy="6"
        snapvisiblegridlinesonly="true"
-       originx="6.4355"
-       originy="9.65325"
+       originx="0"
+       originy="0"
        empspacing="5"
        visible="true"
        enabled="true" />
@@ -55,7 +55,7 @@
     <color-profile
        name="Blue"
        xlink:href="file:///usr/share/color/icc/colord/Bluish.icc"
-       id="color-profile1329" />
+       id="color-profile12350" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -85,13 +85,13 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2871;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2.767265,11.5839 h 7.7226 l -7.7226,5.79195"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 8,36 H 32 L 8,54"
        id="path12865"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2871;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="M 2.5742,14.479875 H 6.17808 6.628565"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.4,45 H 18.6 20"
        id="path13627"
        sodipodi:nodetypes="ccc" />
   </g>

@@ -4,7 +4,7 @@
 <svg
    width="40"
    height="60"
-   viewBox="0 0 12.871 19.3065"
+   viewBox="0 0 40 60"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -29,8 +29,8 @@
      showgrid="true"
      showguides="true"
      inkscape:zoom="9.0508081"
-     inkscape:cx="21.710769"
-     inkscape:cy="28.063793"
+     inkscape:cx="34.416816"
+     inkscape:cy="30.052565"
      inkscape:window-width="1920"
      inkscape:window-height="1007"
      inkscape:window-x="1080"
@@ -41,11 +41,11 @@
     <inkscape:grid
        type="xygrid"
        id="grid9"
-       spacingx="1.2871"
-       spacingy="1.93065"
+       spacingx="4"
+       spacingy="6"
        snapvisiblegridlinesonly="true"
-       originx="6.4355"
-       originy="9.65325"
+       originx="0"
+       originy="0"
        empspacing="5"
        visible="true"
        enabled="true" />
@@ -55,7 +55,7 @@
     <color-profile
        name="Blue"
        xlink:href="file:///usr/share/color/icc/colord/Bluish.icc"
-       id="color-profile4935" />
+       id="color-profile30585" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -85,9 +85,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2871;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="m 6.4355,1.93065 v 5.79195 0"
-       id="path3777" />
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 20,6 v 18 0"
+       id="path30174" />
   </g>
   <metadata
      id="metadata13">

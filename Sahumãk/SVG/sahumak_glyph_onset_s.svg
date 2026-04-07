@@ -4,7 +4,7 @@
 <svg
    width="40"
    height="60"
-   viewBox="0 0 12.871 19.3065"
+   viewBox="0 0 40 60"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -29,8 +29,8 @@
      showgrid="true"
      showguides="true"
      inkscape:zoom="9.0508081"
-     inkscape:cx="15.744451"
-     inkscape:cy="31.378414"
+     inkscape:cx="34.416816"
+     inkscape:cy="30.052565"
      inkscape:window-width="1920"
      inkscape:window-height="1007"
      inkscape:window-x="1080"
@@ -41,11 +41,11 @@
     <inkscape:grid
        type="xygrid"
        id="grid9"
-       spacingx="1.2871"
-       spacingy="1.93065"
+       spacingx="4"
+       spacingy="6"
        snapvisiblegridlinesonly="true"
-       originx="6.4355"
-       originy="9.65325"
+       originx="0"
+       originy="0"
        empspacing="5"
        visible="true"
        enabled="true" />
@@ -55,7 +55,7 @@
     <color-profile
        name="Blue"
        xlink:href="file:///usr/share/color/icc/colord/Bluish.icc"
-       id="color-profile12489" />
+       id="color-profile34862" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -85,13 +85,13 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2871;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.2871,3.8613 h 5.1484 5.1484"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 4,12 H 20 36"
        id="path10571"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.2871;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="m 6.4355,3.8613 v 1.93065 0 1.93065 h 5.1484 v 0.00449 0"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 20,12 v 6 0 6 h 16 v 0.01395 0"
        id="path12087"
        sodipodi:nodetypes="ccccccc" />
   </g>
