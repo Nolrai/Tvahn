@@ -7,98 +7,45 @@
    viewBox="0 0 40 60"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="sahumak_glyph_onset_n.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="false"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="px"
-     showgrid="true"
-     showguides="true"
-     inkscape:zoom="9.0508081"
-     inkscape:cx="21.821256"
-     inkscape:cy="23.312835"
-     inkscape:window-width="1280"
-     inkscape:window-height="661"
-     inkscape:window-x="1486"
-     inkscape:window-y="501"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
-     inkscape:lockguides="false">
-    <inkscape:grid
-       type="xygrid"
-       id="grid9"
-       spacingx="4"
-       spacingy="6"
-       snapvisiblegridlinesonly="true"
-       originx="0"
-       originy="0"
-       empspacing="5"
-       visible="true"
-       enabled="true" />
-  </sodipodi:namedview>
   <defs
      id="defs2">
     <color-profile
        name="Blue"
        xlink:href="file:///usr/share/color/icc/colord/Bluish.icc"
-       id="color-profile28114" />
+       id="color-profile19" />
   </defs>
   <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="guides"
-     sodipodi:insensitive="true">
+     id="layer2">
     <path
        style="fill:#000000;stroke-width:0.321775"
        d="M 0.03997004,9.6934757 12.833179,9.6538768 v 0"
-       id="path148"
-       inkscape:label="path148" />
+       id="path148" />
   </g>
   <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="nucleus" />
+     id="layer3" />
   <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="onsets" />
+     id="layer4" />
   <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="codas" />
+     id="layer5" />
   <g
-     inkscape:label="construction"
-     inkscape:groupmode="layer"
      id="layer1">
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 32,6 H 8"
-       id="path3777-3"
-       sodipodi:nodetypes="cc" />
+       id="path3777-3" />
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 32,24 H 8"
-       id="path3777-7"
-       sodipodi:nodetypes="cc" />
+       id="path3777-7" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3.3377;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 20,6 v 18 0"
-       id="path8338"
-       sodipodi:nodetypes="ccc" />
+       id="path8338" />
   </g>
   <metadata
      id="metadata13">
