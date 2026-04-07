@@ -1,0 +1,92 @@
+Feature type(*cons, vowel, semivowel)
+Feature place(bilabial, alveolar, velar, glottal)
+Feature manner(stop, tap, fricative, affricate, nasal, lateral)
+Feature height(low, mid, high)
+Feature frontness(front, central, back)
+Feature nasalized(nasalized)
+Feature (syllable) stress(*unstressed, secondary, primary)
+feature voicing(unvoiced, voiced)
+Diacritic ˈ (floating) (before) [primary]
+Diacritic ˌ (floating) (before) [secondary]
+Symbol a [low back vowel]
+Symbol ã [low back nasalized vowel]
+Symbol e [mid front vowel]
+Symbol i [high front vowel]
+Symbol ĩ [high front nasalized vowel]
+Symbol o [mid back vowel]
+Symbol õ [mid back nasalized vowel]
+Symbol u [high back vowel]
+Symbol ũ [high back nasalized vowel]
+Symbol ə [mid central vowel]
+Symbol ɪ [high central vowel]
+Symbol ʌ [low central vowel]
+
+# consonants /p t k ts s h m n l r j w ʔ/
+Symbol p [bilabial stop cons]
+Symbol t [alveolar stop cons]
+Symbol k [velar stop cons]
+Symbol ts [alveolar affricate cons]
+Symbol s [alveolar fricative cons]
+Symbol m [bilabial nasal cons]
+Symbol n [alveolar nasal cons]
+Symbol l [alveolar lateral cons]
+Symbol r [velar lateral cons]
+Symbol ɾ [alveolar voiced tap cons]
+
+Symbol h [glottal fricative cons]
+Symbol ʔ [glottal stop cons]
+symbol j [high semivowel]
+symbol w [low semivowel]
+
+Deromanizer:
+  ' => ʔ
+  \? => ʔ
+  \- => *
+  y => j
+  {Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M} => * # uppercase letters are used for glossing. They are removed by the deromanizer.
+
+Syllables:
+  explicit
+
+nasal-overlap:
+  [nasal] [vowel]? => * / [nasalized] _
+
+lenition:
+  {t, k, r} => {ɾ, h, ɾ} / [!cons] _ [!cons]
+
+lateral-collapse:
+  [lateral] => l / $ _
+  [lateral] => r̩ / _ $
+  [lateral] => j / {[cons] _ [vowel], [vowel] _ [cons]}
+  then:
+    j => * / _ {j, w}
+
+
+lenition2:
+  ɾ [!cons] => ʔ / ɾ [!cons] _ [!cons]
+  ɾ [!cons] => * / ɾ [!cons] _
+
+nasalize:
+  [back] [nasal] => [back nasalized] ʔ
+  [front] n => ĩ ʔ
+
+remove-glot:
+  ʔ => * / _ $
+  ʔ => j / {[front], [mid]} _ [!cons]
+  ʔ => w / [back] _ [!cons]
+
+remove-centrals:
+  [central] => * / {_ [vowel], [vowel] _}
+  [low central] => [mid front]
+  [central] => [front]
+
+tsi-lention:
+  tsi => tʃi
+  tsu => su
+  ts => t
+
+restore-dipthongs:
+  {j j?, w w?} => {ji, wo} // {[!cons] _, _ [!cons]}
+
+romanizer:
+  j => y
