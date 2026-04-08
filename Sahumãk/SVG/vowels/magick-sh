@@ -1,0 +1,5 @@
+montage \
+  i.svg in.svg a.svg an.svg o.svg e.svg u.svg un.svg \
+  yi.svg yin.svg wa.svg wan.svg wo.svg ye.svg wu.svg wun.svg \
+  wi.svg win.svg ya.svg yan.svg yo.svg we.svg yu.svg yun.svg \
+  -tile 8x -geometry +20+20 output.png

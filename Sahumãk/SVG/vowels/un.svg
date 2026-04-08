@@ -24,11 +24,11 @@
      id="layer1">
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="M 8,36 31.4,45 8,54"
+       d="M 8,36 31,45 8,54"
        id="path12865-3" />
     <path
        style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       d="m 7.4,45 h 11.2 8.8"
+       d="M 7,45 h 11 9"
        id="path13627" />
   </g>
   <metadata
