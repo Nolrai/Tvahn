@@ -89,15 +89,15 @@ Onsets are encoded as **variable-length band patterns** before the nucleus.
 
 | Pattern | Onset | Symbol |
 | ------- | ----- | ------ |
-| 1       | p     | ⚊      |
-| 11      | t     | ⚌      |
-| 91      | m     | ⚍      |
+|   1     | p     | ⚊      |
+|  11     | t     | ⚌      |
+|  91     | m     | ⚍      |
 | 191     | n     | ☲      |
 | 111     | h     | ☰      |
-| 9       | k     | ⚋      |
-| 19      | s     | ⚎      |
+|   9     | k     | ⚋      |
+|  19     | s     | ⚎      |
 | 119     | ts    | ☴      |
-| 99      | l     | ⚏      |
+|  99     | l     | ⚏      |
 | 199     | r     | ☶      |
 
 
