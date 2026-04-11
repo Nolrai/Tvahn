@@ -9,19 +9,10 @@ import System.FilePath
 import System.Environment (getArgs)
 import System.Exit
 import System.Process ( readProcess, callProcess, readCreateProcessWithExitCode, proc)
-import qualified Data.ByteString.Char8 as BS8
 import qualified Data.Array as Array
 import Data.Array (Array, bounds)
 import Data.Traversable (forM)
 import Data.Foldable (forM_)
-import qualified Data.Text as T
-
-import Data.FileEmbed (embedFile)
-import Text.Printf
-
-mergeTemplate, addLabelTemplate :: String
-mergeTemplate = BS8.unpack $(embedFile "data/mergeTemplate.svg")
-addLabelTemplate = BS8.unpack $(embedFile "data/addLabelTemplate.svg")
 
 main :: IO ()
 main = do
@@ -33,10 +24,10 @@ main = do
   -- combine SVGs from onset and vowel folders into output folder
   normalizeSVGs onset
   normalizeSVGs vowel
-  -- combineSVGs outputFolder onset vowel
-  -- makeTable "Onsets" ((onset </>) <$> onsetOrder)
+  combineSVGs outputFolder onset vowel
+  makeTable "Onsets" ((onset </>) <$> onsetOrder)
   makeTable "Nuclei" ((vowel </>) <$> nuclueusOrder2D)
-  -- makeTable "Syllables" ((outputFolder </>) <$> syllableOrder2D)
+  makeTable "Syllables" ((outputFolder </>) <$> syllableOrder2D)
 
 -- | Pattern | Onset | Symbol |
 -- | ------- | ----- | ------ |
@@ -93,8 +84,9 @@ syllableOrder2D = Array.listArray ((0, 0), (9, 23))
   , v <- Array.elems nuclueusOrder2D
   ]
 
+-- this only works on normalized svg files, where d attributes never span multiple lines!
 getPaths :: FilePath -> IO [String]
-getPaths file = lines <$> readProcess "rg" ["-o", "-r", "$1", " d=\"([^\"]*)\"", file] ""
+getPaths file = lines <$> readProcess "rg" ["-o", "-r", "$2", "(^|[\\s])d=\"([^\"]*)\"", file] ""
 
 combineSVGs :: FilePath -> FilePath -> FilePath -> IO ()
 combineSVGs outputFolder folderA folderB = do
@@ -124,9 +116,9 @@ combineSVG onsetFile vowelFile outputFile = do
   vowelPaths <- getPaths vowelFile
   putStrLn $ "Extracted paths from " <> vowelFile <> ":\n" <> unlines vowelPaths
 
-  let paths = unwords (onsetPaths ++ vowelPaths)
+  let paths = onsetPaths ++ vowelPaths
 
-  writeFile outputFile $ printf mergeTemplate paths
+  writeFile outputFile $ mergeTemplate paths
   putStrLn $ "Written combined SVG to " <> outputFile
 
 -- | Use ImageMagick's montage command to create a table of labeled images.
@@ -140,30 +132,29 @@ makeTable tableName filePaths = do
 
   let tableDims = show (endCol - startCol + 1) <> "x" <> show (endRow - startRow + 1)
         where ((startRow, startCol), (endRow, endCol)) = bounds filePaths
-  let montageArgs :: [String] = Array.elems labledFiles <> ["-tile", tableDims, "-geometry", "+20+20", "-title", tableName, tableName <.> "png"]
+  let montageArgs :: [String] =
+        [ "-density", "300"
+        , "-filter", "point"
+        ]
+        <> Array.elems labledFiles
+        <> [ "-tile", tableDims
+            , "-geometry", "+20+20"
+            , "-title", tableName
+            , tableName <.> "png"
+            ]
   putStrLn $ "Running montage with arguments:\n" <> unlines montageArgs
   callProcess "montage" montageArgs
-  -- removeFile `mapM_` labledFiles
+  removeFile `mapM_` labledFiles
 
 makeLabeledSVG :: FilePath -> String -> FilePath -> IO FilePath
 makeLabeledSVG inputFile label outputSufix = do
   let outputFile = inputFile -<.> outputSufix
   putStrLn $ "Adding label " <> label <> " to " <> inputFile <> " and saving as " <> outputFile
-  let labelText = T.unpack label
-  -- get the d attribute from the SVG file using rg (ripgrep)
+  -- get the d attributes from the SVG file using rg (ripgrep)
   paths <- getPaths inputFile
   putStrLn $ "Extracted paths from " <> inputFile <> ":\n" <> unlines paths
-  let pathsElems = mkPathElems paths
-      svgContent = printf addLabelTemplate labelText pathsStr
-  writeFile outputFile svgContent
+  writeFile outputFile $ labeledSVGTemplate label paths
   pure outputFile
-
-makePathElems :: [String] -> String
-makePathElems ds =
-  unlines
-    [ printf "<path style=\"fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round\" d=\"%s\" />" d
-    | d <- ds
-    ]
 
 normalizeSVGs :: FilePath -> IO ()
 normalizeSVGs folder = do
@@ -171,8 +162,9 @@ normalizeSVGs folder = do
 
   haveTransform <- rgFiles "transform=" folder
   haveGrid      <- rgFiles "grid" folder
+  haveMultiLineDAttributes <- rgFiles "(^|\\s)d=\"[^\"]*$" folder
 
-  let svgFiles = nub (haveTransform ++ haveGrid)
+  let svgFiles = nub (haveTransform ++ haveGrid ++ haveMultiLineDAttributes)
 
   putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
 
@@ -216,3 +208,44 @@ rgFiles regexpr folder = do
     ExitFailure 1 -> pure []  -- no matches
     ExitFailure _ -> error $
       "rg failed for pattern " <> show regexpr <> ":\n" <> stderrText
+
+labeledSVGTemplate :: String -> [String] -> String
+labeledSVGTemplate labelText dStrings = unlines $
+  [ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+  , "<svg"
+  , "  width=\"40\""
+  , "  height=\"80\""
+  , "  viewBox=\"0 -20 40 80\""
+  , "  xmlns=\"http://www.w3.org/2000/svg\">"
+  , "  <text"
+  , "    x=\"20\" y=\"-4\""
+  , "    text-anchor=\"middle\" font-size=\"16\">" ++ labelText ++ "</text>"
+  , ""
+  ] ++ mkGroup dStrings
+    ++ ["</svg>"]
+
+mergeTemplate :: [String] -> String
+mergeTemplate dStrings = unlines $
+  [ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+  , "<svg"
+  , "  width=\"40\""
+  , "  height=\"60\""
+  , "  viewBox=\"0 0 40 60\""
+  , "  xmlns=\"http://www.w3.org/2000/svg\">"
+  ] ++ mkGroup dStrings
+    ++ [ "</svg>"]
+
+mkGroup :: [String] -> [String]
+mkGroup dStrings =
+  [ "  <g"
+  , "      fill=\"none\""
+  , "      stroke=\"#000000\""
+  , "      stroke-width=\"4\""
+  , "      stroke-linecap=\"round\""
+  , "      stroke-linejoin=\"round\""
+  , "     id=\"layer1\">"
+  ] ++ (makePath <$> dStrings)
+    ++ [ "  </g>"]
+
+makePath :: String -> String
+makePath dString = "      <path d=\"" ++ dString ++ "\"/>"
