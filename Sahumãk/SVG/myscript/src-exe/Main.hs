@@ -13,10 +13,12 @@ import qualified Data.Array as Array
 import Data.Array (Array, bounds)
 import Data.Traversable (forM)
 import Data.Foldable (forM_)
+import Text.Printf
+import Control.Monad (zipWithM_, when)
 
 main :: IO ()
 main = do
-  [outputFolder, onset, vowel] <- getArgs
+  outputFolder : onset : vowel : actions <- getArgs
   putStrLn $ "Output folder: " <> outputFolder
   putStrLn $ "Input folders: " <> unlines [onset, vowel]
   -- create output folder if it doesn't exist
@@ -24,10 +26,32 @@ main = do
   -- combine SVGs from onset and vowel folders into output folder
   normalizeSVGs onset
   normalizeSVGs vowel
-  combineSVGs outputFolder onset vowel
-  makeTable "Onsets" ((onset </>) <$> onsetOrder)
-  makeTable "Nuclei" ((vowel </>) <$> nuclueusOrder2D)
-  makeTable "Syllables" ((outputFolder </>) <$> syllableOrder2D)
+  let doCombine = "--combine" `elem` actions
+  let doTables = "--table" `elem` actions
+  let doForgeInput = "--forge-input" `elem` actions
+  when doCombine $ combineSVGs outputFolder onset vowel
+
+  sequence_ $ do
+    f <- [makeTable | doTables] ++ [makeNumberedFiles | doForgeInput]
+    let outputNames = [ "Onsets", "Nuclei", "Syllables"]
+    let folderNames = [onset, vowel, outputFolder]
+    let orders = [onsetOrder2D, nuclueusOrder2D, syllableOrder2D]
+    let inputs = zip3 outputNames folderNames orders
+    (oName, fName, order) <- inputs
+    [f oName ((fName </>) <$> order)]
+
+makeNumberedFiles :: String -> Array i FilePath -> IO ()
+makeNumberedFiles prefix order = do
+  printf "making Numbered files (%s):\n" prefix
+  createDirectoryIfMissing True dir
+  zipWithM_ onItem [1..] (Array.elems order)
+  where
+    dir = "fontForgeInput"
+    onItem :: Int -> FilePath -> IO ()
+    onItem ix filePath = do
+      let base = takeFileName filePath
+      let newFileName = printf "%s/%s_%03d_%s" dir prefix ix base
+      copyFile (filePath <.> "svg") (newFileName <.> "svg")
 
 -- | Pattern | Onset | Symbol |
 -- | ------- | ----- | ------ |
@@ -42,8 +66,8 @@ main = do
 -- |  99     | l     | ⚏      |
 -- | 199     | r     | ☶      |
 
-onsetOrder :: Array (Int, Int) String
-onsetOrder = Array.listArray ((0, 0), (0, 9)) ["p", "t", "m", "n", "h", "k", "s", "ts", "l", "r"]
+onsetOrder2D :: Array (Int, Int) String
+onsetOrder2D = Array.listArray ((0, 0), (0, 9)) ["p", "t", "m", "n", "h", "k", "s", "ts", "l", "r"]
 
 -- | Pattern | Value | Symbol  |
 -- | ------- | ----- | -----   |
@@ -80,7 +104,7 @@ nuclueusOrder2D = Array.listArray ((0, 0), (2, 7))
 syllableOrder2D :: Array (Int, Int) String
 syllableOrder2D = Array.listArray ((0, 0), (9, 23))
   [ o <> v
-  | o <- Array.elems onsetOrder
+  | o <- Array.elems onsetOrder2D
   , v <- Array.elems nuclueusOrder2D
   ]
 
