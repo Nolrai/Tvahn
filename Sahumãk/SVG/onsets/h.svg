@@ -1,12 +1,16 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="40" height="60" viewBox="0 0 40 60" version="1.1" id="svg5">
-    <ns0:defs id="defs2"/>
-    <ns0:g id="layer1">
-        <ns0:path style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M 32 30 L 8 6 M 32 6 L 8 30 M 4 18 L 36 18 L 36 18"/>
-    </ns0:g>
-    <ns0:metadata id="metadata13">
-        <rdf:RDF>
-            <ns2:Work rdf:about=""/>
-        </rdf:RDF>
-    </ns0:metadata>
-</ns0:svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="40"
+  height="60"
+  viewBox="0 0 40 60"
+  xmlns="http://www.w3.org/2000/svg">
+  <g
+      fill="none"
+      stroke="#000000"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+     id="layer1">
+      <path d="M 32 30 L 8 6 M 32 6 L 8 30 M 4 18 L 36 18 L 36 18"/>
+  </g>
+</svg>

@@ -1,6 +1,4 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell #-}
-{-# LANGUAGE RecordWildCards #-}
 
 import Prelude
 import Data.List (isSuffixOf, intercalate, nub)
@@ -15,21 +13,29 @@ import Data.Traversable (forM)
 import Data.Foldable (forM_)
 import Text.Printf
 import Control.Monad (zipWithM_, when)
+import Data.Char (toLower)
 
 main :: IO ()
 main = do
   outputFolder : onset : vowel : actions <- getArgs
   putStrLn $ "Output folder: " <> outputFolder
-  putStrLn $ "Input folders: " <> unlines [onset, vowel]
-  -- create output folder if it doesn't exist
-  createDirectoryIfMissing True outputFolder
-  -- combine SVGs from onset and vowel folders into output folder
+  printf "Input folders: %s %s" onset vowel
   normalizeSVGs onset
+  simplifySvgFiles onset
   normalizeSVGs vowel
+  simplifySvgFiles vowel
   let doCombine = "--combine" `elem` actions
   let doTables = "--table" `elem` actions
   let doForgeInput = "--forge-input" `elem` actions
+
   when doCombine $ combineSVGs outputFolder onset vowel
+
+  when doForgeInput $ do
+    createDirectoryIfMissing True forgeDir
+
+    -- remove old files
+    oldSvgFiles <- filter (".svg" `isSuffixOf`) <$> listDirectory forgeDir
+    (removeFile . (forgeDir </>)) `mapM_` oldSvgFiles
 
   sequence_ $ do
     f <- [makeTable | doTables] ++ [makeNumberedFiles | doForgeInput]
@@ -40,18 +46,20 @@ main = do
     (oName, fName, order) <- inputs
     [f oName ((fName </>) <$> order)]
 
+forgeDir :: FilePath
+forgeDir = "fontForgeInput"
+
 makeNumberedFiles :: String -> Array i FilePath -> IO ()
-makeNumberedFiles prefix order = do
-  printf "making Numbered files (%s):\n" prefix
-  createDirectoryIfMissing True dir
+makeNumberedFiles folder order = do
+  printf "making Numbered files (%s, %s_):\n" folder prefix
   zipWithM_ onItem [1..] (Array.elems order)
   where
-    dir = "fontForgeInput"
-    onItem :: Int -> FilePath -> IO ()
-    onItem ix filePath = do
-      let base = takeFileName filePath
-      let newFileName = printf "%s/%s_%03d_%s" dir prefix ix base
-      copyFile (filePath <.> "svg") (newFileName <.> "svg")
+  prefix = toLower <$> take 2 folder
+  onItem :: Int -> FilePath -> IO ()
+  onItem ix filePath = do
+    let base = takeFileName filePath
+    let newFileName = printf "%s/%s_%03d_%s" forgeDir prefix ix base
+    copyFile (filePath <.> "svg") (newFileName <.> "svg")
 
 -- | Pattern | Onset | Symbol |
 -- | ------- | ----- | ------ |
@@ -114,6 +122,12 @@ getPaths file = lines <$> readProcess "rg" ["-o", "-r", "$2", "(^|[\\s])d=\"([^\
 
 combineSVGs :: FilePath -> FilePath -> FilePath -> IO ()
 combineSVGs outputFolder folderA folderB = do
+  -- reset the output folder
+  exists <- doesDirectoryExist outputFolder
+  when exists $ removeDirectoryRecursive outputFolder
+  createDirectoryIfMissing True outputFolder
+
+  -- combine SVGs from onset and vowel folders into output folder
   putStrLn $ "Combining SVGs from " <> folderA <> " and " <> folderB
   -- get all .svg files in folderA and folderB
   svgFilesA <- filter (".svg" `isSuffixOf`) <$> listDirectory folderA
@@ -197,6 +211,9 @@ normalizeSVGs folder = do
         , "selection-ungroup"
         , "select-all:no-groups"
         , "object-to-path"
+        , "object-stroke-to-path"
+        , "path-simplify"
+        , "path-union"
         , "com.klowner.filter.apply-transform"
         , "export-plain-svg"
         , "export-do"
@@ -221,6 +238,22 @@ normalizeSVGs folder = do
 
     -- Replace original file with normalized output
     renameFile outFile file
+
+simplifySvgFiles :: FilePath -> IO ()
+simplifySvgFiles folder = do
+  putStrLn $ "Simplifying SVGs in folder: " <> folder
+
+  nontemplatedFiles <- rgFiles "xmlns:|metadata|defs" folder
+
+  let svgFiles = nontemplatedFiles
+
+  putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
+  forM_ svgFiles $ \ file -> do
+
+    paths <- getPaths file
+    putStrLn $ "Extracted paths from " <> file <> ":\n" <> unlines paths
+
+    writeFile file $ mergeTemplate paths
 
 rgFiles :: String -> FilePath -> IO [FilePath]
 rgFiles regexpr folder = do

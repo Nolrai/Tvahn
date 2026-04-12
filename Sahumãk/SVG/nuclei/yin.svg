@@ -1,55 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg
-   width="40"
-   height="60"
-   viewBox="0 0 40 60"
-   version="1.1"
-   id="svg5"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#">
-  <defs
-     id="defs2" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     d="M 36,42 H 4"
-     id="path10571" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     d="m 20,42 v 6 0 6 H 4 v 0"
-     id="path12087" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     d="M 36,36 H 4 v 0"
-     id="path12865" />
-  <metadata
-     id="metadata13">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
-      </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-      </cc:License>
-    </rdf:RDF>
-  </metadata>
-  <path
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
-     d="M 36,42 V 48 H 36"
-     id="path1631" />
+  width="40"
+  height="60"
+  viewBox="0 0 40 60"
+  xmlns="http://www.w3.org/2000/svg">
+  <g
+      fill="none"
+      stroke="#000000"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+     id="layer1">
+      <path d="M 36,42 H 4"/>
+      <path d="m 20,42 v 6 0 6 H 4 v 0"/>
+      <path d="M 36,36 H 4 v 0"/>
+      <path d="M 36,42 V 48 H 36"/>
+  </g>
 </svg>

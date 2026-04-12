@@ -1,6 +1,5 @@
 set -e
 
-rm -rf syllables
 cd myscript
 cabal build
 NEW=$(cabal list-bin myscript)
