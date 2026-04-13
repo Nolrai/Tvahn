@@ -1,0 +1,345 @@
+Feature type(*cons, vowel, semivowel)
+Feature place(bilabial, alveolar, velar, glottal)
+Feature manner(stop, fricative, affricate, nasal, lateral)
+Feature height(low, mid, high)
+Feature frontness(front, central, back)
+Feature nasalized(nasalized)
+Feature (syllable) stress(*unstressed, secondary, primary)
+Diacritic ˈ (floating) (before) [primary]
+Diacritic ˌ (floating) (before) [secondary]
+Symbol a [low back vowel]
+Symbol ã [low back nasalized vowel]
+Symbol e [mid front vowel]
+Symbol i [high front vowel]
+Symbol ĩ [high front nasalized vowel]
+Symbol o [mid back vowel]
+Symbol u [high back vowel]
+Symbol ũ [high back nasalized vowel]
+Symbol ə [mid central vowel]
+Symbol ɪ [high central vowel]
+Symbol ʌ [low central vowel]
+
+# consonants /p t k ts s h m n l r j w ʔ/
+Symbol p [bilabial stop cons]
+Symbol t [alveolar stop cons]
+Symbol k [velar stop cons]
+Symbol ts [alveolar affricate cons]
+Symbol s [alveolar fricative cons]
+Symbol m [bilabial nasal cons]
+Symbol n [alveolar nasal cons]
+Symbol l [alveolar lateral cons]
+Symbol r [velar lateral cons]
+
+Symbol h [glottal fricative cons]
+Symbol ʔ [glottal stop cons]
+symbol j [high semivowel]
+symbol w [low semivowel]
+
+
+Deromanizer:
+  {', \?, \-, ʔ, \:} => * # just remove all the stop markers
+  y => j
+  {Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M} => * # uppercase letters are used for glossing. They are removed by the deromanizer.
+  \. => * # periods are used for syllable boundaries. They are removed by the deromanizer.
+
+merge-ts cleanup:
+  t s => ts
+
+Syllables:
+  explicit
+
+Syllables:
+  [!vowel]* [vowel]
+  [!vowel]+ / _ $
+  n // _ [vowel]
+  [!vowel !cons]
+
+handle-nasalized-vowels:
+  ã => an
+  ĩ => in
+  ũ => un
+
+handle-weak-vowels:
+  {ə, ɪ, ʌ} => *
+
+convert-j:
+  j => y
+
+deromanize:
+	tsyin => 
+	tswan => 
+	tswun => 
+	tswin => 
+	tsyan => 
+	tsyun => 
+	pyin => 
+	pwan => 
+	pwun => 
+	pwin => 
+	pyan => 
+	pyun => 
+	tyin => 
+	twan => 
+	twun => 
+	twin => 
+	tyan => 
+	tyun => 
+	myin => 
+	mwan => 
+	mwun => 
+	mwin => 
+	myan => 
+	myun => 
+	nyin => 
+	nwan => 
+	nwun => 
+	nwin => 
+	nyan => 
+	nyun => 
+	hyin => 
+	hwan => 
+	hwun => 
+	hwin => 
+	hyan => 
+	hyun => 
+	kyin => 
+	kwan => 
+	kwun => 
+	kwin => 
+	kyan => 
+	kyun => 
+	syin => 
+	swan => 
+	swun => 
+	swin => 
+	syan => 
+	syun => 
+	tsin => 
+	tsan => 
+	tsun => 
+	tsyi => 
+	tswa => 
+	tswo => 
+	tsye => 
+	tswu => 
+	tswi => 
+	tsya => 
+	tsyo => 
+	tswe => 
+	tsyu => 
+	lyin => 
+	lwan => 
+	lwun => 
+	lwin => 
+	lyan => 
+	lyun => 
+	ryin => 
+	rwan => 
+	rwun => 
+	rwin => 
+	ryan => 
+	ryun => 
+	yin => 
+	wan => 
+	wun => 
+	win => 
+	yan => 
+	yun => 
+	pin => 
+	pan => 
+	pun => 
+	pyi => 
+	pwa => 
+	pwo => 
+	pye => 
+	pwu => 
+	pwi => 
+	pya => 
+	pyo => 
+	pwe => 
+	pyu => 
+	tin => 
+	tan => 
+	tun => 
+	tyi => 
+	twa => 
+	two => 
+	tye => 
+	twu => 
+	twi => 
+	tya => 
+	tyo => 
+	twe => 
+	tyu => 
+	min => 
+	man => 
+	mun => 
+	myi => 
+	mwa => 
+	mwo => 
+	mye => 
+	mwu => 
+	mwi => 
+	mya => 
+	myo => 
+	mwe => 
+	myu => 
+	nin => 
+	nan => 
+	nun => 
+	nyi => 
+	nwa => 
+	nwo => 
+	nye => 
+	nwu => 
+	nwi => 
+	nya => 
+	nyo => 
+	nwe => 
+	nyu => 
+	hin => 
+	han => 
+	hun => 
+	hyi => 
+	hwa => 
+	hwo => 
+	hye => 
+	hwu => 
+	hwi => 
+	hya => 
+	hyo => 
+	hwe => 
+	hyu => 
+	kin => 
+	kan => 
+	kun => 
+	kyi => 
+	kwa => 
+	kwo => 
+	kye => 
+	kwu => 
+	kwi => 
+	kya => 
+	kyo => 
+	kwe => 
+	kyu => 
+	sin => 
+	san => 
+	sun => 
+	syi => 
+	swa => 
+	swo => 
+	sye => 
+	swu => 
+	swi => 
+	sya => 
+	syo => 
+	swe => 
+	syu => 
+	tsi => 
+	tsa => 
+	tso => 
+	tse => 
+	tsu => 
+	lin => 
+	lan => 
+	lun => 
+	lyi => 
+	lwa => 
+	lwo => 
+	lye => 
+	lwu => 
+	lwi => 
+	lya => 
+	lyo => 
+	lwe => 
+	lyu => 
+	rin => 
+	ran => 
+	run => 
+	ryi => 
+	rwa => 
+	rwo => 
+	rye => 
+	rwu => 
+	rwi => 
+	rya => 
+	ryo => 
+	rwe => 
+	ryu => 
+	ts => 
+	in => 
+	an => 
+	un => 
+	yi => 
+	wa => 
+	wo => 
+	ye => 
+	wu => 
+	wi => 
+	ya => 
+	yo => 
+	we => 
+	yu => 
+	pi => 
+	pa => 
+	po => 
+	pe => 
+	pu => 
+	ti => 
+	ta => 
+	to => 
+	te => 
+	tu => 
+	mi => 
+	ma => 
+	mo => 
+	me => 
+	mu => 
+	ni => 
+	na => 
+	no => 
+	ne => 
+	nu => 
+	hi => 
+	ha => 
+	ho => 
+	he => 
+	hu => 
+	ki => 
+	ka => 
+	ko => 
+	ke => 
+	ku => 
+	si => 
+	sa => 
+	so => 
+	se => 
+	su => 
+	li => 
+	la => 
+	lo => 
+	le => 
+	lu => 
+	ri => 
+	ra => 
+	ro => 
+	re => 
+	ru => 
+	p => 
+	t => 
+	m => 
+	n => 
+	h => 
+	k => 
+	s => 
+	l => 
+	r => 
+	i => 
+	a => 
+	o => 
+	e => 
+	u => 
+
+syllables:
+  clear
