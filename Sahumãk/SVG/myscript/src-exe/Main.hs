@@ -201,8 +201,9 @@ normalizeSVGs folder = do
   haveTransform <- rgFiles "transform=" folder
   haveGrid      <- rgFiles "grid" folder
   haveMultiLineDAttributes <- rgFiles "(^|\\s)d=\"[^\"]*$" folder
+  haveStrokes <- rgFiles "stroke=\"#" folder
 
-  let svgFiles = nub (haveTransform ++ haveGrid ++ haveMultiLineDAttributes)
+  let svgFiles = nub (haveTransform ++ haveGrid ++ haveMultiLineDAttributes ++ haveStrokes)
 
   putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
 
@@ -210,10 +211,8 @@ normalizeSVGs folder = do
         [ "select-all:groups"
         , "selection-ungroup"
         , "select-all:no-groups"
-        , "object-to-path"
         , "object-stroke-to-path"
-        , "path-simplify"
-        , "path-union"
+        , "swap-fill-and-stroke"
         , "com.klowner.filter.apply-transform"
         , "export-plain-svg"
         , "export-do"
@@ -244,8 +243,9 @@ simplifySvgFiles folder = do
   putStrLn $ "Simplifying SVGs in folder: " <> folder
 
   nontemplatedFiles <- rgFiles "xmlns:|metadata|defs" folder
+  haveMissingQuote <- rgFiles "stroke=\"none$" folder
 
-  let svgFiles = nontemplatedFiles
+  let svgFiles = nub (nontemplatedFiles ++ haveMissingQuote)
 
   putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
   forM_ svgFiles $ \ file -> do
@@ -295,12 +295,9 @@ mergeTemplate dStrings = unlines $
 mkGroup :: [String] -> [String]
 mkGroup dStrings =
   [ "  <g"
-  , "      fill=\"none\""
-  , "      stroke=\"#000000\""
-  , "      stroke-width=\"4\""
-  , "      stroke-linecap=\"round\""
-  , "      stroke-linejoin=\"round\""
-  , "     id=\"layer1\">"
+  , "    fill=\"#000000\""
+  , "    stroke=\"none\""
+  , "    id=\"layer1\">"
   ] ++ (makePath <$> dStrings)
     ++ [ "  </g>"]
 
