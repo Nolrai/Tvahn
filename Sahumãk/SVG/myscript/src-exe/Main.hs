@@ -1,305 +1,72 @@
+{-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE OverloadedStrings #-}
-
-import Prelude
-import Data.List (isSuffixOf, intercalate, nub)
-import System.Directory
-import System.FilePath
+import qualified Data.Trie as Trie
+import Prelude (error, otherwise, fst)
+import System.IO (IO)
+import GHC.Num (Num(..))
+import Data.Int (Int)
+import Data.Char (Char)
+import qualified Data.ByteString.Char8 as BS
+import TrieGen (genTrie)
 import System.Environment (getArgs)
-import System.Exit
-import System.Process ( readProcess, callProcess, readCreateProcessWithExitCode, proc)
-import qualified Data.Array as Array
-import Data.Array (Array, bounds)
-import Data.Traversable (forM)
-import Data.Foldable (forM_)
-import Text.Printf
-import Control.Monad (zipWithM_, when)
-import Data.Char (toLower)
+import Data.Text.Encoding (decodeUtf8, encodeUtf8)
+import qualified Data.Text as T
+import Data.List (maximum)
+import Data.Maybe (Maybe(..))
+import Data.Functor ((<$>))
+import Data.Function ((.), ($))
+import Data.Foldable (Foldable(foldl'))
+import Data.Monoid ((<>))
+
+-- At compile time, embed the trie
+myTrie :: Trie.Trie Char
+myTrie = $(genTrie "data/toGlyphs.tsv")
+
+maxKeyLen :: Int
+maxKeyLen = maximum $ T.length . decodeUtf8 . fst <$> Trie.toList myTrie
+
+-- deal with non ascii but valid inputs
+normalize :: T.Text -> T.Text
+normalize txt = foldl' (\acc (a, b) -> T.replace a b acc) txt l
+  where
+    l =
+      [ ("ã", "an")
+      , ("ĩ", "in")
+      , ("ũ", "un")
+      ] <>
+      [ ("ə", "")
+      , ("ʌ", "")
+      , ("ɪ", "")
+      , ("ʔ", "")
+      ]
+
+-- Longest match substitution
+substitute :: T.Text -> T.Text
+substitute = go
+  where
+    go txt
+      | T.null txt = T.empty
+      | otherwise =
+          let candidates =
+                [ (T.length normalizedPrefix, v)
+                | len <- [maxKeyLen, maxKeyLen-1 .. 1]
+                , let prefix = T.take len txt
+                , let normalizedPrefix = normalize prefix
+                , let bsPrefix = encodeUtf8 normalizedPrefix
+                , Just v <- [Trie.lookup bsPrefix myTrie]
+                ]
+          in case candidates of
+            (len, v):_ -> T.cons v (go (T.drop len txt))
+            []         -> T.cons (T.head txt) (go (T.tail txt))
 
 main :: IO ()
 main = do
-  outputFolder : onset : vowel : actions <- getArgs
-  putStrLn $ "Output folder: " <> outputFolder
-  printf "Input folders: %s %s" onset vowel
-  normalizeSVGs onset
-  simplifySvgFiles onset
-  normalizeSVGs vowel
-  simplifySvgFiles vowel
-  let doCombine = "--combine" `elem` actions
-  let doTables = "--table" `elem` actions
-  let doForgeInput = "--forge-input" `elem` actions
-
-  when doCombine $ combineSVGs outputFolder onset vowel
-
-  when doForgeInput $ do
-    createDirectoryIfMissing True forgeDir
-
-    -- remove old files
-    oldSvgFiles <- filter (".svg" `isSuffixOf`) <$> listDirectory forgeDir
-    (removeFile . (forgeDir </>)) `mapM_` oldSvgFiles
-
-  sequence_ $ do
-    f <- [makeTable | doTables] ++ [makeNumberedFiles | doForgeInput]
-    let outputNames = [ "Onsets", "Nuclei", "Syllables"]
-    let folderNames = [onset, vowel, outputFolder]
-    let orders = [onsetOrder2D, nuclueusOrder2D, syllableOrder2D]
-    let inputs = zip3 outputNames folderNames orders
-    (oName, fName, order) <- inputs
-    [f oName ((fName </>) <$> order)]
-
-forgeDir :: FilePath
-forgeDir = "fontForgeInput"
-
-makeNumberedFiles :: String -> Array i FilePath -> IO ()
-makeNumberedFiles folder order = do
-  printf "making Numbered files (%s, %s_):\n" folder prefix
-  zipWithM_ onItem [1..] (Array.elems order)
-  where
-  prefix = toLower <$> take 2 folder
-  onItem :: Int -> FilePath -> IO ()
-  onItem ix filePath = do
-    let base = takeFileName filePath
-    let newFileName = printf "%s/%s_%03d_%s" forgeDir prefix ix base
-    copyFile (filePath <.> "svg") (newFileName <.> "svg")
-
--- | Pattern | Onset | Symbol |
--- | ------- | ----- | ------ |
--- |   1     | p     | ⚊      |
--- |  11     | t     | ⚌      |
--- |  91     | m     | ⚍      |
--- | 191     | n     | ☲      |
--- | 111     | h     | ☰      |
--- |   9     | k     | ⚋      |
--- |  19     | s     | ⚎      |
--- | 119     | ts    | ☴      |
--- |  99     | l     | ⚏      |
--- | 199     | r     | ☶      |
-
-onsetOrder2D :: Array (Int, Int) String
-onsetOrder2D = Array.listArray ((0, 0), (0, 9)) ["p", "t", "m", "n", "h", "k", "s", "ts", "l", "r"]
-
--- | Pattern | Value | Symbol  |
--- | ------- | ----- | -----   |
--- | 111     | i     | ☰      |
--- | 119     | ĩ     | ☴      |
--- | 191     | a     | ☲      |
--- | 199     | ã     | ☶      |
--- | 911     | o     | ☱      |
--- | 919     | e     | ☵      |
--- | 991     | u     | ☳      |
--- | 999     | ũ     | ☷      |
-
--- we use "in", "an", and "un" to represent the nasalized vowels, so the file names are ascii.
-
-nuclueusOrder2D :: Array (Int, Int) String
-nuclueusOrder2D = Array.listArray ((0, 0), (2, 7))
-  $  vowelOrder
-  ++ [addSimpleGlide v | v <- vowelOrder]
-  ++ [addCrossGlide v | v <- vowelOrder]
-  where
-    isFrontVowel ('i' : _) = True
-    isFrontVowel ('e' : _) = True
-    isFrontVowel _         = False
-    vowelOrder = ["i", "in", "a", "an", "o", "e", "u", "un"]
-    addSimpleGlide str =
-      if isFrontVowel str
-        then "y" <> str
-        else "w" <> str
-    addCrossGlide str =
-      if isFrontVowel str
-        then "w" <> str
-        else "y" <> str
-
-syllableOrder2D :: Array (Int, Int) String
-syllableOrder2D = Array.listArray ((0, 0), (9, 23))
-  [ o <> v
-  | o <- Array.elems onsetOrder2D
-  , v <- Array.elems nuclueusOrder2D
-  ]
-
--- this only works on normalized svg files, where d attributes never span multiple lines!
-getPaths :: FilePath -> IO [String]
-getPaths file = lines <$> readProcess "rg" ["-o", "-r", "$2", "(^|[\\s])d=\"([^\"]*)\"", file] ""
-
-combineSVGs :: FilePath -> FilePath -> FilePath -> IO ()
-combineSVGs outputFolder folderA folderB = do
-  -- reset the output folder
-  exists <- doesDirectoryExist outputFolder
-  when exists $ removeDirectoryRecursive outputFolder
-  createDirectoryIfMissing True outputFolder
-
-  -- combine SVGs from onset and vowel folders into output folder
-  putStrLn $ "Combining SVGs from " <> folderA <> " and " <> folderB
-  -- get all .svg files in folderA and folderB
-  svgFilesA <- filter (".svg" `isSuffixOf`) <$> listDirectory folderA
-  svgFilesB <- filter (".svg" `isSuffixOf`) <$> listDirectory folderB
-
-  -- print the files found in each folder
-  putStrLn $ "Files in " <> folderA <> ":\n" <> unlines svgFilesA
-  putStrLn $ "Files in " <> folderB <> ":\n" <> unlines svgFilesB
-
-  -- combine each combination of files from A and B
-  forM_ svgFilesA $ \fileA -> do
-    forM_ svgFilesB $ \fileB -> do
-      let outputFile = outputFolder </> (takeBaseName fileA ++ takeBaseName fileB ++ ".svg")
-      combineSVG (folderA </> fileA) (folderB </> fileB) outputFile
-
-combineSVG :: FilePath -> FilePath -> FilePath -> IO ()
-combineSVG onsetFile vowelFile outputFile = do
-  putStrLn $ "Combining " <> onsetFile <> " and " <> vowelFile <> " into " <> outputFile
-
-  -- get the d attribute from the SVG files using rg (ripgrep)
-  onsetPaths <- getPaths onsetFile
-  putStrLn $ "Extracted paths from " <> onsetFile <> ":\n" <> unlines onsetPaths
-
-  vowelPaths <- getPaths vowelFile
-  putStrLn $ "Extracted paths from " <> vowelFile <> ":\n" <> unlines vowelPaths
-
-  let paths = onsetPaths ++ vowelPaths
-
-  writeFile outputFile $ mergeTemplate paths
-  putStrLn $ "Written combined SVG to " <> outputFile
-
--- | Use ImageMagick's montage command to create a table of labeled images.
-makeTable :: String -> Array (Int, Int) FilePath -> IO ()
-makeTable tableName filePaths = do
-  let svgFiles = (<.> "svg") <$> filePaths
-  putStrLn $ "Creating table " <> tableName <> " with files:\n" <> unlines (Array.elems svgFiles)
-  labledFiles <- svgFiles `forM` \ path -> do
-    let fileName = takeBaseName path
-    makeLabeledSVG path fileName "labeled.svg"
-
-  let tableDims = show (endCol - startCol + 1) <> "x" <> show (endRow - startRow + 1)
-        where ((startRow, startCol), (endRow, endCol)) = bounds filePaths
-  let montageArgs :: [String] =
-        [ "-density", "300"
-        , "-filter", "point"
-        ]
-        <> Array.elems labledFiles
-        <> [ "-tile", tableDims
-            , "-geometry", "+20+20"
-            , "-title", tableName
-            , tableName <.> "png"
-            ]
-  putStrLn $ "Running montage with arguments:\n" <> unlines montageArgs
-  callProcess "montage" montageArgs
-  removeFile `mapM_` labledFiles
-
-makeLabeledSVG :: FilePath -> String -> FilePath -> IO FilePath
-makeLabeledSVG inputFile label outputSufix = do
-  let outputFile = inputFile -<.> outputSufix
-  putStrLn $ "Adding label " <> label <> " to " <> inputFile <> " and saving as " <> outputFile
-  -- get the d attributes from the SVG file using rg (ripgrep)
-  paths <- getPaths inputFile
-  putStrLn $ "Extracted paths from " <> inputFile <> ":\n" <> unlines paths
-  writeFile outputFile $ labeledSVGTemplate label paths
-  pure outputFile
-
-normalizeSVGs :: FilePath -> IO ()
-normalizeSVGs folder = do
-  putStrLn $ "Normalizing SVGs in folder: " <> folder
-
-  haveTransform <- rgFiles "transform=" folder
-  haveGrid      <- rgFiles "grid" folder
-  haveMultiLineDAttributes <- rgFiles "(^|\\s)d=\"[^\"]*$" folder
-  haveStrokes <- rgFiles "stroke=\"#" folder
-
-  let svgFiles = nub (haveTransform ++ haveGrid ++ haveMultiLineDAttributes ++ haveStrokes)
-
-  putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
-
-  let actions = intercalate ";"
-        [ "select-all:groups"
-        , "selection-ungroup"
-        , "select-all:no-groups"
-        , "object-stroke-to-path"
-        , "swap-fill-and-stroke"
-        , "com.klowner.filter.apply-transform"
-        , "export-plain-svg"
-        , "export-do"
-        , "window-close"
-        ]
-
-  forM_ svgFiles $ \file -> do
-    putStrLn $ "Normalizing " <> file
-
-    let outFile = replaceExtension file "normalized.svg"
-        inkscapeArgs =
-          [ "-g"
-          , file
-          , "--export-type=svg"
-          , "-o"
-          , outFile
-          , "--actions=" ++ actions
-          ]
-
-    putStrLn $ "Running Inkscape with arguments:\n" <> unlines inkscapeArgs
-    callProcess "inkscape" inkscapeArgs
-
-    -- Replace original file with normalized output
-    renameFile outFile file
-
-simplifySvgFiles :: FilePath -> IO ()
-simplifySvgFiles folder = do
-  putStrLn $ "Simplifying SVGs in folder: " <> folder
-
-  nontemplatedFiles <- rgFiles "xmlns:|metadata|defs" folder
-  haveMissingQuote <- rgFiles "stroke=\"none$" folder
-
-  let svgFiles = nub (nontemplatedFiles ++ haveMissingQuote)
-
-  putStrLn $ "SVG files to normalize:\n" <> unlines svgFiles
-  forM_ svgFiles $ \ file -> do
-
-    paths <- getPaths file
-    putStrLn $ "Extracted paths from " <> file <> ":\n" <> unlines paths
-
-    writeFile file $ mergeTemplate paths
-
-rgFiles :: String -> FilePath -> IO [FilePath]
-rgFiles regexpr folder = do
-  let p = proc "rg" ["-l", "-e", regexpr, folder]
-  (exitCode, stdoutText, stderrText) <- readCreateProcessWithExitCode p ""
-
-  case exitCode of
-    ExitSuccess   -> pure (lines stdoutText)
-    ExitFailure 1 -> pure []  -- no matches
-    ExitFailure _ -> error $
-      "rg failed for pattern " <> show regexpr <> ":\n" <> stderrText
-
-labeledSVGTemplate :: String -> [String] -> String
-labeledSVGTemplate labelText dStrings = unlines $
-  [ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-  , "<svg"
-  , "  width=\"40\""
-  , "  height=\"80\""
-  , "  viewBox=\"0 -20 40 80\""
-  , "  xmlns=\"http://www.w3.org/2000/svg\">"
-  , "  <text"
-  , "    x=\"20\" y=\"-4\""
-  , "    text-anchor=\"middle\" font-size=\"16\">" ++ labelText ++ "</text>"
-  , ""
-  ] ++ mkGroup dStrings
-    ++ ["</svg>"]
-
-mergeTemplate :: [String] -> String
-mergeTemplate dStrings = unlines $
-  [ "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-  , "<svg"
-  , "  width=\"40\""
-  , "  height=\"60\""
-  , "  viewBox=\"0 0 40 60\""
-  , "  xmlns=\"http://www.w3.org/2000/svg\">"
-  ] ++ mkGroup dStrings
-    ++ [ "</svg>"]
-
-mkGroup :: [String] -> [String]
-mkGroup dStrings =
-  [ "  <g"
-  , "    fill=\"#000000\""
-  , "    stroke=\"none\""
-  , "    id=\"layer1\">"
-  ] ++ (makePath <$> dStrings)
-    ++ [ "  </g>"]
-
-makePath :: String -> String
-makePath dString = "      <path d=\"" ++ dString ++ "\"/>"
+  args <- getArgs
+  let (inputPath, outputPath) = case args of
+        [filePath] -> (filePath, "output.txt")
+        [filePath, outPath] -> (filePath, outPath)
+        _ -> error "Usage: myscript <input-file> [output-file]"
+  input <- BS.readFile inputPath
+  let inputText = decodeUtf8 input
+  let outputText = substitute inputText
+  BS.writeFile outputPath (encodeUtf8 outputText)

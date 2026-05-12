@@ -4,6 +4,7 @@ cd myscript
 cabal build
 NEW=$(cabal list-bin myscript)
 cd -
-cp $NEW myscript.exe
-echo "Running $NEW" \"syllables\" \"onset\" \"nuclei\" $$
-$NEW "syllables" "onsets" "nuclei" "$@"
+rm toGlyphs.exe example.glyphs
+cp $NEW toGlyphs.exe
+./toGlyphs.exe ../../PSA/Conversation\ 1.txt ./example.glyphs
+code ./example.glyphs
