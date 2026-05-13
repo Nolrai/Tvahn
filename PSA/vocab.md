@@ -180,6 +180,7 @@ Class marking is usually lexicalized, but in some kinship terms it may remain se
 ## Structural Notes
 
 * **iru** exists in PPSA as an independent relativizing / clause-linking element; fusion and suffixal behavior develop later in PSA.
+* **iiru** exists in PPSA is just iru with emphasis but early in the transition to PSA it becomes lexicalized as a interogative pronoun, before fusing onto the preposition along with the other "persons/distances".
 * Compounding rule: **head-first**, with a strong tendency for **material heads** (e.g., *se-…*).
 * Life-stage markers (*te- / Ø / so-*) are derivational noun-class prefixes tied to cultural life stages.
 * In some kinship terms, class marking may remain semantically productive rather than strictly lexicalized.
