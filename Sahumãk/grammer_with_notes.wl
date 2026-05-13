@@ -1,4 +1,5 @@
-These are the 7 verbs that can act as main/TAM marking verbs in main clauses. The 4 forms are 
+These are the 7 verbs that can act as main/TAM marking verbs in main clauses.
+The 4 forms are (in order): gerund, immersive, reportive, distal
 
 - MYU Completative / PAT Exhaustive
 ʔi.tĩ
@@ -30,17 +31,21 @@ lã.tə.lã.ni.ti.tsã
 lã.ti.tsi.r
 lã.ti.tsã.nã
 
-SAY - usually PAU - for the topic or phisical space, TOP the old topic marker holds the content, and PAI is used for conversation
+These two verbs aren't part of the double TAM system, but can be used without it, and instead of having a single complementive adposition they take the full set of motion adpostions regularly.
+
+SAY
 su.r
 sa.r
 sa.r
 se.rã
 
-MOVE - any
+MOVE
 lu.m
 lʌ.mʌ.lʌ.m
 lʌ.mʌ.sa.r
 lə.mã
+
+Adpositions have 7 forms, near-speaker, near-listener, near-both, infinive, distal, relitavised, interogotive.
 
 UP (sort of)
 me.tĩ
