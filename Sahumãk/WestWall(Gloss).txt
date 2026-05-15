@@ -1,0 +1,34 @@
+When the western cities broke oath,
+The oath breaking by the western cities allowed Isama [to]
+[Oath-Rancid TOP.1&2] [HeldBy.default West.adj CITY] [[WAR-LEADER Isamã] away-from.1&2] Exceptional.remote
+tãwãk-seɾõ petĩnit nĩsetãtũ ket pwĩnikits Isamã sətãnits kitswisar.
+
+the WAR-LEADER Isamã crossed the black water.
+She carried herself across the Black Water.
+[Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 BLACK WATER]
+Isamã petĩnit so kətətãnits lʌmʌlʌm putĩnit teseheɾõ hu.
+
+Three shrines opened their doors to her.
+[She] entered [the shrines] via the doors [they opened].
+MOVE.cont [VIA.1&2 [SHRINE TOP.rel THREE-TABOO HELD-BY.rel] GATE]
+lʌmʌlʌm kətətãnits semãk syir lĩtã kityir pũpek.
+
+Two kings bent knee before her fire.
+Below her fire the pressing together between the two kings and the ground rang out!
+[GRAB.gerund TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST] [Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
+ãk petĩnit setã syir waso rãtãnits Isamã syir sest metĩnit lãtəlãnisã sãnã rãnã setou.
+
+She carried the Lamp northward.
+The lamp, carried by Isama, moved north.
+[bearing.LAMP TOP.depart] [Isamã HeldBy.default] MOVE.cont [TO.default NORTH] 
+
+
+She fed the Sun with her own body.
+The food that is Isamã's body was given to the sun by Isama.
+[Isamã TOP.rel body-TOP.rel Food TOP.1&2] [Isamã HeldBy.1&2] [FOR SUN TOP.rel EAT.gerund] Move.gerund TOP.1&2 Explosive.cont
+
+Therefore her daughters rule the river-mouths,
+SAY.gerund TOP.1&2 TWO-Nursing Top.rel DAUGHTER MYU.default RIVER-MOUTHS TO.default Suportive.depart
+and her chosen heir speaks before the shrines.
+SAY.gerund TOP.1&2 [[HeldBy.default] HEIR] DAUGHTER MYU.default Shrine DOWN-TO Completative.cont
+

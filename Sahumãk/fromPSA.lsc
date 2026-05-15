@@ -1,11 +1,12 @@
 Feature type(*cons, vowel, semivowel)
-Feature place(bilabial, alveolar, velar, glottal)
+Feature place(bilabial, alveolar, postalveolar, velar, glottal)
 Feature manner(stop, tap, fricative, affricate, nasal, lateral)
 Feature height(low, mid, high)
 Feature frontness(front, central, back)
 Feature nasalized(nasalized)
 Feature (syllable) stress(*unstressed, secondary, primary)
 feature voicing(unvoiced, voiced)
+feature syllabic(syllabic)
 Diacritic ˈ (floating) (before) [primary]
 Diacritic ˌ (floating) (before) [secondary]
 Symbol a [low back vowel]
@@ -25,6 +26,7 @@ Symbol ʌ [low central vowel]
 Symbol p [bilabial stop cons]
 Symbol t [alveolar stop cons]
 Symbol k [velar stop cons]
+Symbol x [velar fricative cons]
 Symbol ts [alveolar affricate cons]
 Symbol s [alveolar fricative cons]
 Symbol m [bilabial nasal cons]
@@ -38,6 +40,17 @@ Symbol ʔ [glottal stop cons]
 symbol j [high semivowel]
 symbol w [low semivowel]
 
+# consonants in Classical Sahumank not in PSA
+# (technically a lot of these existed as allophones in PSA)
+Symbol b [bilabial stop cons voiced]
+Symbol d [alveolar stop cons voiced]
+Symbol g [velar stop cons voiced]
+Symbol v [bilabial fricative cons voiced]
+Symbol z [alveolar fricative cons voiced]
+Symbol r̩ [alveolar tap cons syllabic]
+Symbol tʃ [postalveolar affricate cons]
+
+
 Deromanizer:
   ' => ʔ
   \? => ʔ
@@ -48,8 +61,14 @@ Deromanizer:
 Syllables:
   explicit
 
+Syllables:
+  clear
+
 nasal-overlap:
   [nasal] [vowel]? => * / [nasalized] _
+
+de-gemmination cleanup:
+  [cons]$1 $1 => $1
 
 lenition:
   {t, k, r} => {ɾ, h, ɾ} / [!cons] _ [!cons]
@@ -69,13 +88,29 @@ lenition2:
 nasalize:
   [back] [nasal] => [back nasalized] ʔ
   [front] n => ĩ ʔ
+  [front] m => i b
+  [central] m => [back nasalized] v
 
 remove-glot:
-  ʔ => * / _ $
   ʔ => j / {[front], [mid]} _ [!cons]
   ʔ => w / [back] _ [!cons]
+  ʔ => ɾ / _ [cons] // $ _
+  ʔ => *
+
+split-clusters:
+  [cons] s => ts
+  s t => ts
+  ɾ => ɾɪ / _ [cons]
+  [nasal] => * / _ [cons]
+  [cons]$1 [cons]$2 => $1 ə $2
+
+strengthan-u:
+  {u, ũ} => v / [vowel] _ // _ [!vowel]
+  {u, ũ} => vu / $ _
+  ũ => uv // _ [!vowel]
 
 remove-centrals:
+  [cons]$1 [central] => * / _ $1
   [central] => * / {_ [vowel], [vowel] _}
   [low central] => [mid front]
   [central] => [front]
@@ -85,8 +120,16 @@ tsi-lention:
   tsu => su
   ts => t
 
+initial-voicing:
+ {s, t, p, k} => {z, d, b, g} / $ _
+
+final-lentation:
+  k => x / _ $
+
 restore-dipthongs:
   {j j?, w w?} => {ji, wo} // {[!cons] _, _ [!cons]}
 
 romanizer:
   j => y
+  r̩ => r # distinct from the tap so we don't need the diacritic.
+  x => hh # just because I will mis read it otherwise.

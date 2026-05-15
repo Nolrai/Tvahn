@@ -1,0 +1,150 @@
+
+
+These are the 7 verbs that can act as main/TAM marking verbs in main clauses.
+The 4 forms are (in order): atemporal (atem), continual (cont), remote, departing (depart).
+
+- MYU Completative / PAT Exhaustive
+ʔi.tĩ              => iɾĩ
+tyi.tĩ             => dyiɾĩ
+ʔi.tə.sa.r         => iɾesar
+ʔi.tã.nã           => iɾã
+
+- RUS Suportive
+hɪ.we.k            => hiwehh
+hi.we.k            => hiwehh
+hɪ.we.se.r         => hiweser
+hɪ.we.kã           => hiwehã
+
+- MYU Looming
+ã.k                => ãhh
+ã.nũ.k             => ãhh
+ã.si.r             => ãsir
+wã.kã              => wãhã
+
+- RUS Exceptional
+kai.tu             => gaiɾu
+kə.kai.tu          => gehaiɾu
+ki.tswi.sa.r       => gitwisar
+ki.twĩ             => giɾwĩ
+
+- RUS Explosive / MYU Expansive / PAT Reaching
+lã.na.ti.tsũ       => lãɾisuv
+lã.tə.lã.ni.ti.tsã => lãɾelãɾitã
+lã.ti.tsi.r        => lãɾitʃir
+lã.ti.tsã.nã       => lãɾitã
+
+These two verbs aren't part of the double TAM system, but can be used without it, and instead of having a single complementive adposition they take the full set of motion adpostions regularly.
+
+SAY
+su.r               => zur
+sa.r               => zar
+sa.r               => zar
+se.rã              => zeɾã
+
+MOVE
+lu.m               => luv
+lʌ.mʌ.lʌ.m         => lãvelãv
+lʌ.mʌ.sa.r         => lãvesar
+lə.mã              => lõvã
+
+Adpositions have 7 forms, near-speaker, near-listener, near-both, default, distal, relitavised, interogotive.
+
+UP (sort of)
+me.tĩ              => meɾĩ
+mi.ti.t            => miɾit
+me.tĩ.ni.ti.t      => meɾĩt
+myu                => myu
+mã.nũ              => mã
+mwi.r              => mwir
+mɪ.wi.yi.r         => miwiyir
+
+Within/between/bounded-by
+pe.tĩ              => beɾĩ
+pi.ti.t            => biɾit
+pe.tĩ.ni.ti.t      => beɾĩt
+pai                => bai
+pã.nũ              => bã
+pyi.r              => byir
+pyi.r              => byir
+
+TOP
+pe.tĩ              => beɾĩ
+pi.ti.t            => biɾit
+pe.tĩ.ni.ti.t      => beɾĩt
+rai                => lai
+sã.tã.nã           => zãɾã
+sĩ.ti.r            => zãɾir
+sĩ.tyi.r          => zãɾyir
+
+DOWN-TO
+pə.tə.tã           => beɾe
+pɪ.tɪ.ts           => biɾit
+pə.tə.tã.ni.ts     => beɾet
+pa.t               => bat
+pə.tã.nã           => beɾã
+pi.ti.r            => biɾir
+pe.tyi.r           => beɾyir
+
+AGAINST / UP-TO
+rã.tã              => lãɾã
+rã.ts              => lãt
+rã.tã.ni.ts        => lãɾãt
+rã                 => lã
+rã.nã.nã           => lã
+rã.ni.r            => lãr
+rã.n.yi.r          => lãyir
+
+UP-AWAY-FROM
+sə.tã              => zeɾã
+sɪ.ts              => zit
+sə.tã.ni.ts        => zeɾãt
+ru.s               => lus
+sã.nã              => zã
+si.r               => zir
+syi.r              => zyir
+
+INTO
+sã.tã              => zãɾã
+sã.ts              => zãt
+sã.tã.ni.ts        => zãɾãt
+sĩ                 => zĩ
+sã.nã.nã           => zã
+sã.ni.r            => zãr
+sã.n.yi.r          => zãyir
+
+PENTETRATE/ENVELOP
+i.sə.tã            => iseɾã
+i.sɪ.ts            => isit
+i.sə.tã.ni.ts      => iseɾãt
+yai.s              => yais
+i.sã.nã            => isã
+yi.swi.r           => yiswir
+sa.wi.yi.r         => zawiyir
+
+HELD-BY/VIA/CONTROLED-BY
+
+kə.tə.tã           => geɾe
+kɪ.tɪ.ts           => giɾit
+kə.tə.tã.ni.ts     => geɾet
+ke.t               => get
+kə.tã.nã           => geɾã
+ki.tyi.r           => giɾyir
+ki.tyi.r           => giɾyir
+
+TO/TOWARD/TARGET
+kã.tã              => gãɾã
+kã.ts              => gãt
+kã.tã.ni.ts        => gãɾãt
+kũ                 => guv
+kã.nã.nã           => gã
+kã.ni.r            => gãr
+kã.nyi.r          => gãyir
+
+ACROSS
+pu.tĩ              => buɾĩ
+pu.ti.t            => buɾit
+pu.tĩ.ni.ti.t      => buɾĩt
+pau                => bav
+pũ.nũ              => buv
+pu.wi.r            => buwir
+pu.wi.yi.r         => buwiyir

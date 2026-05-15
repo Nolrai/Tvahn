@@ -49,6 +49,14 @@ pã.nũ
 pyi.r
 pyi.r
 
+pe.tĩ
+pi.ti.t
+pe.tĩ.ni.ti.t
+rai
+sã.tã.nã
+sã.ti.r
+sã.tyi.r
+
 pə.tə.tã
 pɪ.tɪ.ts
 pə.tə.tã.ni.ts
@@ -63,7 +71,7 @@ rã.tã.ni.ts
 rã
 rã.nã.nã
 rã.ni.r
-rã.n.yi.r
+rã.nyi.r
 
 sə.tã
 sɪ.ts
@@ -79,7 +87,7 @@ sã.tã.ni.ts
 sĩ
 sã.nã.nã
 sã.ni.r
-sã.n.yi.r
+sã.nyi.r
 
 i.sə.tã
 i.sɪ.ts
@@ -103,7 +111,7 @@ kã.tã.ni.ts
 kũ
 kã.nã.nã
 kã.ni.r
-kã.n.yi.r
+kã.nyi.r
 
 pu.tĩ
 pu.ti.t
