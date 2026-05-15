@@ -3,21 +3,21 @@ Feature place(bilabial, alveolar, postalveolar, velar, glottal)
 Feature manner(stop, tap, fricative, affricate, nasal, lateral)
 Feature height(low, mid, high)
 Feature frontness(front, central, back)
-Feature nasalized(nasalized)
+Feature +nasalized
 Feature (syllable) stress(*unstressed, secondary, primary)
 feature voicing(unvoiced, voiced)
 feature syllabic(syllabic)
 Diacritic ˈ (floating) (before) [primary]
 Diacritic ˌ (floating) (before) [secondary]
 Symbol a [low back vowel]
-Symbol ã [low back nasalized vowel]
+Symbol ã [low back +nasalized vowel]
 Symbol e [mid front vowel]
 Symbol i [high front vowel]
-Symbol ĩ [high front nasalized vowel]
+Symbol ĩ [high front +nasalized vowel]
 Symbol o [mid back vowel]
-Symbol õ [mid back nasalized vowel]
+Symbol õ [mid back +nasalized vowel]
 Symbol u [high back vowel]
-Symbol ũ [high back nasalized vowel]
+Symbol ũ [high back +nasalized vowel]
 Symbol ə [mid central vowel]
 Symbol ɪ [high central vowel]
 Symbol ʌ [low central vowel]
@@ -65,7 +65,7 @@ Syllables:
   clear
 
 nasal-overlap:
-  [nasal] [vowel]? => * / [nasalized] _
+  [nasal] [vowel]? => * / [+nasalized] _
 
 de-gemmination cleanup:
   [cons]$1 $1 => $1
@@ -80,16 +80,18 @@ lateral-collapse:
   then:
     j => * / _ {j, w}
 
-
 lenition2:
   ɾ [!cons] => ʔ / ɾ [!cons] _ [!cons]
   ɾ [!cons] => * / ɾ [!cons] _
 
 nasalize:
-  [back] [nasal] => [back nasalized] ʔ
+  [back] [nasal] => [back +nasalized] ʔ
   [front] n => ĩ ʔ
   [front] m => i b
-  [central] m => [back nasalized] v
+  [central] m => [back +nasalized] v
+
+tap-nasal:
+  ɾ => n / [+nasalized] _ // _ $
 
 remove-glot:
   ʔ => j / {[front], [mid]} _ [!cons]
@@ -104,7 +106,7 @@ split-clusters:
   [nasal] => * / _ [cons]
   [cons]$1 [cons]$2 => $1 ə $2
 
-strengthan-u:
+strengthen-u:
   {u, ũ} => v / [vowel] _ // _ [!vowel]
   {u, ũ} => vu / $ _
   ũ => uv // _ [!vowel]
