@@ -1,7 +1,5 @@
 
 
-These are the 7 verbs that can act as main verbs in main clauses.
-5 of them take fixed adpositions and an topic clause with the lexical verb, and are glossed with an adjective that shold be understood in a abstract sense, describing logical conections and aspect more then physical position.
 
 Each of these takes one of the discourse states:
 
@@ -15,7 +13,7 @@ departing - Used to end a section. If the next clause is Continual then that mea
 
 The 4 forms are listed in order: atemporal (atem), continual (cont), remote, departing (depart).
 
-- MYU Completative / PAT Exhaustive
+ITĨ - MYU Completative / PAT Exhaustive
 ʔi.tĩ              => iɾĩ     => i.tĩ.
 tyi.tĩ             => dyiɾĩ   => tyi.tĩ
 ʔi.tə.sa.r         => iɾesar  => i.te.sa.r
@@ -79,7 +77,7 @@ pã.nũ              => bã      => pã
 pyi.r              => byir    => pri.r
 pyi.r              => byir    => pyi.r
 
-TOP
+TOPIC
 pe.tĩ              => beɾĩ    => pe.tĩ
 pi.ti.t            => biɾit   => pe.ti.t
 pe.tĩ.ni.ti.t      => beɾĩt   => pe.tĩ.ti
