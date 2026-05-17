@@ -1,0 +1,78 @@
+GLOSS,DictionaryForm,LONG-GLOSS,form,underlying,surface,spelling
+UP,MYU,"UP (sort of)",near-speaker,me.tĩ,meɾĩ,me.tĩ
+UP,MYU,"UP (sort of)",near-listener,mi.ti.t,miɾit,me.ti.t
+UP,MYU,"UP (sort of)",near-both,me.tĩ.ni.ti.t,meɾĩt,me.tĩ.t
+UP,MYU,"UP (sort of)",default,myu,myu,myu
+UP,MYU,"UP (sort of)",distal,mã.nũ,mã,mã
+UP,MYU,"UP (sort of)",relativised,mwi.r,mwir,mwi.r
+UP,MYU,"UP (sort of)",interrogative,mɪ.wi.yi.r,miwiyir,mi.wi.yi.r
+WITHIN,BAI,Within/between/bounded-by,near-speaker,pe.tĩ,beɾĩ,pe.tĩ
+WITHIN,BAI,Within/between/bounded-by,near-listener,pi.ti.t,biɾit,pe.ti.t
+WITHIN,BAI,Within/between/bounded-by,near-both,pe.tĩ.ni.ti.t,beɾĩt,pe.tĩ.t
+WITHIN,BAI,Within/between/bounded-by,default,pai,bai,pai
+WITHIN,BAI,Within/between/bounded-by,distal,pã.nũ,bã,pã
+WITHIN,BAI,Within/between/bounded-by,relativised,pyi.r,byir,pri.r
+WITHIN,BAI,Within/between/bounded-by,interrogative,pyi.r,byir,pyi.r
+TOPIC,LAI,TOPIC,near-speaker,pe.tĩ,beɾĩ,pe.tĩ
+TOPIC,LAI,TOPIC,near-listener,pi.ti.t,biɾit,pe.ti.t
+TOPIC,LAI,TOPIC,near-both,pe.tĩ.ni.ti.t,beɾĩt,pe.tĩ.ti
+TOPIC,LAI,TOPIC,default,rai,lai,rai
+TOPIC,LAI,TOPIC,distal,sã.tã.nã,zãɾã,sã.tã
+TOPIC,LAI,TOPIC,relativised,sĩ.ti.r,zãɾir,sĩ.ti.r
+TOPIC,LAI,TOPIC,interrogative,sĩ.tyi.r,zãɾyir,sĩ.tyi.r
+DOWN-TO,BAT,DOWN-TO,near-speaker,pə.tə.tã,beɾe,pe.te
+DOWN-TO,BAT,DOWN-TO,near-listener,pɪ.tɪ.ts,biɾit,pi.ti.ts
+DOWN-TO,BAT,DOWN-TO,near-both,pə.tə.tã.ni.ts,beɾet,pe.te.t
+DOWN-TO,BAT,DOWN-TO,default,pa.t,bat,pa.t
+DOWN-TO,BAT,DOWN-TO,distal,pə.tã.nã,beɾã,pe.tã.nã
+DOWN-TO,BAT,DOWN-TO,relativised,pi.ti.r,biɾir,pi.ti.r
+DOWN-TO,BAT,DOWN-TO,interrogative,pe.tyi.r,beɾyir,pe.tyi.r
+AGAINST,LÃ,"AGAINST / UP-TO",near-speaker,rã.tã,lãɾã,lã.tsã
+AGAINST,LÃ,"AGAINST / UP-TO",near-listener,rã.ts,lãt,lã.ts
+AGAINST,LÃ,"AGAINST / UP-TO",near-both,rã.tã.ni.ts,lãɾãt,lã.tsã.ts
+AGAINST,LÃ,"AGAINST / UP-TO",default,rã,lã,lã
+AGAINST,LÃ,"AGAINST / UP-TO",distal,rã.nã.nã,lã,lã.nã
+AGAINST,LÃ,"AGAINST / UP-TO",relativised,rã.ni.r,lãr,lã.nã.r
+AGAINST,LÃ,"AGAINST / UP-TO",interrogative,rã.n.yi.r,lãyir,lã.yĩ
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,near-speaker,sə.tã,zeɾã,se.ta
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,near-listener,sɪ.ts,zit,si.ts
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,near-both,sə.tã.ni.ts,zeɾãt,se.tã.ts
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,default,ru.s,lus,lu.si
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,distal,sã.nã,zã,sã.nã
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,relativised,si.r,zir,sĩ
+UP-AWAY-FROM,LUS,UP-AWAY-FROM,interrogative,syi.r,zyir,syĩ
+INTO,ZĨ,INTO,near-speaker,sã.tã,zãɾã,sã.tã
+INTO,ZĨ,INTO,near-listener,sã.ts,zãt,sã.ts
+INTO,ZĨ,INTO,near-both,sã.tã.ni.ts,zãnãt,sã.nã.ts
+INTO,ZĨ,INTO,default,sĩ,zĩ,sĩ
+INTO,ZĨ,INTO,distal,sã.nã.nã,zã,zã.nã
+INTO,ZĨ,INTO,relativised,sã.ni.r,zãr,zã.nã.r
+INTO,ZĨ,INTO,interrogative,sã.n.yi.r,zãyir,zã.nyi.r
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,near-speaker,i.sə.tã,iseɾã,i.se.tã
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,near-listener,i.sɪ.ts,isit,i.si.ts
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,near-both,i.sə.tã.ni.ts,iseɾãt,i.se.tã.ts
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,default,yai.s,yais,yai.s
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,distal,i.sã.nã,isã,i.sã
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,relativised,yi.swi.r,yiswir,yi.swi.r
+PENTETRATE,YAIS,PENTETRATE/ENVELOP,interrogative,sa.wi.yi.r,zawiyir,sa.wi.yi.r
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,near-speaker,kə.tə.tã,geɾe,ke.te
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,near-listener,kɪ.tɪ.ts,giɾit,ki.ti.ts
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,near-both,kə.tə.tã.ni.ts,geɾet,ke.te.ni
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,default,ke.t,get,ke.t
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,distal,kə.tã.nã,geɾã,ke.tã
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,relativised,ki.tyi.r,giɾyir,ki.tyi.r
+HELD-BY,GET,HELD-BY/VIA/CONTROLED-BY,interrogative,ki.tyi.r,giɾyir,ki.tyi.r
+TO,GUV,TO/TOWARD/TARGET,near-speaker,kã.tã,gãnã,kã.tã
+TO,GUV,TO/TOWARD/TARGET,near-listener,kã.ts,gãt,kã.ts
+TO,GUV,TO/TOWARD/TARGET,near-both,kã.tã.ni.ts,gãnãt,kã.tã.ts
+TO,GUV,TO/TOWARD/TARGET,default,kũ,guv,kũ
+TO,GUV,TO/TOWARD/TARGET,distal,kã.nã.nã,gã,kã.nã
+TO,GUV,TO/TOWARD/TARGET,relativised,kã.ni.r,gãr,kã.rã
+TO,GUV,TO/TOWARD/TARGET,interrogative,kã.nyi.r,gãyir,kã.ryi
+ACROSS,BAV,ACROSS,near-speaker,pu.tĩ,buɾĩ,pu.tĩ
+ACROSS,BAV,ACROSS,near-listener,pu.ti.t,buɾit,pu.tĩ.ts
+ACROSS,BAV,ACROSS,near-both,pu.tĩ.ni.ti.t,buɾĩt,pu.tĩ.ts
+ACROSS,BAV,ACROSS,default,pau,bav,pã
+ACROSS,BAV,ACROSS,distal,pũ.nũ,buv,pũ
+ACROSS,BAV,ACROSS,relativised,pu.wi.r,buwir,pu.wi.r
+ACROSS,BAV,ACROSS,interrogative,pu.wi.yi.r,buwiyir,pu.wi.yi.r
