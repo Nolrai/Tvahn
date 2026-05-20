@@ -26,7 +26,7 @@ lante SETTLE/LOWER
 rokunk HUNT
 utun HOME
 ronst COOK
-u:kani CLUTCH
+uukani CLUTCH
 
 tesint BELLY / BIRTH-MOTHER
 mank OBLIGATION/DEBT
