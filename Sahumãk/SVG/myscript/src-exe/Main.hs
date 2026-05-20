@@ -48,7 +48,7 @@ substitute = go
       | T.null txt = T.empty
       | otherwise =
           let candidates =
-                [ (T.length normalizedPrefix, v)
+                [ (T.length prefix, v)
                 | len <- [maxKeyLen, maxKeyLen-1 .. 1]
                 , let prefix = T.take len txt
                 , let normalizedPrefix = normalize prefix

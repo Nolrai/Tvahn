@@ -17,7 +17,12 @@ cabal build
 NEW=$(cabal list-bin myscript)
 cd - >/dev/null
 
-safe_rm "$EXE_FILE" "$OUT_FILE"
-cp "$NEW" "$EXE_FILE"
-./"$EXE_FILE" "$IN_FILE" "$OUT_FILE"
-code ./example.glyphs
+if [ -e "$IN_FILE" ]; then
+  safe_rm "$EXE_FILE" "$OUT_FILE"
+  cp "$NEW" "$EXE_FILE"
+  ./"$EXE_FILE" "$IN_FILE" "$OUT_FILE"
+  code "$OUT_FILE"
+  code "$IN_FILE"
+else
+  echo "\"$IN_FILE\" not found."
+fi

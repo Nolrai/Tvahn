@@ -15,7 +15,6 @@ Symbol e [mid front vowel]
 Symbol i [high front vowel]
 Symbol ĩ [high front +nasalized vowel]
 Symbol o [mid back vowel]
-Symbol õ [mid back +nasalized vowel]
 Symbol u [high back vowel]
 Symbol ũ [high back +nasalized vowel]
 Symbol ə [mid central vowel]
@@ -40,7 +39,7 @@ Symbol ʔ [glottal stop cons]
 symbol j [high semivowel]
 symbol w [low semivowel]
 
-# consonants in Classical Sahumank not in PSA
+# consonants in Classical Sahumãk not in PSA
 # (technically a lot of these existed as allophones in PSA)
 Symbol b [bilabial stop cons voiced]
 Symbol d [alveolar stop cons voiced]
@@ -67,7 +66,7 @@ Syllables:
 nasal-overlap:
   [nasal] [vowel]? => * / [+nasalized] _
 
-de-gemmination cleanup:
+degemmination cleanup:
   [cons]$1 $1 => $1
 
 lenition:
@@ -88,9 +87,11 @@ nasalize:
   [back] [nasal] => [back +nasalized] ʔ
   [front] n => ĩ ʔ
   [front] m => i b
-  [central] m => [back +nasalized] v
+  [central] n => ã ʔ
+  [central] m => [central] v
 
 tap-nasal:
+  ɾ [vowel] => r / _ $
   ɾ => n / [+nasalized] _ // _ $
 
 remove-glot:
@@ -110,6 +111,7 @@ strengthen-u:
   {u, ũ} => v / [vowel] _ // _ [!vowel]
   {u, ũ} => vu / $ _
   ũ => uv // _ [!vowel]
+  {u, ũ} => * / _ w
 
 remove-centrals:
   [cons]$1 [central] => * / _ $1
@@ -117,19 +119,23 @@ remove-centrals:
   [low central] => [mid front]
   [central] => [front]
 
-tsi-lention:
+tsi-lenition:
   tsi => tʃi
   tsu => su
   ts => t
 
+glide-rhotacization:
+  j => ɾ / [vowel] _ [front]
+  w => ɾ / [vowel] _ [back]
+
+stranded-glide-vocalization:
+  {j j?, w w?} => {ji, wo} // {[!cons] _, _ [!cons]}
+
 initial-voicing:
  {s, t, p, k} => {z, d, b, g} / $ _
 
-final-lentation:
+final-lenition:
   k => x / _ $
-
-restore-dipthongs:
-  {j j?, w w?} => {ji, wo} // {[!cons] _, _ [!cons]}
 
 romanizer:
   j => y
