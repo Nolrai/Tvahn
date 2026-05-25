@@ -1,29 +1,29 @@
 GLOSS,DictionaryForm,LONG-GLOSS,SYSTEM,form,underlying,surface,tranliteration,sahumãk glyphs
-COMPLETATIVE,IɾĨ,"MYU Completative / PAT Exhaustive",MYU/PAT,atemporal,ʔi.tĩ,iɾĩ,i.tĩ.,
-COMPLETATIVE,IɾĨ,"MYU Completative / PAT Exhaustive",MYU/PAT,continual,tyi.tĩ,dyiɾĩ,tyi.tĩ,
-COMPLETATIVE,IɾĨ,"MYU Completative / PAT Exhaustive",MYU/PAT,remote,ʔi.tə.sa.r,iɾesar,i.te.sa.r,
-COMPLETATIVE,IɾĨ,"MYU Completative / PAT Exhaustive",MYU/PAT,departing,ʔi.tã.nã,iɾã,i.tã,
-SUPPORTIVE,HIWEHH,"RUS Supportive",RUS,atemporal,hɪ.we.k,hiwehh,he.we.ke,
-SUPPORTIVE,HIWEHH,"RUS Supportive",RUS,continual,hi.we.k,hiwehh,hi.we.ke,
-SUPPORTIVE,HIWEHH,"RUS Supportive",RUS,remote,hɪ.we.se.r,hiweser,he.we.se.r,
-SUPPORTIVE,HIWEHH,"RUS Supportive",RUS,departing,hɪ.we.kã,hiwehã,he.we.kã,
-LOOMING,ÃHH,"MYU Looming",MYU,atemporal,ã.k,ãhh,ã.k,
-LOOMING,ÃHH,"MYU Looming",MYU,continual,ã.nũ.k,ãhh,ã.kũ,
-LOOMING,ÃHH,"MYU Looming",MYU,remote,ã.si.r,ãsir,ã.si.r,
-LOOMING,ÃHH,"MYU Looming",MYU,departing,wã.kã,wãhã,wã.hã,
-EXCEPTIONAL,GAIɾU,"RUS Exceptional",RUS,atemporal,kai.tu,gaiɾu,kya.tu,
-EXCEPTIONAL,GAIɾU,"RUS Exceptional",RUS,continual,kə.kai.tu,gehaiɾu,ke.kya.tu,
-EXCEPTIONAL,GAIɾU,"RUS Exceptional",RUS,remote,ki.tswi.sa.r,gitwisar,ki.tswi.sa.r,
-EXCEPTIONAL,GAIɾU,"RUS Exceptional",RUS,departing,ki.twĩ,giɾwĩ,ki.twĩ,
-EXPANSIVE,LÃNISUV,"RUS Explosive / MYU Expansive / PAT Reaching",RUS/MYU/PAT,atemporal,lã.na.ti.tsũ,lãnisuv,lã.ni.sũ,
-EXPANSIVE,LÃNISUV,"RUS Explosive / MYU Expansive / PAT Reaching",RUS/MYU/PAT,continual,lã.tə.lã.ni.ti.tsã,lãnelãnitã,lã.ne.lã.ni.tã,
-EXPANSIVE,LÃNISUV,"RUS Explosive / MYU Expansive / PAT Reaching",RUS/MYU/PAT,remote,lã.ti.tsi.r,lãnitʃir,lã.ni.tsi.r,
-EXPANSIVE,LÃNISUV,"RUS Explosive / MYU Expansive / PAT Reaching",RUS/MYU/PAT,departing,lã.ti.tsã.nã,lãnitã,lã.ni.tã,
+COMPLETATIVE,IɾĨ,MYU Completative / PAT Exhaustive,MYU/PAT,atemporal,ʔi.tĩ,ir,i.r,
+COMPLETATIVE,IɾĨ,MYU Completative / PAT Exhaustive,MYU/PAT,continual,tyi.tĩ,dyir,tyi.r,
+COMPLETATIVE,IɾĨ,MYU Completative / PAT Exhaustive,MYU/PAT,remote,ʔi.tə.sa.r,iɾesar,i.te.sa.r,
+COMPLETATIVE,IɾĨ,MYU Completative / PAT Exhaustive,MYU/PAT,departing,ʔi.tã.nã,ir,i.r,
+SUPPORTIVE,HIWEHH,RUS Supportive,RUS,atemporal,hɪ.we.k,hiwehh,he.we.ke,
+SUPPORTIVE,HIWEHH,RUS Supportive,RUS,continual,hi.we.k,hiwehh,hi.we.ke,
+SUPPORTIVE,HIWEHH,RUS Supportive,RUS,remote,hɪ.we.se.r,hiweser,he.we.se.r,
+SUPPORTIVE,HIWEHH,RUS Supportive,RUS,departing,hɪ.we.kã,hiwehã,he.we.kã,
+LOOMING,ÃHH,MYU Looming,MYU,atemporal,ã.k,ãhh,ã.k,
+LOOMING,ÃHH,MYU Looming,MYU,continual,ã.nũ.k,ãhh,ã.kũ,
+LOOMING,ÃHH,MYU Looming,MYU,remote,ã.si.r,ãsir,ã.si.r,
+LOOMING,ÃHH,MYU Looming,MYU,departing,wã.kã,wãhã,wã.hã,
+EXCEPTIONAL,GAIɾU,RUS Exceptional,RUS,atemporal,kai.tu,gwir,kwi.r,
+EXCEPTIONAL,GAIɾU,RUS Exceptional,RUS,continual,kə.kai.tu,gehwir,ke.hwi.r,
+EXCEPTIONAL,GAIɾU,RUS Exceptional,RUS,remote,ki.tswi.sa.r,gitwisar,ki.tswi.sa.r,
+EXCEPTIONAL,GAIɾU,RUS Exceptional,RUS,departing,ki.twĩ,giɾwĩ,ki.twĩ,
+EXPANSIVE,LÃNISUV,RUS Explosive / MYU Expansive / PAT Reaching,RUS/MYU/PAT,atemporal,lã.na.ti.tsũ,lãnisuv,lã.ni.sũ,
+EXPANSIVE,LÃNISUV,RUS Explosive / MYU Expansive / PAT Reaching,RUS/MYU/PAT,continual,lã.tə.lã.ni.ti.tsã,lãnetã,lã.ne.tã,
+EXPANSIVE,LÃNISUV,RUS Explosive / MYU Expansive / PAT Reaching,RUS/MYU/PAT,remote,lã.ti.tsi.r,lãnitʃir,lã.ni.tsi.r,
+EXPANSIVE,LÃNISUV,RUS Explosive / MYU Expansive / PAT Reaching,RUS/MYU/PAT,departing,lã.ti.tsã.nã,lãnitã,lã.ni.tã,
 SAY,ZUR,SAY,BASIC,atemporal,su.r,zur,su.r,
 SAY,ZUR,SAY,BASIC,continual,sa.r,zar,sa.r,
 SAY,ZUR,SAY,BASIC,remote,sa.r,zar,sa.r,
-SAY,ZUR,SAY,BASIC,departing,se.rã,zeɾã,se.rã,
+SAY,ZUR,SAY,BASIC,departing,se.rã,zer,se.r,
 MOVE,LUV,MOVE,MOTION,atemporal,lu.m,luv,lũ.p,
-MOVE,LUV,MOVE,MOTION,continual,lʌ.mʌ.lʌ.m,levelev,le.me.le.me,
+MOVE,LUV,MOVE,MOTION,continual,lʌ.mʌ.lʌ.m,leveɾev,le.me.re.m,
 MOVE,LUV,MOVE,MOTION,remote,lʌ.mʌ.sa.r,levesar,le.me.sa.r,
 MOVE,LUV,MOVE,MOTION,departing,lə.mã,levã,le.mã,

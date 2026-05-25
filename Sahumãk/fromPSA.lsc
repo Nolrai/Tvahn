@@ -76,14 +76,15 @@ degemmination cleanup:
   [cons]$1 $1 => $1
 
 lenition:
-  {t, k, r} => {ɾ, h, ɾ} / [!cons] _ [!cons]
+  {t, k} => {ɾ, h} / [!cons] _ [!cons]
 
 lateral-collapse:
   [lateral] => l / $ _
   [lateral] => r̩ / _ $
-  [lateral] => j / {[cons] _ [vowel], [vowel] _ [cons]}
+  [lateral] => j / {[!cons] _ [!vowel], [!vowel] _ [!cons]}
   then:
     j => * / _ {j, w}
+  [lateral] => ɾ / {[!cons] _ [!cons]}
 
 lenition2:
   ɾ [!cons] => ʔ / ɾ [!cons] _ [!cons]

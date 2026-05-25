@@ -1,34 +1,38 @@
 When the western cities broke oath,
 The oath breaking by the western cities allowed Isama [to]
-[Oath-Rancid TOP.1&2] [HeldBy.default West.adj CITY] [[WAR-LEADER Isamã] away-from.1&2] Exceptional.remote
-tãwãk-seɾõ petĩnit nĩsetãtũ ket pwĩnikits Isamã sətãnits kitswisar.
+[Oath-Rancid TOP.1&2] [WESTERN TOP.rel CITY HeldBy.default] [[WAR-LEADER Isamã] away-from.1&2] Exceptional.remote
+dãɾãhh zeɾã beɾĩt dãɾidupagã zĩnir nĩtwuɾuv get gaɾihh isamã zeɾãt gitwisar
 
 the WAR-LEADER Isamã crossed the black water.
 She carried herself across the Black Water.
-[Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 BLACK WATER]
-Isamã petĩnit so kətətãnits lʌmʌlʌm putĩnit teseheɾõ hu.
+[War-leader Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 NIGHT LAKE]
+gaɾihh isamã beɾĩt zo geɾet leveɾev buɾĩt des hwu
 
 Three shrines opened their doors to her.
 [She] entered [the shrines] via the doors [they opened].
 MOVE.cont [VIA.1&2 [SHRINE TOP.rel THREE-TABOO HELD-BY.rel] GATE]
-lʌmʌlʌm kətətãnits semãk syir lĩtã kityir pũpek.
+leveɾev geɾet zibãhh zĩnir lĩ-dãr giɾyir nĩsetãpehh
 
 Two kings bent knee before her fire.
 Below her fire the pressing together between the two kings and the ground rang out!
-[GRAB.gerund TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST] [Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
-ãk petĩnit setã syir waso rãtãnits Isamã syir sest metĩnit lãtəlãnisã sãnã rãnã setou.
+[GRAB.atemp TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST.1&2] [War-leader Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
+ãhh beɾĩt zetã zĩnir wa-zo lãnãt gaɾihh isama zĩnir dezet meɾĩt lãnetã lã zeɾer
 
 She carried the Lamp northward.
-The lamp, carried by Isama, moved north.
-[bearing.LAMP TOP.depart] [Isamã HeldBy.default] MOVE.cont [TO.default NORTH] 
+Miss Lamp, carried by Isama, moved north.
+[bearing LAMP TOP.both] [War-leader Isamã HeldBy.both] MOVE.cont [TO.default NORTH]
+te gãneseɾãɾitã beɾĩt gaɾihh isamã geɾet leveɾev guv
 
+Because She fed the Sun Goddess with her own body,
+War-leader Isama's body was fed to Lady Sun by War-leader Isama, therefore
+[[War-leader Isamã TOP.rel] BODY FEED TOP.both] [War-leader Isamã HeldBy.both] Supportive.depart [INTO.distal NURSING SUN]
+gaɾihh isamã zĩnir behh zepã beɾĩt gaɾihh isamã geɾet hiwehã zã ze-dov
 
-She fed the Sun with her own body.
-The food that is Isamã's body was given to the sun by Isama.
-[Isamã TOP.rel body-TOP.rel Food TOP.1&2] [Isamã HeldBy.1&2] [FOR SUN TOP.rel EAT.gerund] Move.gerund TOP.1&2 Explosive.cont
+her daughters rule my river-mouths,
+[[[child TOP.rel] Two NURSING] MYU.default] SAY.cont [DOWN-TO.1 [TWO [TOP.rel GATE [TOP.rel RIVER]]]]
+doteɾu zĩnir wa-zo myu zar ber wa zĩnir nĩsetãpehh zĩnir dãpehh
 
-Therefore her daughters rule the river-mouths,
-SAY.gerund TOP.1&2 TWO-Nursing Top.rel DAUGHTER MYU.default RIVER-MOUTHS TO.default Suportive.depart
-and her chosen heir speaks before the shrines.
-SAY.gerund TOP.1&2 [[HeldBy.default] HEIR] DAUGHTER MYU.default Shrine DOWN-TO Completative.cont
-
+and War-leader Isama's chosen heir's words reach the shrines.
+The Heir spoken of by War Leader Isama speaks all the way to the Shrines.
+[SAY.atemp TOP.1&2] [[[[War-leader Isama TOP.rel] SAY.atemp] Top.rel] HEIR MYU.default] [Shrine MYU.distal] Completative.cont
+zur beɾĩt gaɾihh isamã zĩnir zur beɾĩt dehibevã myu zibãhh mã dyir.
