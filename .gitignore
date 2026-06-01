@@ -1,5 +1,6 @@
 dist-newstyle
-*ev.wl
+*_ev.*
 "Sahum\303\243k/SVG/syllables/"
-*_trace.wl
+*_trace.*
 *.exe
+tmp.*
