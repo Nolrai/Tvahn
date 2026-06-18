@@ -23,107 +23,57 @@ breaking at claus boundries --
     
 
           
-tsã.te.k se.rã pe.rĩ.t tsan.ri.tu.pa.kan sĩ.ni.r nĩ.twu.tu.m ke.t ka.ti.k i.sa.man se.rã.t ki.tswi.sa.r
+tsan.te.k se.rã pe.rin.t tsan.ri.tu.pa.kan sin.ni.r nin.twu.tu.m ke.t ka.ti.k i.sa.man se.ran.t ki.tswi.sa.r
 dãɾãhh zeɾã beɾĩt dãɾidupagã zĩnir nĩtwuɾuv get gaɾihh Isamã zeɾãt gitwisar
-[Oath-Rancid TOP.1&2] [WESTERN TOP.rel CITY HeldBy.default] [[WAR-LEADER Isamã] away-from.1&2] Exceptional.remote
+[Oath-Rancid TOP.1&2] [WESTERN TOP.rel CITY HeldBy.default] [[Commander Isamã] away-from.1&2] Exceptional.remote
 The oath breaking by the western cities allowed Isamã [to]
 When the western cities broke oath,
 
-the WAR-LEADER Isamã crossed the black water.
-She carried herself across the Black Water.
-[War-leader Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 NIGHT LAKE]
-gaɾihh Isamã beɾĩt zo geɾet leveɾev buɾĩt des hwu
-ka.ti.k i.sa.man pe.rĩ.t so ke.re.t le.me.re.m pu.rĩ.t te.s hu.wu
         
-
-        
-ka.ti.k i.sa.man pe.rĩ.t so ke.re.t le.me.re.m pu.rĩ.t te.s hu.wu
+ka.ti.k i.sa.man pe.rin.t so ke.re.t le.me.re.m pu.rin.t te.s hu.wu
 gaɾihh Isamã beɾĩt zo geɾet leveɾev buɾĩt des hwu
-[War-leader Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 NIGHT LAKE]
-She carried herself across the Black Water.
-the WAR-LEADER Isamã crossed the black water.
-
-Three shrines opened their doors to her.
-[She] entered [the shrines] via the doors [they opened].
-MOVE.cont [VIA.1&2 [SHRINE TOP.rel THREE-TABOO HELD-BY.rel] GATE]
-leveɾev geɾet zibãhh zĩnir lĩ-dãr giɾyir nĩsetãpehh
-le.me.re.m ke.re.t si.man.k sĩ.ni.r lin.tsã.r ki.ryi.r nĩ.se.tã.pe.k
-      
+[Commander Isamã TOP.1&2] [NURSING HELD-BY.1&2] MOVE.cont [ACROSS.1&2 NIGHT LAKE]
+Chief Isamã carried herself across the Black Water.
+Chief Isamã crossed the black water.
 
       
-le.me.re.m ke.re.t si.man.k sĩ.ni.r lin.tsã.r ki.ryi.r nĩ.se.tã.pe.k
+le.me.re.m ke.re.t si.man.k sin.ni.r lin.tsan.r ki.ryi.r nin.se.tan.pe.k
 leveɾev geɾet zibãhh zĩnir lĩ-dãr giɾyir nĩsetãpehh
 MOVE.cont [VIA.1&2 [SHRINE TOP.rel THREE-TABOO HELD-BY.rel] GATE]
-[She] entered [the shrines] via the doors [they opened].
+[She] entered [the shrines] via the doors (the shrines) opened.
 Three shrines opened their doors to her.
 
-Two kings bent knee before her fire.
-Below her fire the pressing together between the two kings and the ground rang out!
-[GRAB.atemp TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST.1&2] [War-leader Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
-ãhh beɾĩt zetã zĩnir wa-zo lãnãt gaɾihh Isamã zĩnir dezet meɾĩt lãnetã lã zeɾer
-ã.k pe.rĩ.t se.tã sĩ.ni.r wa.so lã.nã.t ka.ti.k i.sa.man sĩ.ni.r te.se.t me.rĩ.t lã.ne.tã rã se.te.r
              
-
-             
-ã.k pe.rĩ.t se.tã sĩ.ni.r wa.so lã.nã.t ka.ti.k i.sa.man sĩ.ni.r te.se.t me.rĩ.t lã.ne.tã rã se.te.r
+an.k pe.rin.t se.tã sin.ni.r wa.so lan.nan.t ka.ti.k i.sa.man sin.ni.r te.se.t me.rin.t lan.ne.tã rã se.te.r
 ãhh beɾĩt zetã zĩnir wa-zo lãnãt gaɾihh Isamã zĩnir dezet meɾĩt lãnetã lã zeɾer
-[GRAB.atemp TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST.1&2] [War-leader Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
+[GRAB.atemp TOP.1&2] [KING TOP.rel TWO-NURSING AGAINST.1&2] [Commander Isamã TOP.rel FIRE MYU.1&2] Explosive.cont [AGAINST GROUND]
 Below her fire the pressing together between the two kings and the ground rang out!
 Two kings bent knee before her fire.
 
-She carried the Lamp northward.
-Miss Lamp, carried by Isamã, moved north.
-[bearing LAMP TOP.both] [War-leader Isamã HeldBy.both] MOVE.cont [TO.default NORTH]
-de gãneseɾãɾitã beɾĩt gaɾihh Isamã geɾet leveɾev guv
-te kã.ne.se.rã.ri.tsã pe.rĩ.t ka.ti.k i.sa.man ke.re.t le.me.re.m ku.m
        
-
-       
-te kã.ne.se.rã.ri.tsã pe.rĩ.t ka.ti.k i.sa.man ke.re.t le.me.re.m ku.m
+te kan.ne.se.ran.ri.tsã pe.rin.t ka.ti.k i.sa.man ke.re.t le.me.re.m ku.m
 de gãneseɾãɾitã beɾĩt gaɾihh Isamã geɾet leveɾev guv
-[bearing LAMP TOP.both] [War-leader Isamã HeldBy.both] MOVE.cont [TO.default NORTH]
+[bearing LAMP TOP.1&2] [Commander Isamã HeldBy.1&2] MOVE.cont [TO.default NORTH]
 Miss Lamp, carried by Isamã, moved north.
 She carried the Lamp northward.
 
-Because She fed the Sun Goddess with her own body,
-War-leader Isamã's body was fed to Lady Sun by War-leader Isamã, therefore
-[[War-leader Isamã TOP.rel] BODY FEED TOP.both] [War-leader Isamã HeldBy.both] Supportive.depart [INTO.distal NURSING SUN]
-gaɾihh Isamã zĩnir behh zepã beɾĩt gaɾihh Isamã geɾet hiwehã zã ze-dov
-ka.ti.k i.sa.man sĩ.ni.r pe.k se.pã pe.rĩ.t ka.ti.k i.sa.man ke.re.t he.we.kã sã se.tun
            
-
-           
-ka.ti.k i.sa.man sĩ.ni.r pe.k se.pã pe.rĩ.t ka.ti.k i.sa.man ke.re.t he.we.kã sã se.tun
+ka.ti.k i.sa.man sin.ni.r pe.k se.pã pe.rin.t ka.ti.k i.sa.man ke.re.t he.we.kã sã se.tun
 gaɾihh Isamã zĩnir behh zepã beɾĩt gaɾihh Isamã geɾet hiwehã zã ze-dov
-[[War-leader Isamã TOP.rel] BODY FEED TOP.both] [War-leader Isamã HeldBy.both] Supportive.depart [INTO.distal NURSING SUN]
-War-leader Isamã's body was fed to Lady Sun by War-leader Isamã, therefore
+[[Commander Isamã TOP.rel] BODY FEED TOP.1&2] [Commander Isamã HeldBy.1&2] Supportive.depart [INTO.distal NURSING SUN]
+Commander Isamã's body was fed to Lady Sun by Commander Isamã, therefore
 Because She fed the Sun Goddess with her own body,
 
-her daughters rule my river-mouths,
-Two of her children command my river's gates.
-[[[child TOP.rel] Two NURSING] MYU.default] SAY.cont [DOWN-TO.1 [TWO [TOP.rel GATE [TOP.rel RIVER]]]]
-doteɾu zĩnir wa-zo myu zar ber wa zĩnir nĩsetãpehh zĩnir dãpehh
-sto.ste.wu sĩ.ni.r wa.so myu sa.r pe.r wa sĩ.ni.r nĩ.se.tã.pe.k sĩ.ni.r tsa.pe.k
           
-
-          
-sto.ste.wu sĩ.ni.r wa.so myu sa.r pe.r wa sĩ.ni.r nĩ.se.tã.pe.k sĩ.ni.r tsa.pe.k
+sto.ste.wu sin.ni.r wa.so myu sa.r pe.r wa sin.ni.r nin.se.tan.pe.k sin.ni.r tsa.pe.k
 doteɾu zĩnir wa-zo myu zar ber wa zĩnir nĩsetãpehh zĩnir dãpehh
 [[[child TOP.rel] Two NURSING] MYU.default] SAY.cont [DOWN-TO.1 [TWO [TOP.rel GATE [TOP.rel RIVER]]]]
 Two of her children command my river's gates.
 her daughters rule my river-mouths,
 
-
-and War-leader Isamã's chosen heir's words reach the shrines.
-The Heir spoken of by War Leader Isamã speaks all the way to the Shrines.
-[SAY.atemp TOP.1&2] [[[[War-leader Isamã TOP.rel] SAY.atemp] Top.rel] HEIR MYU.default] [Shrine MYU.distal] Completative.cont
-zur beɾĩt gaɾihh Isamã zĩnir zur beɾĩt dehibevã myu zibãhh mã dyir.
-su.r pe.rĩ.t ka.ti.k i.sa.man sĩ.ni.r su.r pe.rĩ.t te.hi.pe.man myu si.man.k mã tyi.r
            
-
-           
-su.r pe.rĩ.t ka.ti.k i.sa.man sĩ.ni.r su.r pe.rĩ.t te.hi.pe.man myu si.man.k mã tyi.r
+su.r pe.rin.t ka.ti.k i.sa.man sin.ni.r su.r pe.rin.t te.hi.pe.man myu si.man.k mã tyi.r
 zur beɾĩt gaɾihh Isamã zĩnir zur beɾĩt dehibevã myu zibãhh mã dyir.
-[SAY.atemp TOP.1&2] [[[[War-leader Isamã TOP.rel] SAY.atemp] Top.rel] HEIR MYU.default] [Shrine MYU.distal] Completative.cont
+[SAY.atemp TOP.1&2] [[[[Commander Isamã TOP.rel] SAY.atemp] TOP.rel] HEIR MYU.default] [Shrine MYU.distal] Completative.cont
 The Heir spoken of by War Leader Isamã speaks all the way to the Shrines.
-and War-leader Isamã's chosen heir's words reach the shrines.
+and Commander Isamã's chosen heir's words reach the shrines.
