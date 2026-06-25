@@ -1,0 +1,132 @@
+to    'ami       rol       bo tþuwx xya    xo    ŋewt     to   lip rolip
+ATTN   shoreland COLL.LONG ON 144 people GEN   language TOP  one one.LONG
+
+Listen! on all the lands, the thousands of peoples' language was one single tongue.
+
+Now, in all the world there was one language, one common tongue.
+
+þams    xo  bwe     he kxol          xo  tþit  to   shinar ro    woŋ      ro    bwax  ti    lep      bo  glam
+family  GEN inland  COLL.FLAT foot   GEN time  TOP  shinar THEME lowland THEME  see   CONJ  SG.FLAT  ON  nurse
+
+At the time of the walking inland of the families, [they] found shinar, a lowland and settled on it.
+
+As people moved eastward, they found a plain in Shinar and settled there.
+
+xya         to  lipa      bo lipa      bo
+COLL.PERSON TOP SG.PERSON TO SG.PERSON TO
+They said to each other,
+
+iyi  "dlo         yayo xaþt, dlo         t    xya         yayo  tlas  i    gits-i    wu         sirt" iyi   nox.
+QUOTE 2ND.COMMAND SUBJ COME  2nd.COMMAND CONJ COLL.PERSON SUBJ. Brick OBJ. MAKE CONJ COMPLETELY Bake  QUOTE say
+“Come, let’s make bricks and bake them thoroughly.”
+
+tlas  e     twex  gu  e     gits i    tþeŋ  ʃi   e     'erk  ʃi   gu  e    ti.
+Brick INSTR stone NEG INSTR make CONJ black MASS INSTR white Mass NEG INSTR CONJ.
+
+[They] built with brick not with stone, and with tar not lime.
+
+They used brick instead of stone, and tar for mortar.
+
+xya         to  iyi  "dlo         yayo xaþt,
+COLL.PERSON TOP QUOTE 2ND.COMMAND SUBJ COME
+
+[then] they said "Come,
+
+dlo         t    xya         yayo hut-tþuwx-ʃi-klik       i   gits-i     tþeŋ-ti-'erk-rol           ro    yotus rolip    kyek ti.
+2nd.COMMAND CONJ COLL.PERSON SUBJ twelve-gross-MASS-house OBJ build CONJ black-CONJ-white-COLL.long THEME touch one.LONG watchtower CONJ.
+
+let's build a metropolus and [in it] a watchtower that reaches the heavens.
+
+let us build ourselves a city, with a tower that reaches to the heavens,
+
+gu-ŋoja    to  tþuwx xya         yayo tlu-ya   xo 'ins i nox 'aha.
+
+NEG-reason TOP 144   COLL.PERSON SUBJ 1st.COLL GEN NAME say TELIC.
+
+Why? So hundreds will say our names.
+
+so that we may make a name for ourselves;
+
+ge  kyek  to  tlu-ya   ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit 'aha ge.
+NEG watchtower TOP 1st.COLL THEME one.person THEME one.person THEME lowlands COLL.FLAT ON blow TELIC NEG.
+
+[if we] don't [build] the tower, then we shall be blown one by one onto all the lowlands.
+
+Otherwise we will be scattered over the face of the whole earth.
+
+tito     YHWH to  xya         yayo guwu    gits ʃi-klik    ti   kyek  i   xaþt-i    bwax.
+
+CONJ-ATTN YHWH TOP COLL.PERSON SUBJ IMPERF. make MASS-house CONJ Tower OBJ come-CONJ see.
+
+But, YHWH came and saw the mass of buildings and the tower that the people were building.
+
+but the LORD came down to see the city and the tower the people were building.
+
+YHWH to iyi "xya to lip-ʃi-xya rolip ŋewt e gits kyak xo guwu lix yayo þimp bwebo xrohap to xya xo 'ahanox xo bapig xo gelip to wu xo tþit to ge tþit"
+
+YHWH said "About them, the time of the tower built by the people using one language is before now, so, never will not be the time of finishing any of their plans"
+
+The Lord said, “If as one people speaking the same language they have begun to do this, then nothing they plan to do will be impossible for them.
+
+----
+
+The conjuction has three forms a full form "ti" used in careful speech and after consonants other than (p t b d tþ ts), and a "t" form used after vowels, especially on pronouns, and an "i" only used after (p t b d tþ ts). All three of these can coordinate NP or clauses, but is not used to coordinate adpositional (a.k. PP) phrases.
+
+When the first conjuct is a clause, the second conjunct can replace the verb with a (nonreduced) 'ti' , interpreted as replication of the first clause's verb.
+
+'lipa bo lipa bo' is a fixed phrase meaning "one to another", "to each other", or "one to one". It is an example of a broader rule in which adjacent phrases may be headed by the same prepositions.. Such constructions have somewhat ambiguous semantics and may imply:
+
+pairing or reciprocal relations (lipa bo lipa bo "to each other"),
+chained or distributive interpretations (lipa ro lipa ro "one by one"),
+or appositional descriptions, where multiple phrases describe the same referent (shinar ro woŋ ro "Shinar, a lowland").
+
+In appositional uses the repeated phrases are more parallel than their usual English translations.
+
+They use a base 12 system so tþuwx is both litterally 144 and just 'a multitude, a large number'. Hense the somewhat uneven translations.
+
+'to' (topic marker)
+
+'to' marks the clause topic or discourse frame. The to-phrase precedes the main predication and typically comes before explicit subjects and other arguments. It may mark:
+
+* the main discourse topic (xya to “as for the people…”)
+* a temporal frame ([X] xo tþit to “when / at the time of X…”)
+* a conditional or contrastive frame (ge kyek to “without the tower / otherwise…”)
+
+clause-initial 'to'
+
+A separate clause-initial to may appear at discourse openings or before especially long or complex topical frames. This functions as an attention-directing particle, foregrounding the following topic/frame as a single discourse unit. In constructions that demand the use of 'yayo' the phrase following this use of 'to' can end in 'yayo' instead of 'to'.
+
+In the opening line of the Babel passage, both 'to' occur together (as they usually will): the first to is the clause-initial attention particle, while the later 'to' marks the topical phrase itself.
+
+'yayo' (Subject marker)
+'yayo' is used when either there is both a topic and and a subject in the same clause, or in certian constructions (such as commands, and relative clauses),
+
+In relative clauses, the default discourse organization is reversed: yayo becomes the unmarked participant marker, while to is used only when a distinct topic must be introduced.
+
+Commands are formed by 1) using the pronoun dlo, and 2) using the yayo postposition to mark the agent. Usually this means dlo is part of the NP that gets marked with yayo.
+
+In command constructions, 'dlo t xya' literally “command-and people” functions as an inclusive cohortative, unlike "dlo yayo xya koko VERB", which commands the addressee to do the verb _with_ a seperate group.
+
+"tþeŋ ti 'erk rol" literally means "the black and white (long) things" but is how they say "the heavens"
+
+"[X] xo tþit" is used adverbially as "when/during X", PWT doesn't like turning verbs into nouns that much so this is often used where english would say something like "When the x were y-ing.." with a noun associated with the action. For example above "[..] xo he-kxol xo tþit to" is used where english says "As people moved eastward" Though interesingly this replicates an ambiguity not in the english, its not clear what the relasionship between "inland" and walking is are they going inland, or are they already inland and walking somewhere in spicific.
+
+glam originally means “nurse, feed milk to, particularly babies" and by extension “settle in / inhabit / cultivate a place.” Catgirls travel with infants or when pregnant much less often then humans do, because milk not pregnacies is the bottleneck, and nessarily the birth mother can't be the nurse mother. (because overies and breasts are active at different ages.) Therefor the term "nurse" also means "use as an home".
+
+Windic typological notes:
+* SOV base order
+* postpositions (head-final adpositions)
+* topic-first framing
+* optional subject marking (yayo)
+* discourse particle system (to)
+* plus relativization via ellipsis / zero verbs
+
+'ro' (glossed as THEME) is a direct object marker used for holding, bringing, or giving. Using it can often change the meaning of a verb. "X i bwax" means "[they] see the X", "X ro bwax" means "[they] found the X", though with other verbs you just can't use "i" or must use "i". The verb meaning modifying uses derived from longer phrases meaning "they saw X and brought [news of] it". In some daughter languages 'ro' becomes the default direct object marker, with "i" either being lost or being resticted to certian verb classes.
+
+'tito' - discourse marker, tito is composed of the attention getter 'to' and the conjunction 'ti' and isn't quite a contrastice like "however" or "but" but is rather somewhere between that, and "and then" or "but also", the key point is not that the second clause is unexpected, but that it is new and interesting, or important. So can also be used where Enlgish would use "and therefor:" but here it does serve to say "new event!".
+
+ʃi is the mass classifier/counter. With normally countable nouns, it treats the referent as an uncounted substance or aggregate rather than as discrete units. Thus ʃi-klik is literally something like “house/building as mass,” here meaning the built-up settlement or mass of buildings.
+
+guwu is an adverb expressing an "unfinished" or imperfective mood, its composed of "gu" a negative marker and "wu" which means completely/thoughly/finished.
+
+---
