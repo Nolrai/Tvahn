@@ -47,7 +47,7 @@ Why? So hundreds will say our names.
 
 so that we may make a name for ourselves;
 
-ge  kyek  to  tlu-ya   ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit 'aha ge.
+ge  kyek       to  tlu-ya   ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit 'aha ge.
 NEG watchtower TOP 1st.COLL THEME one.person THEME one.person THEME lowlands COLL.FLAT ON blow TELIC NEG.
 
 [if we] don't [build] the tower, then we shall be blown one by one onto all the lowlands.
@@ -62,16 +62,59 @@ But, YHWH came and saw the mass of buildings and the tower that the people were 
 
 but the LORD came down to see the city and the tower the people were building.
 
-YHWH to iyi "xya to lip-ʃi-xya rolip ŋewt e gits kyak xo guwu lix yayo þimp bwebo xrohap to xya xo 'ahanox xo bapig xo gelip to wu xo tþit to ge tþit"
+YHWH to  iyi  "xya         to  lip-ʃi-xya           yayo rolip    ŋewt     e     gits  kyak       xo  guwu       lix            i    þimp bwebo dlo-yayo-bwax
 
-YHWH said "About them, the time of the tower built by the people using one language is before now, so, never will not be the time of finishing any of their plans"
+YHWH TOP QUOTE COLL.person TOP One-MASS-COLL.PERSON SUBJ One.LONG language INSTR build watchtower GEN unfinished SINGULAR.round OBJ  now  UPSTREAM-OF command-SUBJ-see
 
-The Lord said, “If as one people speaking the same language they have begun to do this, then nothing they plan to do will be impossible for them.
+YHWH said "About them, BEHOLD the starting point of the tower built by the people using one language before now.
+
+The Lord said, “If as one people speaking the same language they have begun to do this,
+
+xya         xo  'ahanox xo  bapig    xo  gelip   xo  wu       tþit to  ge  xexk pasla
+
+COLL.PERSON GEN plan    GEN One.FLAT GEN not-one GEN FINISHED time TOP NEG possess CONSQ
+
+So, of their plans, not one will lack a finishing-time.
+
+then nothing they plan to do will be impossible for them.
+
+dlo         yayo xaþt, dlo         t    xya         yayo  ʃi-klik    i    ŋomp-i    ŋewt     e     mut-mut    ibwu gits.
+2ND.COMMAND SUBJ COME  2nd.COMMAND CONJ COLL.PERSON SUBJ. MASS-house OBJ. go-  CONJ language INSTR mutterings INTO make.
+
+Come, let us go to [their] buildings and turn [their] language into mutterings.
+
+Come, let us go down and confuse their language.
+
+gu-ŋoja    to  lipa-      lipa       yayo-xo  'ins  i   nox-ge
+
+NEG-reason TOP one.person one.person SUBJ-GEN name OBJ say NEG.
+
+Why? So that they will not say each others' names.
+
+so they will not understand each other.
+
+tito,     YHWH yayo xya         ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit-i   klik-i   guwu ge gits
+CONJ-ATTN YHWH SUBJ COLL.person THEME one.person THEME one.person THEME lowlands COLL.FLAT ON blow-CONJ house OBJ neg-FINISHED NEG make.
+
+Then YHWH did blow them one by one onto all the lowlands, and [they] didn't continue to build the city.
+
+So the Lord scattered them from there over all the earth, and they stopped building the city.
+
+keŋt  to  ʃi   xo  'ins i   babel i   'aha-pasla,  ʃi   xo  lep      bo YHWH to 'ami       rol       ŋewt     e     mut-mut    ibwu gits.
+story TOP MASS GEN name OBJ babel OBJ TELIC-CONSQ, MASS GEN ONE.FLAT ON YHWH TOP Shoreland COLL.long language INSTR mutterings INTO make.
+
+This story is why it's name is bable; there, the Lord made the language of all the lands into mutterings.
+
+That is why it was called Babel—because there the Lord confused the language of the whole world.
 
 ----
 
-The conjuction has three forms a full form "ti" used in careful speech and after consonants other than (p t b d tþ ts), and a "t" form used after vowels, especially on pronouns, and an "i" only used after (p t b d tþ ts). All three of these can coordinate NP or clauses, but is not used to coordinate adpositional (a.k. PP) phrases.
+In PWT, “say someone’s name” can mean to address or successfully speak with them. In this passage it renders the Hebrew idiom “hear another’s speech,” giving the sense “understand one another.” This is a different shade of meaning then the earliear use of "become well known".
 
+The conjunction ti is a clause-level clitic. Its reduced forms attach phonologically to the final word of the preceding clause, usually the predicate in SOV clauses.
+
+The conjuction has three forms a full form "ti" used in careful speech and after consonants other than (p t b d tþ ts), and a "t" form used after vowels, especially on pronouns, and an "i" only used after (p t b d tþ ts). All three of these can coordinate NP or clauses, but is not used to coordinate adpositional (a.k. PP) phrases.
+p;
 When the first conjuct is a clause, the second conjunct can replace the verb with a (nonreduced) 'ti' , interpreted as replication of the first clause's verb.
 
 'lipa bo lipa bo' is a fixed phrase meaning "one to another", "to each other", or "one to one". It is an example of a broader rule in which adjacent phrases may be headed by the same prepositions.. Such constructions have somewhat ambiguous semantics and may imply:
@@ -81,6 +124,8 @@ chained or distributive interpretations (lipa ro lipa ro "one by one"),
 or appositional descriptions, where multiple phrases describe the same referent (shinar ro woŋ ro "Shinar, a lowland").
 
 In appositional uses the repeated phrases are more parallel than their usual English translations.
+
+when its a reciprical relasionship that would use two different adpositions, the phrase gets re-aranged into "lipa-lipa yayo-xo" as an sort of contraction of "lipa yayo lipa yayo lipa xo lipa xo", but with a narrower meaning, saying that each one is paird with another, "lipa yayo lipa xo" would imply it was the same person, the reflexive is the default.
 
 They use a base 12 system so tþuwx is both litterally 144 and just 'a multitude, a large number'. Hense the somewhat uneven translations.
 
@@ -113,6 +158,10 @@ In command constructions, 'dlo t xya' literally “command-and people” functio
 
 glam originally means “nurse, feed milk to, particularly babies" and by extension “settle in / inhabit / cultivate a place.” Catgirls travel with infants or when pregnant much less often then humans do, because milk not pregnacies is the bottleneck, and nessarily the birth mother can't be the nurse mother. (because overies and breasts are active at different ages.) Therefor the term "nurse" also means "use as an home".
 
+if then / so that statements are expresed using either [[noun phrase] TOP [verb phrase] MARKER] or [[clause]. [clause] MARKER] where the marker can be one of three options, the TELIC 'aha, indicating that the consiquence is an intent, so the "if" ness is refering to a choice, or the HYP swuhi meaning the "if" ness is a hypothetica, "if that is true, then this is true", or the CONSG pasla indicating that first clause is inded true, and therefor so is the second.
+
+"bwebo" litterally means "upstream of/on top of/inland from", but is used to mean "before", you can see "bwe" used in the physical direction sense in the line about Shinar. Which metaphore, upstream being the future that will come to you, or layers deposited one after another so that the top is the most recent, is ambiguous.
+
 Windic typological notes:
 * SOV base order
 * postpositions (head-final adpositions)
@@ -127,6 +176,6 @@ Windic typological notes:
 
 ʃi is the mass classifier/counter. With normally countable nouns, it treats the referent as an uncounted substance or aggregate rather than as discrete units. Thus ʃi-klik is literally something like “house/building as mass,” here meaning the built-up settlement or mass of buildings.
 
-guwu is an adverb expressing an "unfinished" or imperfective mood, its composed of "gu" a negative marker and "wu" which means completely/thoughly/finished.
+guwu lix literally means something like “unfinished/ongoing thing,” but with the round/singular counter it is lexicalized as “starting point” or “commencement.” It contrasts with wu tþit, literally “finished time,” meaning “ending-time / completion-time.”
 
 ---
