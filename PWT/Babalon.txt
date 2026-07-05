@@ -70,9 +70,8 @@ YHWH said "About them, BEHOLD the starting point of the tower built by the peopl
 
 The Lord said, “If as one people speaking the same language they have begun to do this,
 
-xya         xo  'ahanox xo  bapig    xo  gelip   xo  wu       tþit to  ge  xexk pasla
-
-COLL.PERSON GEN plan    GEN One.FLAT GEN not-one GEN FINISHED time TOP NEG possess CONSQ
+xya xo 'ahanox xo gelip to bapig xo wu tþit ro ge xexh pasla
+COLL.PERSON GEN plan GEN not-one TOP one.WALL GEN finished time THEME NEG possess CONSE
 
 So, of their plans, not one will lack a finishing-time.
 
