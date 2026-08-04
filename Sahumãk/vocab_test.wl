@@ -92,3 +92,5 @@ lin
 wa
 semank
 kã.t.te.s.ʔe.rom.tsan
+
+huastrostrohuhu
