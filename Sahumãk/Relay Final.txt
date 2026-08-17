@@ -1,114 +1,126 @@
-Gibwu zãr        levesar buɾĩt    doter-iveter.
-GUEST TOPIC.DIST MOVE.R  OVER.1&2 STONE-HILL
+Gibwu zãr      levesar     buɾĩt      doter-iveter.
+GUEST TOP.DIST MOVE.remote ACROSS.1&2 STONE-HILL
 
-The traveler roamed over the mountain.
+The traveler moved across the mountain.
 
-A forager walks on the mountain,
-
----
-
-Tʃihevã isã       lãnisuv gã      gibwu zir     dĩɾup lã
-BRAT    YAIS.DIST EXP.AT  TO.DIST GUEST RUS.REL TIME  AGAINST.DIST
-
-heɾateɾeywu isã       zĩnir   zetwu zã       dãpehh zã       zĩnir   eɾisezar  zĩnir   hiwehh  zer
-ICE         YAIS.DIST TOP.REL SOUP  RUS.DIST RIVER  RUS.DIST TOP.REL BEAST-SAY TOP.REL SUPP.C  RUS.1
-
-This was because of the roaring from the river from the ice melting, before the brat became a traveler.
-
-because before the villager formed the forager, the ice melted and made this river heard.
-
----
-zo-ãt  des   zosetãtĩ zãr      geper        doter-iveter gãnãt  luv        lwi
-Godess Night Pelican  TOP.DIST ByThrow.DIST Stone-Hill   To.1&2 MOVE.Atemp TOP.default
-
-ĩ     lus         zeɾãt   hiwehh
-STAND LUS.default LUS.1&2 SUPP.Cont
-
-zo-ãt  zĩnir   ĩ     zãr      dʒe ger      leverev gãnãt tenĩtwuɾuv.
-Godess TOP.REL STAND TOP.DIST EYE VIA.dist MOVE    TO.the village
-
-Because Goddess Night Pelican flew, she stood on the mountain. Because she stood, the villagers saw her.
-
-The bird spirit would fly into and stand itself upon the mountain, and the villagers would look upon the bird spirit.
+A forager crossed the mountain,
 
 ---
 
-doter-iveter mã       zĩnir   zo-ãt   zãr      hwan ger      dʒe ger      luv        guv     zo
-Stone-Hill   MYU.dist TOP.rel Goddess Top.DIST EAR  VIA.dist EYE VIA.dist MOVE.atemp TO.dist nurser
+Tʃihevã isã       lãnisuv    gã      gibwu zir     dĩɾup lã
+BRAT    YAIS.DIST EXPA.atemp TO.DIST GUEST LUS.REL TIME  AGAINST.DIST
 
-luv        zãr      lãnitã    isã       lãkwu.
-MOVE.atemp TOP.Dist EXPA.Depart YAIS.DIST MIND.
+heɾateɾeywu isã       zĩnir   zetwu zã       dãpehh zã       zĩnir   eɾisesar zĩnir   hiwehh    zer
+ICE         YAIS.DIST TOP.REL SOUP  LUS.DIST RIVER  LUS.DIST TOP.REL ROAR     TOP.REL SUPP.cont LUS.1
 
-The women would look and hear the spirit bird in the mountain and transition their minds.
+Before the brat became a traveler, the river-roar from the melting ice supported this.
 
----
-
-ĩ     zãr Zo Okyaiti   myu     wut  zo     myu     meɾĩt   iɾesar.
-STAND TOP.DIST Okyaiti MYU.def MANY Nurser MYU.def MYU.1&2 COMP.remote
-
-Mrs. Okyaiti and the women stood over it.
-
-Okiáíti and the women would be on it.
+because the ice melted, the river roared, and the child became a traveler.
 
 ---
 
-dup  mã      Zo     Okyaiti zãr
-DAWN MYU.def Nurser Okyaiti TOP.Dist
+zo-ãt   des   zosetãtĩ  zãr      gepet              doter-iveter gãnãt  luv        lwi.
+GODDESS NIGHT ALBATROSS TOP.DIST BY-PROPELLING.DIST STONE-HILL   TO.1&2 MOVE.atemp TOP.default
 
-under dawn, Okyaiti would say
+ĩ lus zeɾãt hiwehh.
+STAND LUS.default LUS.1&2 SUPP.cont
 
-In the morning, Okyaiti would say
+zo-ãt zĩnir ĩ zãr dʒe ger leveɾev gãnãt denĩtwuɾuv.
+GODDESS TOP.REL STAND TOP.DIST EYE HELD-BY.DIST MOVE.cont TO.1&2 VILLAGE
+
+Because Goddess Night Albatross flew to the mountain, she stood there. Because she stood, the villagers' eyes moved toward her.
+
+The bird spirit would fly into the mountain and stand there, and the villagers would look upon her.
+
+---
+
+doter-iveter mã       zĩnir   zo-ãt   zãr      hwan ger          dʒe ger          luv        guv        zo
+STONE-HILL   MYU.DIST TOP.REL GODDESS TOP.DIST EAR  HELD-BY.DIST EYE HELD-BY.DIST MOVE.atemp TO.default NURSER
+
+luv        zãr      lãnitã      isã       lãkwu.
+MOVE.atemp TOP.DIST EXPA.depart YAIS.DIST MIND
+
+The women would look and listen toward the goddess in the mountain, and their minds would transform.
+
+The women would see and hear the bird spirit in the mountain, and their minds would change.
+
+---
+
+ĩ     zãr      Zo     Okyaiti myu         wut  zo     myu         meɾĩt   iɾesar.
+STAND TOP.DIST NURSER Okyaiti MYU.default MANY NURSER MYU.default MYU.1&2 COMP.remote
+
+Nurser Okyaiti and the women completed their standing over it.
+
+Nurser Okiáíti and the women would be on it.
+
+---
+
+dup mã Zo Okyaiti zãr
+DAWN MYU.DIST NURSER Okyaiti TOP.DIST
+
+At dawn, Nurser Okyaiti would say:
+
+In the morning, Okyaiti would say:
 
 --
 
-"Gibwu Zo      De      gãt! Mãhh biɾit     dĩ   ber   zosetãtĩ zo-ãt   gã      zur       zã           gehwir"
- Guest Nursers Bearer, TO.2 Duty DOWN-TO.2 word TOP.1 Pelican  Goddess TO.dist SAY.Atemp LUS.dist     EXCE.cont.
+"Gibwu Zo De gãt! Mãhh biɾit dĩ ber zosetãtĩ zo-ãt gã zur zã gehwir."
+GUEST NURSER BEARER TO.2 DUTY DOWN-TO.2 WORD TOP.1 ALBATROSS GODDESS TO.DIST SAY.atemp LUS.DIST EXCE.cont
 
-"O Men and women! Your duty lets you say this word to the Pelican Goddess."
+"Guests, nursers, bearers, to you! Your duty allows this word to be said to the Albatross Goddess."
 
 "You people! Say this word to the bird spirit!"
+
 --
 
-"Gibwu Zo De gãt! Mãhh biɾit luv zit evãt giɾit gehwir ra doter-iveter. Mãhh biɾit zosetãtĩ zo-ãt mwir dĩ ber lãnisuv zit"
+"Gibwu Zo De gãt! Mãhh biɾit luv zit evãt giɾit gehwir ra doter-iveter. Mãhh biɾit zosetãtĩ zo-ãt mwir dĩ ber lãnisuv zit."
+GUEST NURSER BEARER TO.2 DUTY DOWN-TO.2 MOVE.atemp LUS.2 FOOT HELD-BY.2 EXCE.cont AGAINST STONE-HILL DUTY DOWN-TO.2 ALBATROSS GODDESS MYU.REL WORD TOP.1 EXPA.atemp LUS.2
 
-"Ladies and gents! Your duty lets you walk up to the mountain and the word of the Pelican Goddess reach you."
+"Guests, nursers, bearers, to you! Your duty allows your feet to move to the mountain, and the Albatross Goddess's word to reach you."
 
 "You people! Walk into the mountain and hear the word of the bird spirit!"
 
 --
 
-"zo-ãt zãr zo lus hiwehh. zo get levã gãnãt!"
+"zo-ãt   zãr      zo     lus         hiwehh.   zo     get             levã        gãnãt!"
+ GODDESS TOP.DIST NURSER LUS.default SUPP.cont NURSER HELD-BY.default MOVE.depart TO.1&2
 
-"It has the woman and the woman gives it to us!"
+"The goddess is supported from the woman. The woman moves by it to us!"
 
---
-
-Zo-ãt zãr zo lus hiweser.
-
-Goddess TOP.DIST nurser AWAY-FROM.Default SUPP.remote.
-
-Zo zãr zo-ãt ger leveɾev gãr.
-
-Nurser TOP.DIST Goddess VIA, MOVE.Cont TO.1.
-
-Kemi zĩnir lis biɾit zo-ãt giɾit levã gãt.
-
-Use TOP.rel thing TOP.1&2 Goddess VIA.
-
-This bird spirit had and gave this woman to me and it gave you what you want:
+"The bird spirit has this woman, and this woman gives it to us!"
 
 --
 
-dutup myuzãr, zo zĩnir doter-iveter lã zĩnir luv zãr zo zã zo isã zo-ãt zã lãnisuv zã giɾwĩ.
+Zo-ãt   zãr      zo     lus         hiweser.
+GODDESS TOP.DIST NURSER LUS.default SUPP.remote
 
-In the future, a woman's walking to the mountain lets her become a goddess.
+Zo     zãr      zo-ãt   ger          leveɾev   gãr.
+NURSER TOP.DIST GODDESS HELD-BY.DIST MOVE.cont TO.1
+
+Kemi zĩnir   lis   biɾit zo-ãt   giɾit     levã        gãt.
+USE  TOP.REL THING TOP.2 GODDESS HELD-BY.2 MOVE.depart TO.2
+
+The bird spirit was supported by the woman. The woman moved by the goddess to me. The useful thing moves by the goddess to you.
+
+This bird spirit took and gave this woman to me, and it gave you what you wanted.
+
+--
+
+dutup myu zãr, zo zĩnir doter-iveter lã zĩnir luv zãr
+FUTURE MYU TOP.DIST NURSER TOP.REL STONE-HILL AGAINST.DIST TOP.REL MOVE.atemp TOP.DIST
+
+zo zã zo isã zo-ãt zã lãnisuv zã giɾwĩ.
+NURSER LUS.DIST NURSER YAIS.DIST GODDESS INTO.DIST EXPA.atemp LUS.DIST EXCE.depart
+
+In the future, a woman's moving to the mountain will let her transform from woman into goddess.
 
 A woman will walk into the mountain and transition from human to bird spirit.
 
 --
 
-lwi zĩnir dar zur ber levã bur dar.
+lwi zĩnir dãr zur ber levã bur dãr.
+TOP.default TOP.REL WRONG SAY.atemp TOP.1 MOVE.depart ACROSS.1 WRONG
 
-To call this wrong would be wrong.
+To call this wrong would move wrongly across me.
 
 Let her do so.
