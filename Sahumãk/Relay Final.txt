@@ -51,7 +51,7 @@ STAND TOP.DIST NURSER Okyaiti MYU.default MANY NURSER MYU.default MYU.1&2 COMP.r
 
 Nurser Okyaiti and the women completed their standing over it.
 
-Nurser Okiáíti and the women would be on it.
+Nurser Okyaiti and the women would be on it.
 
 ---
 
@@ -83,7 +83,7 @@ GUEST NURSER BEARER TO.2 DUTY DOWN-TO.2 MOVE.atemp LUS.2 FOOT HELD-BY.2 EXCE.con
 --
 
 "zo-ãt   zãr      zo     lus         hiwehh.   zo     get             levã        gãnãt!"
- GODDESS TOP.DIST NURSER LUS.default SUPP.cont NURSER HELD-BY.default MOVE.depart TO.1&2
+GODDESS TOP.DIST NURSER LUS.default SUPP.cont NURSER HELD-BY.default MOVE.depart TO.1&2
 
 "The goddess is supported from the woman. The woman moves by it to us!"
 
