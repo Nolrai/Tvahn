@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSA</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">@page { margin: 0.65in; }
+body {
+color: #111;
+font-family: "DejaVu Serif", Georgia, serif;
+font-size: 10.5pt;
+line-height: 1.35;
+}
+h1, h2, h3, h4 { page-break-after: avoid; }
+h1 { font-size: 22pt; margin-top: 0; }
+h2 { font-size: 16pt; border-bottom: 1px solid #bbb; padding-bottom: 0.12in; margin-top: 0.3in; }
+h3 { font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; }
+th, td { border: 1px solid #ccc; padding: 3px 5px; vertical-align: top; }
+th { background: #eee; }
+pre {
+white-space: pre-wrap;
+font-family: "DejaVu Sans Mono", monospace;
+font-size: 9pt;
+border-left: 3px solid #ccc;
+padding-left: 0.12in;
+}
+code { font-family: "DejaVu Sans Mono", monospace; }
+img { max-width: 100%; height: auto; }
+.pagebreak { page-break-before: always; }
+.source-note { color: #555; font-size: 9pt; }
+.notes-page {
+page-break-before: always;
+min-height: 9in;
+background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 0.31in, #ddd 0.32in);
+}
+.notes-page h2 { border: 0; }
+.glyphs { font-family: "Sahumank", "DejaVu Sans", sans-serif; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSA</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#psa-print-packet">PSA Print Packet</a>
+<ul>
+<li><a href="#source-inventory">Source Inventory</a></li>
+</ul></li>
+<li><a href="#protosouth-american-catgirl-psa">Proto–South American
+Catgirl (PSA)</a>
+<ul>
+<li><a href="#core-language-specification-conlang-bible">Core Language
+Specification (“Conlang Bible”)</a></li>
+<li><a href="#status-and-scope">0. Status and Scope</a></li>
+<li><a href="#fundamental-design-principle-highest-priority">1.
+Fundamental Design Principle (Highest Priority)</a>
+<ul>
+<li><a href="#priority-1-deixis-relevance-flow-of-attention"><strong>Priority
+1: Deixis / relevance / flow of attention</strong></a></li>
+</ul></li>
+<li><a href="#noun-class-system-process-ontology">2. Noun Class System
+(Process Ontology)</a>
+<ul>
+<li><a href="#core-classes-proto-stage">2.1 Core Classes (Proto
+Stage)</a></li>
+<li><a href="#marking">2.2 Marking</a></li>
+<li><a href="#diachronic-secondary-classes">2.3 Diachronic Secondary
+Classes</a></li>
+</ul></li>
+<li><a href="#deixis-and-individuation-si">3. Deixis and Individuation
+(<em>si</em>)</a>
+<ul>
+<li><a href="#nature-of-si">3.1 Nature of <em>si</em></a></li>
+<li><a href="#pronouns">3.2 Pronouns</a></li>
+</ul></li>
+<li><a href="#clause-level-deixis-true-core-system">4. Clause-Level
+Deixis (True Core System)</a>
+<ul>
+<li><a href="#historical-origin">4.1 Historical Origin</a></li>
+<li><a href="#where-deixis-lives">4.2 Where Deixis Lives</a></li>
+</ul></li>
+<li><a href="#adpositions-as-deictic-paradigms">5. Adpositions as
+Deictic Paradigms</a>
+<ul>
+<li><a href="#general-system">5.1 General System</a></li>
+<li><a href="#position-relative-to-verb">5.2 Position Relative to
+Verb</a></li>
+<li><a href="#benefactive-example">5.3 Benefactive Example</a></li>
+<li><a href="#instrumental-example">5.4 Instrumental Example</a></li>
+</ul></li>
+<li><a href="#verb-system-overview">6. Verb System Overview</a>
+<ul>
+<li><a href="#no-agreement">6.1 No Agreement</a></li>
+<li><a href="#dual-tam-systems-both-real">6.2 Dual TAM Systems (Both
+Real)</a></li>
+<li><a href="#result-combinatorial-explosion">6.3 Result: Combinatorial
+Explosion</a></li>
+</ul></li>
+<li><a href="#core-syntax-event-subject-construction">7. Core Syntax:
+Event-Subject Construction</a>
+<ul>
+<li><a href="#structure">7.1 Structure</a></li>
+<li><a href="#correct-classification">7.2 Correct
+Classification</a></li>
+<li><a href="#example-canonical">7.3 Example (Canonical)</a></li>
+</ul></li>
+<li><a href="#subjecthood">8. Subjecthood</a></li>
+<li><a href="#lexical-instability">9. Lexical Instability</a></li>
+<li><a href="#phonology">10. Phonology</a>
+<ul>
+<li><a href="#vowels">10.1 Vowels</a></li>
+<li><a href="#consonants-underlying-14">10.2 Consonants (Underlying
+~14)</a></li>
+<li><a href="#allophony">10.3 Allophony</a></li>
+<li><a href="#glottal-stop">10.4 Glottal Stop</a></li>
+<li><a href="#phonotactics">10.5 Phonotactics</a></li>
+</ul></li>
+<li><a href="#diachronic-tendencies">11. Diachronic Tendencies</a></li>
+<li><a href="#one-sentence-core-definition">12. One-Sentence Core
+Definition</a></li>
+</ul></li>
+<li><a href="#ppsa-root-lexicon-working-canon">PPSA Root Lexicon
+(Working Canon)</a>
+<ul>
+<li><a href="#noun-class-life-stage-markers">Noun-Class / Life-Stage
+Markers</a></li>
+<li><a href="#core-roots-canon">Core Roots (Canon)</a>
+<ul>
+<li><a href="#terrain-materials">Terrain &amp; Materials</a></li>
+<li><a href="#animals-body-substances">Animals &amp; Body
+Substances</a></li>
+<li><a href="#core-verbs-light-verbs">Core Verbs / Light Verbs</a></li>
+<li><a href="#social-relational-roots">Social / Relational
+Roots</a></li>
+</ul></li>
+<li><a href="#core-relational-markers-ppsa">Core Relational Markers
+(PPSA)</a></li>
+<li><a href="#selected-derived-lexemes-ppsa-stage">Selected Derived
+Lexemes (PPSA Stage)</a>
+<ul>
+<li><a href="#water-system">Water System</a></li>
+<li><a href="#boundaries-enclosures">Boundaries / Enclosures</a></li>
+<li><a href="#landforms">Landforms</a></li>
+<li><a href="#dwelling-fire">Dwelling &amp; Fire</a></li>
+<li><a href="#fishing-hunting-toolkit">Fishing &amp; Hunting
+Toolkit</a></li>
+<li><a href="#feeding-exchange">Feeding &amp; Exchange</a></li>
+<li><a href="#kinship-terms">Kinship Terms</a></li>
+<li><a href="#motion-posture-constructions">Motion &amp; Posture
+Constructions</a></li>
+<li><a href="#cooking">Cooking</a></li>
+</ul></li>
+<li><a href="#body-vitality">Body &amp; Vitality</a></li>
+<li><a href="#weather-time">Weather &amp; Time</a></li>
+<li><a href="#speech-law-the-unseen">Speech, Law &amp; the
+Unseen</a></li>
+<li><a href="#structural-notes">Structural Notes</a></li>
+</ul></li>
+<li><a href="#environment-landscape-10">1️⃣ Environment &amp; Landscape
+(10)</a></li>
+<li><a href="#animals-subsistence-12">2️⃣ Animals &amp; Subsistence
+(12)</a></li>
+<li><a href="#early-cultivation-food-processing-8">3️⃣ Early Cultivation
+&amp; Food Processing (8)</a></li>
+<li><a href="#household-social-units-10">4️⃣ Household &amp; Social Units
+(10)</a></li>
+<li><a href="#motion-position-8">5️⃣ Motion &amp; Position (8)</a></li>
+<li><a href="#body-vitality-6">6️⃣ Body &amp; Vitality (6)</a></li>
+<li><a href="#weather-cycles-6">7️⃣ Weather &amp; Cycles (6)</a></li>
+<li><a href="#early-ritual-proto-abstract-optional-but-fitting">8️⃣ Early
+Ritual / Proto-Abstract (Optional but fitting)</a>
+<ul>
+<li><a href="#why-this-list-fits-just-before-perfected-pig-fish-farming">Why
+this list fits “just before perfected pig &amp; fish farming”</a></li>
+<li><a href="#conversation-1">Conversation 1</a></li>
+<li><a href="#linguistic-periodization">Linguistic
+Periodization</a></li>
+<li><a href="#misc.-notes-for-reorganization-later.">Misc. Notes for
+reorganization later.</a></li>
+<li><a href="#field-notes-1">Field Notes 1</a></li>
+<li><a href="#field-notes-2">Field Notes 2</a></li>
+<li><a href="#field-notes-3">Field Notes 3</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="psa-print-packet">PSA Print Packet</h1>
+<p>Proto-South American Catgirl working notes</p>
+<p>Generated: 2026-08-10</p>
+<h2 id="source-inventory">Source Inventory</h2>
+<ul>
+<li><code>PSA/PSA.md</code></li>
+<li><code>PSA/vocab.md</code></li>
+<li><code>PSA/slots.md</code></li>
+<li><code>PSA/Conversation 1 (Gloss).md</code></li>
+<li><code>PSA/Conversation 1.txt</code></li>
+<li><code>PSA/exersizes_notes.md</code></li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/PSA.md</code>
+</p>
+<p>Yes, that request makes perfect sense. What you’re asking for is a
+<strong>single authoritative design document</strong>: not prose
+explanation, not argument, but a <em>reference bible</em> that freezes
+what PSA <em>is</em>, how it works, and why, without re-deriving it.</p>
+<p>Below is that document.</p>
+<p>I will <strong>not</strong> introduce new ideas. I will
+<strong>not</strong> simplify away contradictions. I will
+<strong>not</strong> restate the religion except where grammar requires
+it.</p>
+<p>This is written in the tone of a serious descriptive grammar /
+conlang spec.</p>
+<hr />
+<h1 id="protosouth-american-catgirl-psa">Proto–South American Catgirl
+(PSA)</h1>
+<h2 id="core-language-specification-conlang-bible">Core Language
+Specification (“Conlang Bible”)</h2>
+<hr />
+<h2 id="status-and-scope">0. Status and Scope</h2>
+<ul>
+<li><p><strong>PSA is a reconstructed proto-language</strong>,
+comparable to PIE:</p>
+<ul>
+<li>predates writing</li>
+<li>reconstructed from daughter languages</li>
+<li>reconstruction targets the language <strong>immediately prior to a
+major expansion</strong></li>
+</ul></li>
+<li><p>Earlier speech stages existed but are <strong>not fully
+reconstructible</strong> and are treated as <em>pre-PSA</em>.</p></li>
+<li><p>PSA already contains <strong>internal layering, erosion, and
+reanalysis</strong> at the moment of reconstruction.</p></li>
+</ul>
+<hr />
+<h2 id="fundamental-design-principle-highest-priority">1. Fundamental
+Design Principle (Highest Priority)</h2>
+<h3 id="priority-1-deixis-relevance-flow-of-attention"><strong>Priority
+1: Deixis / relevance / flow of attention</strong></h3>
+<p>PSA is not time-first, agent-first, or argument-first.</p>
+<blockquote>
+<p><strong>Everything is organized around whether something is within
+the current attentional field, and how attention flows through the
+event.</strong></p>
+</blockquote>
+<p>This priority outranks:</p>
+<ul>
+<li>tense</li>
+<li>aspect</li>
+<li>mood</li>
+<li>grammatical relations</li>
+<li>noun class</li>
+<li>argument structure</li>
+</ul>
+<p>If deixis is wrong, the clause is pragmatically invalid even if
+formally grammatical.</p>
+<hr />
+<h2 id="noun-class-system-process-ontology">2. Noun Class System
+(Process Ontology)</h2>
+<h3 id="core-classes-proto-stage">2.1 Core Classes (Proto Stage)</h3>
+<p>PSA has <strong>three primary noun classes</strong>, encoding
+<strong>process state</strong>, not gender:</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Core meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bearing</strong></td>
+<td>latent, growing, origin-state, protected</td>
+</tr>
+<tr class="even">
+<td><strong>Traveling</strong></td>
+<td>circulating, extracted, mobile, in-process</td>
+</tr>
+<tr class="odd">
+<td><strong>Nursing</strong></td>
+<td>completed, transformed, stabilized, dangerous / sacral</td>
+</tr>
+</tbody>
+</table>
+<p>These apply to:</p>
+<ul>
+<li>people</li>
+<li>animals</li>
+<li>food</li>
+<li>places</li>
+<li>tools</li>
+<li>abstractions</li>
+</ul>
+<h3 id="marking">2.2 Marking</h3>
+<ul>
+<li><p><strong>Traveling</strong> is <strong>unmarked</strong> in
+PSA.</p></li>
+<li><p><strong>Bearing</strong> marked by article
+<strong>te</strong>.</p></li>
+<li><p><strong>Nursing</strong> marked by article
+<strong>so</strong>.</p></li>
+<li><p>Articles are:</p>
+<ul>
+<li>free or clitic in PSA</li>
+<li>later fuse as prefixes/suffixes in daughters</li>
+</ul></li>
+</ul>
+<h3 id="diachronic-secondary-classes">2.3 Diachronic Secondary
+Classes</h3>
+<p>Derived via morphology + noun class:</p>
+<ul>
+<li>diminutive + bearing → tools, children, inanimates</li>
+<li>plural + traveling → swarms, weather, rivers, forces</li>
+<li>augmentative + nursing → sacred/dangerous beings, mountains, old
+trees</li>
+<li>augmentative + bearing → land, origins, “the people”</li>
+</ul>
+<p>Not all daughter languages retain these.</p>
+<hr />
+<h2 id="deixis-and-individuation-si">3. Deixis and Individuation
+(<em>si</em>)</h2>
+<h3 id="nature-of-si">3.1 Nature of <em>si</em></h3>
+<ul>
+<li><p><em>si</em> is <strong>not a definite article</strong></p></li>
+<li><p>It means:</p>
+<blockquote>
+<p><strong>“this instance that is currently relevant /
+individuated”</strong></p>
+</blockquote></li>
+<li><p>Functions:</p>
+<ul>
+<li>individuation of mass nouns</li>
+<li>topical anchoring</li>
+<li>override of default flow assumptions</li>
+</ul></li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><em>kita</em> → fish as commodity / circulation</li>
+<li><em>si kita</em> → this piece/batch of fish</li>
+<li><em>zo si kita</em> → this specific completed/dangerous batch</li>
+</ul>
+<h3 id="pronouns">3.2 Pronouns</h3>
+<ul>
+<li>Pronouns are <strong>definite by default</strong></li>
+<li>Stacked forms (<em>desi, zosi</em>) behave as <strong>gendered
+demonstratives</strong></li>
+<li>Pronoun systems later erode heavily.</li>
+</ul>
+<hr />
+<h2 id="clause-level-deixis-true-core-system">4. Clause-Level Deixis
+(True Core System)</h2>
+<h3 id="historical-origin">4.1 Historical Origin</h3>
+<ul>
+<li><p>Descends from an <strong>abandoned possessive / relational
+clitic</strong></p></li>
+<li><p>Originally meant:</p>
+<blockquote>
+<p>“within my sphere / attached to me / under my responsibility”</p>
+</blockquote></li>
+<li><p>Possession collapsed as a semantic category.</p></li>
+<li><p>Morphology survived and generalized into <strong>attention /
+relevance marking</strong>.</p></li>
+</ul>
+<hr />
+<h3 id="where-deixis-lives">4.2 Where Deixis Lives</h3>
+<p>Deixis is encoded in <strong>three places</strong>:</p>
+<ol type="1">
+<li><strong>Clause role marker</strong> (mandatory)</li>
+<li><strong>Verb fusion / light verbs</strong></li>
+<li><strong>Relational adpositions</strong></li>
+</ol>
+<p>NP-level <em>si</em> is only a residual shard of this system.</p>
+<hr />
+<h2 id="adpositions-as-deictic-paradigms">5. Adpositions as Deictic
+Paradigms</h2>
+<h3 id="general-system">5.1 General System</h3>
+<ul>
+<li>All pre/postpositions have <strong>2–4 surface forms</strong></li>
+<li>These forms map onto <strong>five abstract deictic
+levels</strong>:</li>
+</ul>
+<ol type="1">
+<li>Very near speaker (strongly speaker-anchored)</li>
+<li>Near addressee</li>
+<li>Shared / discourse-near (“us”)</li>
+<li>Default distance</li>
+<li>Further than normal / backgrounded</li>
+</ol>
+<p>Not all adpositions lexicalize all five.</p>
+<hr />
+<h3 id="position-relative-to-verb">5.2 Position Relative to Verb</h3>
+<ul>
+<li><strong>Pre-verbal adpositions</strong> = postpositions (sources,
+preconditions)</li>
+<li><strong>Post-verbal adpositions</strong> = prepositions (goals,
+results)</li>
+</ul>
+<hr />
+<h3 id="benefactive-example">5.3 Benefactive Example</h3>
+<p>Benefactive (“for / to”) paradigm:</p>
+<ul>
+<li><p>Speaker-proximal form:</p>
+<ul>
+<li>means <em>for me</em></li>
+<li>does <strong>not</strong> take a noun</li>
+</ul></li>
+<li><p>Addressee-proximal form:</p>
+<ul>
+<li>can mean <em>for you</em> alone</li>
+</ul></li>
+<li><p>Shared / neutral form:</p>
+<ul>
+<li>default “for”</li>
+</ul></li>
+<li><p>Distal form:</p>
+<ul>
+<li>institutions, future recipients, abstractions</li>
+</ul></li>
+</ul>
+<p>Benefactive naturally drifts into <strong>telic meaning</strong>.</p>
+<hr />
+<h3 id="instrumental-example">5.4 Instrumental Example</h3>
+<p>Instrumental has <strong>two forms</strong>:</p>
+<ul>
+<li><p><strong>“this” instrumental</strong></p>
+<ul>
+<li>only if instrument is more bound to speaker than
+addressee/topic/context</li>
+</ul></li>
+<li><p><strong>“that” instrumental</strong></p>
+<ul>
+<li>otherwise</li>
+</ul></li>
+</ul>
+<p>Not distance-based; <strong>sphere-of-control-based</strong>.</p>
+<hr />
+<h2 id="verb-system-overview">6. Verb System Overview</h2>
+<h3 id="no-agreement">6.1 No Agreement</h3>
+<ul>
+<li><p>Verbs <strong>never agree</strong> with:</p>
+<ul>
+<li>noun class</li>
+<li>person</li>
+<li>gender</li>
+</ul></li>
+<li><p>All relational meaning is elsewhere.</p></li>
+</ul>
+<hr />
+<h3 id="dual-tam-systems-both-real">6.2 Dual TAM Systems (Both
+Real)</h3>
+<p>PSA has <strong>two coexisting TAM systems</strong>.</p>
+<h4 id="a.-older-morphological-tam-still-productive">A. Older
+Morphological TAM (Still Productive)</h4>
+<ul>
+<li>tense</li>
+<li>aspect</li>
+<li>mood</li>
+<li>conjunctive / dependency marking</li>
+<li>evidential overlays</li>
+</ul>
+<p>Irregular, prestige-coded, never fully dies.</p>
+<hr />
+<h4 id="b.-newer-tam-via-verb-adposition-deixis">B. Newer TAM via Verb +
+Adposition + Deixis</h4>
+<ul>
+<li>event-type verbs (“occur”, “move”, “exhaust”, etc.)</li>
+<li>relational adpositions</li>
+<li>deictic paradigms</li>
+<li>attentional closure vs openness</li>
+</ul>
+<p>This system also encodes TAM — <strong>independently</strong>.</p>
+<hr />
+<h3 id="result-combinatorial-explosion">6.3 Result: Combinatorial
+Explosion</h3>
+<p>Because the two systems are:</p>
+<ul>
+<li>orthogonal</li>
+<li>overlapping</li>
+<li>historically accreted</li>
+</ul>
+<p>They multiply into <strong>~200 socially recognized clause
+types</strong>, often called “tenses” by speakers.</p>
+<p>Speakers:</p>
+<ul>
+<li>agree on distinctions</li>
+<li>rank them pragmatically</li>
+<li>cannot paraphrase them cleanly</li>
+</ul>
+<hr />
+<h2 id="core-syntax-event-subject-construction">7. Core Syntax:
+Event-Subject Construction</h2>
+<h3 id="structure">7.1 Structure</h3>
+<ul>
+<li><strong>Verbal noun occupies subject position</strong></li>
+<li>No argument promotion occurs</li>
+<li>Agent, patient, instrument are obliques</li>
+</ul>
+<p>This is <strong>not a passive</strong>.</p>
+<hr />
+<h3 id="correct-classification">7.2 Correct Classification</h3>
+<blockquote>
+<p><strong>Event-subject / event-headed construction with agent
+demotion</strong></p>
+</blockquote>
+<p>No object → subject promotion.</p>
+<hr />
+<h3 id="example-canonical">7.3 Example (Canonical)</h3>
+<blockquote>
+<p><strong>painting sbj-that burnt-up by-you with-that brush
+for-me</strong> “You used your brush to completely finish painting that
+for me.”</p>
+</blockquote>
+<ul>
+<li>Completion comes from <strong>burn-up</strong></li>
+<li>Not from the construction itself</li>
+<li>Swap verb+adposition → different TAM</li>
+</ul>
+<hr />
+<h2 id="subjecthood">8. Subjecthood</h2>
+<ul>
+<li><p>PSA lacks a stable grammatical subject</p></li>
+<li><p>In newer system:</p>
+<ul>
+<li>events outrank agents</li>
+</ul></li>
+<li><p>Agents may be:</p>
+<ul>
+<li>omitted</li>
+<li>backgrounded</li>
+<li>highlighted</li>
+</ul></li>
+<li><p>Responsibility ≠ syntactic prominence</p></li>
+</ul>
+<hr />
+<h2 id="lexical-instability">9. Lexical Instability</h2>
+<ul>
+<li><p>Certain semantic domains resist stable roots</p></li>
+<li><p>“Child” is unreconstructible:</p>
+<ul>
+<li>replaced by metaphors (sling, burden, jewelry)</li>
+</ul></li>
+<li><p>Driven by:</p>
+<ul>
+<li>noun class semantics</li>
+<li>derivational competition</li>
+<li>attentional framing</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="phonology">10. Phonology</h2>
+<h3 id="vowels">10.1 Vowels</h3>
+<p><strong>Targets (monophthongs):</strong></p>
+<ul>
+<li>/a i u ɪ ə/</li>
+</ul>
+<p><strong>Nasal (phonemic, restricted):</strong></p>
+<ul>
+<li>/ã ɪ̃ ũ/</li>
+</ul>
+<p><strong>Length (unstable, stressed only):</strong></p>
+<ul>
+<li>/aː uː/</li>
+</ul>
+<p>Most stressed syllables are <strong>vowel trajectories</strong> (VV,
+Vj, Vw, Vr).</p>
+<hr />
+<h3 id="consonants-underlying-14">10.2 Consonants (Underlying ~14)</h3>
+<ul>
+<li>/p t k ts s h m n l r j w ʔ/</li>
+<li>No phonemic voicing</li>
+<li>Heavy allophony</li>
+</ul>
+<hr />
+<h3 id="allophony">10.3 Allophony</h3>
+<ul>
+<li>Palatalization before /i ɪ j/</li>
+<li>Intervocalic weakening (taps, glottals)</li>
+<li><strong>Coda /N/</strong> = nasal archiphoneme (Japanese-like)</li>
+<li>No geminates</li>
+</ul>
+<hr />
+<h3 id="glottal-stop">10.4 Glottal Stop</h3>
+<ul>
+<li><p>/ʔ/ is <strong>not a coda</strong></p></li>
+<li><p>Marks <strong>prosodic word boundaries</strong></p></li>
+<li><p>Appears word-initially before:</p>
+<ul>
+<li>vowels</li>
+<li>liquids</li>
+<li>sibilants</li>
+</ul></li>
+<li><p>Dropped in compounds / lexicalized phrases</p></li>
+</ul>
+<hr />
+<h3 id="phonotactics">10.5 Phonotactics</h3>
+<ul>
+<li>Preferred syllables: (ʔ)CV, (ʔ)CVC</li>
+<li>No clusters</li>
+<li>Complexity in nuclei, not edges</li>
+</ul>
+<p><strong>Register effects:</strong></p>
+<ul>
+<li><p>Formal: lexeme-faithful endings</p></li>
+<li><p>Casual:</p>
+<ul>
+<li>nouns open (CV)</li>
+<li>verbs closed (CVC with /N/)</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="diachronic-tendencies">11. Diachronic Tendencies</h2>
+<ul>
+<li>Articles fuse</li>
+<li>Pronouns erode</li>
+<li>Length → diphthongs/liquids</li>
+<li>New TAM expands</li>
+<li>Old TAM fossilizes but survives</li>
+<li>Daughter languages diverge sharply</li>
+</ul>
+<hr />
+<h2 id="one-sentence-core-definition">12. One-Sentence Core
+Definition</h2>
+<blockquote>
+<p><strong>Proto–South American Catgirl is a relevance-first,
+event-headed language with a process-based noun class system, dual
+overlapping TAM architectures, and a deictic attentional grammar that
+replaces agreement and dominates clause structure.</strong></p>
+</blockquote>
+<hr />
+<p>If you want, I can next:</p>
+<ul>
+<li>condense this into a <strong>1-page quick reference</strong></li>
+<li>generate a <strong>diagram of clause structure</strong></li>
+<li>or sketch <strong>how one daughter language collapses this
+system</strong></li>
+</ul>
+<p>But this document is now stable enough to build <em>from</em> rather
+than <em>argue about</em>.</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/vocab.md</code>
+</p>
+<h1 id="ppsa-root-lexicon-working-canon">PPSA Root Lexicon (Working
+Canon)</h1>
+<p>This document collects the current canon roots and key derivational
+class markers defined for Proto-PSA (PPSA), plus selected high-priority
+derived compounds, kinship terms, and core relational constructions.</p>
+<hr />
+<h2 id="noun-class-life-stage-markers">Noun-Class / Life-Stage
+Markers</h2>
+<ul>
+<li><strong>te-</strong> = Bearing class (early / fertile / initiating /
+trickster / smallish)</li>
+<li><strong>Ø (unmarked)</strong> = Traveling class (moving / ambitious
+/ active default)</li>
+<li><strong>so-</strong> = Nursing class (completed / containing /
+nurturing / respected / commanding)</li>
+</ul>
+<p><strong>Historical note:</strong> The prefix <strong>te-</strong> did
+not originally exist as an independent morpheme. It was later reanalyzed
+from the word <strong>tesint</strong> (see below). Only after this
+reanalysis did <em>te-</em> become a productive bearing-class
+marker.</p>
+<p>Class marking is usually lexicalized, but in some kinship terms it
+may remain semantically productive (e.g., <em>te-sikimani</em> vs
+<em>sikimani</em> vs <em>so-sikimani</em>).</p>
+<hr />
+<h2 id="core-roots-canon">Core Roots (Canon)</h2>
+<h3 id="terrain-materials">Terrain &amp; Materials</h3>
+<ul>
+<li><strong>hu</strong> = water (default / flowing)</li>
+<li><strong>astro</strong> = earth / ground / floor / forest (general
+terrain)</li>
+<li><strong>iman</strong> = breast</li>
+<li><strong>tsan</strong> = textile / rope / woven material</li>
+<li><strong>pak</strong> = big-toe claw / kicking claw (historically
+also stake/post)</li>
+<li><strong>se</strong> = wood / branch (material head in
+compounds)</li>
+</ul>
+<h3 id="animals-body-substances">Animals &amp; Body Substances</h3>
+<ul>
+<li><strong>ram</strong> = domestic pig (pig-analog; aquatic
+eutransdontid)</li>
+<li><strong>ʔhas</strong> = fish (generic)</li>
+<li><strong>ʔrom</strong> = fat / grease</li>
+<li><strong>sorom</strong> = rancid / spoiled / gone bad (especially of
+food, grease, or preserved matter)</li>
+<li><strong>ʔank</strong> = bone</li>
+<li><strong>upon</strong> = (semi-)edible plant matter (leaf / tuber /
+nut / grain; not wood)</li>
+<li><strong>pum</strong> = hand claw (deep semantic category; distinct
+from <strong>pak</strong> ‘foot claw’)</li>
+</ul>
+<h3 id="core-verbs-light-verbs">Core Verbs / Light Verbs</h3>
+<ul>
+<li><strong>mus</strong> = give</li>
+<li><strong>sik</strong> = take</li>
+<li><strong>kemi</strong> = use / employ</li>
+<li><strong>kemitsotan</strong> = speak / use breath / speak aloud</li>
+<li><strong>luma</strong> = general motion verb (go / come / carry /
+throw / enter / leave; meaning determined by relational marking)</li>
+<li><strong>lante</strong> = settle / lower oneself</li>
+<li><strong>ʔen</strong> = rise / stand</li>
+<li><strong>rokunk</strong> = hunt</li>
+<li><strong>utun</strong> = home (dwelling / place of return; distinct
+from built structure)</li>
+<li><strong>ronst</strong> = cook / apply fire (base for boil / roast /
+smoke / salt compounds)</li>
+<li><strong>u:kani</strong> = push against / clutch (later evolves into
+PSA event-frame verb <em>miw wukani</em>)</li>
+</ul>
+<h3 id="social-relational-roots">Social / Relational Roots</h3>
+<ul>
+<li><p><strong>tesint</strong> = belly → later “person who was pregnant
+(with me).” This form is the historical source of the
+<strong>te-</strong> prefix. Only later was <em>tesint</em> reanalyzed
+folk-etymologically as <em>te-sint</em>, allowing <em>te-</em> to spread
+as a productive bearing marker. The reduced element
+<strong>sint</strong> is sometimes used poetically to mean “catgirl,”
+but never becomes the default term.</p></li>
+<li><p><strong>mank</strong> = obligation / debt (final <em>nk</em>
+realized [ŋk] → [ŋ]; emphatic reduplicated form <em>mankank</em>
+/maŋgaŋ/ bleached into basic lexical form)</p></li>
+</ul>
+<hr />
+<h2 id="core-relational-markers-ppsa">Core Relational Markers
+(PPSA)</h2>
+<ul>
+<li><strong>miw</strong> = upward / above / upright / superior
+orientation (structurally central adposition)</li>
+<li><strong>pai</strong> = interior / between / within relation</li>
+<li><strong>kun</strong> = toward / to</li>
+<li><strong>ʔrap</strong> = away from / from</li>
+<li><strong>kent</strong> = by holding / carried-by</li>
+<li><strong>kept</strong> = by propelling / thrown-by</li>
+</ul>
+<p>(Note: In motion constructions, the carried/thrown entity receives
+topic marking.)</p>
+<hr />
+<h2 id="selected-derived-lexemes-ppsa-stage">Selected Derived Lexemes
+(PPSA Stage)</h2>
+<h3 id="water-system">Water System</h3>
+<ul>
+<li><strong>river</strong> = <em>hu-hu</em> → <strong>huhu</strong></li>
+<li><strong>pond / containing water</strong> = <em>so-hu</em> →
+<strong>sohu</strong></li>
+</ul>
+<h3 id="boundaries-enclosures">Boundaries / Enclosures</h3>
+<ul>
+<li><strong>boundary / bank</strong> = <em>tsan-pak</em> →
+<strong>tsanpak</strong></li>
+<li><strong>fence / enclosure</strong> (wood as head; containing
+boundary) = <em>se-so-tsanpak</em> → <strong>sesotsanpak</strong></li>
+</ul>
+<h3 id="landforms">Landforms</h3>
+<ul>
+<li><strong>hill</strong> = <em>iman-astro</em> →
+<strong>imanastro</strong> (“earth-breast,” breast as head)</li>
+<li><strong>open ground / meadow</strong> = <em>astro-so-hu</em> →
+<strong>astrosohu</strong> (earth-pond logic)</li>
+<li><strong>mud</strong> = <em>so-hu-ram</em> → <strong>sohuram</strong>
+(pond-pig logic)</li>
+<li><strong>stone</strong> = <em>astro-astro</em> →
+<strong>astrostro</strong></li>
+</ul>
+<h3 id="dwelling-fire">Dwelling &amp; Fire</h3>
+<ul>
+<li><strong>house (built structure)</strong> = <em>so-se-so-se</em> →
+<strong>sosesose</strong> (archetypal “finished wood,” reduced
+form)</li>
+<li><strong>hearth</strong> = <em>so-se-ronst</em> →
+<strong>soseronst</strong> (finished wood-fire place)</li>
+<li><strong>mayor / village head / lord</strong> =
+<em>so-se-so-se-tsene</em> → <strong>sosesosetsene</strong>
+(“house-name,” the house by which the settlement is known; later
+broadens toward “ruler”)</li>
+</ul>
+<h3 id="fishing-hunting-toolkit">Fishing &amp; Hunting Toolkit</h3>
+<ul>
+<li><strong>hook for fish</strong> = <em>pum-ʔhas</em> →
+<strong>pumahas</strong></li>
+<li><strong>trap / snare</strong> = <em>tsan-(u)-rokunk</em> →
+<strong>tsanurokunk</strong></li>
+<li><strong>butcher / cut meat</strong> = <em>rokunk-utun</em> →
+<strong>rokunkutun</strong></li>
+</ul>
+<h3 id="feeding-exchange">Feeding &amp; Exchange</h3>
+<ul>
+<li><strong>feed (animals)</strong> = <em>mus-upon</em> →
+<strong>musupon</strong></li>
+<li><strong>trade</strong> = <em>mus-sik</em> → <strong>musisik</strong>
+(give-take)</li>
+<li><strong>crush / grind</strong> = <em>astro-stro-kimi</em> →
+<strong>astrostrokimi</strong> (“stone-use,” i.e. reduce by working
+against stone)</li>
+</ul>
+<h3 id="kinship-terms">Kinship Terms</h3>
+<ul>
+<li><p><strong>woman who bore me</strong> = <strong>tesint</strong>
+(historically unanalyzable at earliest stage; only later reinterpreted
+as <em>te-sint</em>)</p></li>
+<li><p><strong>woman who nursed me</strong> = <em>so-kemi-iman</em> →
+<strong>sokemiman</strong> (nursing breast-user)</p></li>
+<li><p><strong>child (actual child stage)</strong> =
+<em>te-kemi-iman-i</em> → <strong>tekemimani</strong> (bearing
+breast-user-DIM)</p></li>
+<li><p><strong>younger / same-age sibling (traveling stage
+default)</strong> = <em>sik-iman-i</em> → <strong>sikimani</strong>
+(breast-taker-DIM)</p>
+<ul>
+<li>may appear as <strong>te-sikimani</strong> (young child stage)</li>
+<li>may appear as <strong>so-sikimani</strong> (elder reference)</li>
+</ul></li>
+<li><p><strong>older sibling</strong> = <em>mus-iman</em> →
+<strong>musiman</strong> (breast-giver)</p></li>
+<li><p><strong>guest</strong> = <em>kemi-huhu</em> →
+<strong>kemihuhu</strong> (river-user)</p></li>
+</ul>
+<h3 id="motion-posture-constructions">Motion &amp; Posture
+Constructions</h3>
+<ul>
+<li><strong>go / come toward</strong> = <em>luma kun</em></li>
+<li><strong>go / leave from</strong> = <em>luma ʔrap</em></li>
+<li><strong>carry (by holding)</strong> = <em>luma kent</em></li>
+<li><strong>throw (by propelling)</strong> = <em>luma kept</em></li>
+<li><strong>settle / sit / calm</strong> = <em>lante pai</em></li>
+<li><strong>sit upright</strong> = <em>lante miw</em></li>
+<li><strong>stand up</strong> = <em>ʔen miw</em></li>
+</ul>
+<h3 id="cooking">Cooking</h3>
+<ul>
+<li><strong>boil</strong> = <em>ronst-hu</em> →
+<strong>ronstuhu</strong></li>
+<li><strong>roast / bake</strong> (dry cook; fire-fire) =
+<em>ronst-ronst</em> → <strong>ronstonst</strong></li>
+<li><strong>salt</strong> = <em>ronst-astro-so-huhu</em> →
+<strong>ronstastrosohuhu</strong></li>
+<li><strong>smoke</strong> = <em>ronst-astro-ronst</em> →
+<strong>ronstastroronst</strong></li>
+</ul>
+<hr />
+<h2 id="body-vitality">Body &amp; Vitality</h2>
+<ul>
+<li><strong>blood</strong> = ro</li>
+<li><strong>breath</strong> = tsotan</li>
+<li><strong>hand</strong> = nen</li>
+<li><strong>foot</strong> = amant</li>
+<li><strong>hunger</strong> = nepant</li>
+<li><strong>sleep</strong> = sun</li>
+</ul>
+<hr />
+<h2 id="weather-time">Weather &amp; Time</h2>
+<ul>
+<li><strong>rain</strong> = <em>miw-hu</em> → <strong>miwhu</strong>
+(water from above)</li>
+<li><strong>dry / drought</strong> = hanst</li>
+<li><strong>wind</strong> = etna</li>
+<li><strong>cold (noun)</strong> = <em>etna-hu</em> →
+<strong>etnahu</strong> (wet-wind)</li>
+<li><strong>cold (adjectival construction)</strong> = <em>[noun] etnahu
+kent iru</em> (cold-carrying; with free relativizer
+<strong>iru</strong>)</li>
+<li><strong>dawn</strong> = atup</li>
+<li><strong>night</strong> = hetnos</li>
+</ul>
+<hr />
+<h2 id="speech-law-the-unseen">Speech, Law &amp; the Unseen</h2>
+<ul>
+<li><strong>name / word</strong> = tsene</li>
+<li><strong>oath</strong> = <em>tsene-mank</em> →
+<strong>tsenemank</strong> (name of debt)</li>
+<li><strong>taboo / prohibition / mistake</strong> = <em>tsan-ro</em> →
+<strong>tsanro</strong> (blood-rope)</li>
+<li><strong>forbidden</strong> = <em>pai tsanro</em></li>
+<li><strong>ancestor</strong> = lexicalized compound from “nursing
+breast-user (burned) within” → provisional form
+<strong>sokemimanpai</strong> (historically cremation-based; exact
+reduction to be determined)</li>
+<li><strong>spirit</strong> = <em>uuki miw iru</em> (they who lurk
+above; <strong>iru</strong> present in PPSA as free relativizing
+element, not yet fused)</li>
+<li><h2 id="nicaragua-sohuhumanki-the-promised-river-lexicalized-place-name"><strong>Nicaragua</strong>
+= <strong>sohuhumanki</strong> (“the promised river”; lexicalized
+place-name)</h2></li>
+</ul>
+<h2 id="structural-notes">Structural Notes</h2>
+<ul>
+<li><strong>iru</strong> exists in PPSA as an independent relativizing /
+clause-linking element; fusion and suffixal behavior develop later in
+PSA.</li>
+<li><strong>iiru</strong> exists in PPSA is just iru with emphasis but
+early in the transition to PSA it becomes lexicalized as a interogative
+pronoun, before fusing onto the preposition along with the other
+“persons/distances”.</li>
+<li>Compounding rule: <strong>head-first</strong>, with a strong
+tendency for <strong>material heads</strong> (e.g., <em>se-…</em>).</li>
+<li>Life-stage markers (<em>te- / Ø / so-</em>) are derivational
+noun-class prefixes tied to cultural life stages.</li>
+<li>In some kinship terms, class marking may remain semantically
+productive rather than strictly lexicalized.</li>
+<li>Relational meaning is largely carried by adpositions rather than
+verb roots.</li>
+<li>PPSA compounds are morphologically transparent; opacity emerges
+later in PSA through sound change.</li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/slots.md</code>
+</p>
+<p>You’re asking for <strong>semantic slots</strong>, not words — a core
+lexeme inventory for PPSA at the stage just before perfected pig + fish
+farming. So:</p>
+<ul>
+<li>settled or semi-settled</li>
+<li>fishing is important</li>
+<li>pigs exist but breeding intensification is just emerging</li>
+<li>compound nouns common</li>
+<li>SVO grammar</li>
+<li>no heavy state bureaucracy yet</li>
+<li>rich distal marking system</li>
+</ul>
+<p>So we want a lexicon that reflects:</p>
+<ul>
+<li>subsistence</li>
+<li>kin + household</li>
+<li>movement + place</li>
+<li>material culture</li>
+<li>early ritual</li>
+<li>social obligations</li>
+<li>weather + water</li>
+<li>proto-agricultural cycles</li>
+</ul>
+<p>Not abstract philosophy yet.</p>
+<p>Here’s a curated list of ~60 <strong>root meaning slots</strong>
+appropriate to that cultural stage.</p>
+<p>You can decide which are simple roots vs compounds later.</p>
+<hr />
+<h1 id="environment-landscape-10">1️⃣ Environment &amp; Landscape
+(10)</h1>
+<ol type="1">
+<li>water (generic)</li>
+<li>river / flowing water</li>
+<li>still water / pond</li>
+<li>hill / rise</li>
+<li>forest / wooded land</li>
+<li>open ground / clearing</li>
+<li>mud / wet earth</li>
+<li>stone / rock</li>
+<li>fire (controlled)</li>
+</ol>
+<hr />
+<h1 id="animals-subsistence-12">2️⃣ Animals &amp; Subsistence (12)</h1>
+<ol start="11" type="1">
+<li>pig (wild boar ancestor stage)</li>
+<li>fish (generic)</li>
+<li>net (fishing net)</li>
+<li>hook / line</li>
+<li>trap / snare</li>
+<li>hunt (verb)</li>
+<li>butcher / cut meat</li>
+<li>fat / grease</li>
+<li>bone</li>
+<li>herd / group of animals</li>
+<li>feed (animals)</li>
+<li>salt / smoke (preserve food)</li>
+</ol>
+<hr />
+<h1 id="early-cultivation-food-processing-8">3️⃣ Early Cultivation &amp;
+Food Processing (8)</h1>
+<ol start="23" type="1">
+<li>seed</li>
+<li>plant / grow (verb)</li>
+<li>dig (earth)</li>
+<li>fence / enclosure</li>
+<li>store / keep food</li>
+<li>grind / crush</li>
+<li>cook (boil/roast)</li>
+<li>rot / spoil</li>
+</ol>
+<hr />
+<h1 id="household-social-units-10">4️⃣ Household &amp; Social Units
+(10)</h1>
+<ol start="31" type="1">
+<li>house / shelter</li>
+<li>hearth</li>
+<li>mother</li>
+<li>father</li>
+<li>child</li>
+<li>sibling</li>
+<li>clan / household unit</li>
+<li>guest / outsider</li>
+<li>exchange / give</li>
+<li>debt / obligation</li>
+</ol>
+<hr />
+<h1 id="motion-position-8">5️⃣ Motion &amp; Position (8)</h1>
+<ol start="41" type="1">
+<li>go</li>
+<li>come</li>
+<li>carry</li>
+<li>throw</li>
+<li>enter</li>
+<li>leave</li>
+<li>sit / settle</li>
+<li>stand / rise</li>
+</ol>
+<hr />
+<h1 id="body-vitality-6">6️⃣ Body &amp; Vitality (6)</h1>
+<ol start="49" type="1">
+<li>blood</li>
+<li>breath</li>
+<li>hand</li>
+<li>foot</li>
+<li>belly / hunger</li>
+<li>sleep</li>
+</ol>
+<hr />
+<h1 id="weather-cycles-6">7️⃣ Weather &amp; Cycles (6)</h1>
+<ol start="55" type="1">
+<li>rain</li>
+<li>dry / drought</li>
+<li>wind</li>
+<li>cold</li>
+<li>dawn</li>
+<li>night</li>
+</ol>
+<hr />
+<h1 id="early-ritual-proto-abstract-optional-but-fitting">8️⃣ Early
+Ritual / Proto-Abstract (Optional but fitting)</h1>
+<ol start="61" type="1">
+<li>name</li>
+<li>promise / oath</li>
+<li>taboo / forbidden</li>
+<li>ancestor</li>
+<li>spirit / unseen force</li>
+</ol>
+<hr />
+<h2 id="why-this-list-fits-just-before-perfected-pig-fish-farming">Why
+this list fits “just before perfected pig &amp; fish farming”</h2>
+<ul>
+<li>Nets, traps, enclosures, storing, and smoking exist.</li>
+<li>But no advanced irrigation, no markets, no coinage.</li>
+<li>Kinship and obligation matter more than formal state structure.</li>
+<li>Weather and land cycles are crucial.</li>
+<li>Ritual is present but still concrete.</li>
+</ul>
+<hr />
+<p>If you want, next step we can:</p>
+<ul>
+<li>Categorize these into <strong>likely monosyllabic vs disyllabic PPSA
+roots</strong></li>
+<li>Or assign which ones are more likely to be <strong>compound
+nouns</strong></li>
+<li>Or design semantic fields that preferentially end in -n (to feed
+your nasal-grade system)</li>
+</ul>
+<p>Which direction do you want to go?</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/Conversation 1 (Gloss).md</code>
+</p>
+<p>Mother:       hu petĩ kɪtɪts lʌmʌsar sãtã pãnũ
+sar petyir ((hu petĩ) kɪtɪts lʌmʌsar sãtã pãnũ) sar petyir WATER TOP.1
+HELD-BY.2 MOVE.Rep INTO.1 TOP.5 SAY ACROSS.WHAT Have you brought the
+water in?</p>
+<p>Daughter:    me.tĩ sar petĩ tsãr FROM.1 SAY TOP.1 TABOO I’d be
+lying if I said so. I have not.</p>
+<p>Mother:  ʌ      kɪtɪts lʌmʌ myu ʔitãnã pat
+təs pãnũ sũ petĩnitit tsãr. ((kɪtɪts lʌmʌ myu) ʔitãnã (pat təs) pãnũ)
+(sũ petĩnitit) tsãr. [[HELD-BY.2 MOVE FROM.Default] BURN.Proj
+[DOWNTO.Default NIGHT] TOP.5] [SLEEP TOP.1&amp;2] TABOO fishing carrying
+using up [time] until night, is bad for sleeping. We can’t sleep until
+you bring the water in.</p>
+<p>Daughter:     ʌ stosterɪkim petĩ metĩ
+ãnũk. metĩ ʔitãnã petĩ kitswisar sətã lʌmʌ. ((stosterɪkim petĩ) metĩ
+ãnũk). ((metĩ ʔitãnã petĩ) (sətã lʌmʌ)). ((GRIND TOP.1) FROM.1 LURK.Red)
+; ((MIW1 BURN.Proj TOP1) CUT.Gnomic (AWAYFROM MOVE)) Grinding is
+relevent. Finishing allows movement. I’m griding right now, after I
+finish I’ll get it.</p>
+<p>Mother:           ʔĩ pitit yais kəkaitu
+pitit sar tsãr, tup petĩnitit serom. (((((ʔĩ pitit) yais kəkaitu) pitit)
+sar) pai) tsãr, (tup petĩnitit) serom. (((((GET-UP TOP.2) PENETRATE.Def
+CUT) TOP.2) SAY) TOP.Def) TABOO, (TOMORROW TOP.1&amp;2) RANCID. [if] you
+dont start getting up, [then] tomrrow [will be] suck. If you don’t get
+to it soon, we’ll regret it.</p>
+<p>Daughter:    petĩnitit metĩ sar kãtã. TOP.1&amp;2 MEW.1
+SAY.Red TO.1. I tell my self that. I know.</p>
+<p>Mother:    təs pai tsãr. (təs pai) tsãr. (NIGHT TOP.Def) TABOO
+Night is bad. Don’t leave it until too late.</p>
+<p>??          </p>
+<p>MOTHER:     </p>
+<p>DAUGHTER:   </p>
+<p>MOTHER:  ʌ     </p>
+<p>DAUGHTER:     ʌ</p>
+<p>MOTHER:          </p>
+<p>DAUGHTER:   </p>
+<p>MOTHER:   </p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/Conversation 1.txt</code>
+</p>
+<h2 id="conversation-1">Conversation 1</h2>
+<pre class="text"><code>MOTHER:
+  hu petĩ kɪtɪts lʌmʌsar sãtã pãnũ sar petyir
+
+DAUGHTER:
+  me tĩ sar petĩ tsãr
+
+MOTHER:
+  kɪtɪts lʌmʌ myu ʔitãnã pat təs pãnũ sũ petĩnitit tsãr
+
+DAUGHTER:
+
+  stosterɪkim petĩ metĩ ãnũk. metĩ ʔitãnã petĩ kitswisar sətã lʌmʌ
+
+MOTHER:
+  ʔĩ pitit yais kəkaitu pitit sar tsãr, tup petĩnitit serom
+
+DAUGHTER:
+  petĩnitit metĩ sar kãtã
+
+MOTHER:
+  təs pai tsãr</code></pre>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PSA/exersizes_notes.md</code>
+</p>
+<h2 id="linguistic-periodization">Linguistic Periodization</h2>
+<ul>
+<li><p><strong>PPSA / Orinoco Horizon (~4000-3000 BID):</strong> Earlier
+related speech varieties before full homogenization. Important for
+design reconstruction, but not recoverable in-universe as a single
+stable language.</p></li>
+<li><p><strong>PSA Proper (~2300-1800? BID):</strong> The
+reconstructible common ancestor. This corresponds to broad regional
+linguistic and material-cultural commonality after the emergence of
+cities, before major daughter-language divergence.</p></li>
+<li><p><strong>Post-PSA / Early Daughter Continuum (~1900-400
+BID):</strong> PSA-descended varieties spread and differentiate,
+including the ancestors of Sahumãk, A recognisable group called the
+Golden family decends from speakers living in OTL Costa Rica and
+Panama.</p></li>
+<li><p><strong>Tar-Bird Horizon / Pre-Classical Sahumank (~400 BID-50
+AID):</strong> A archelogicaly distinct ‘horizon’ starts around OTL San
+Juan river and OTL lake Nicuagua, showing farming of animal feed, and
+aquaculture, as well as the euponimous “Tar-Birds”, bird shaped
+impresions, carvings, and mumifications covered or composed of asphalt
+like tar, or black water proof shelacs. They are clearly simular to the
+earlier and contemporus material culture in OTL Costa Rica but are also
+very distinct. Pre-Classical Sahumank exists an speech comunity mostly
+isolated from other PSA descended languages. Texile writing system
+undergoes heavy simplification and phonolozation eventually becoming a
+hemi-sylabatry, these are depicted in durable media, but the writing
+form does not transfer well, being effectively a form of psudo-graphia
+just depicting the form of the weaving, rather then being readable.
+There does seem to have been somewhat extensive experimentation with
+trying to make readible depictions of texile writing, but the attemts to
+mirror texture or three d shape don’t work well.</p></li>
+<li><p><strong>Classical Sahumãk (~0-370 AID):</strong> Attested written
+daughter language. Sudden durable inscriptions likely reflect transfer
+from older textile literacy, not invention of writing. The major
+inovation is the creation of straight line glyphs replacing patterns of
+which thread is woven above the ‘weft’, and how the weft is locked to
+the next row. Notes on both systems are in the Sahumank folder.</p></li>
+</ul>
+<h2 id="misc.-notes-for-reorganization-later.">Misc. Notes for
+reorganization later.</h2>
+<p>PSA is an externally a priori language: it is not descended from or
+modeled on any real-world language family. Internally, however, it is
+treated as a reconstructed proto-language, comparable in cultural
+importance to Proto-Indo-European before the Age of Sail. It is the
+reconstructed ancestor of several languages spoken by the Catgirls of
+southern Middle America and northern South America. One known daughter
+language, Sahumank, will serve as an internal reference point for future
+reconstruction and family design.</p>
+<p>Tvahn (an modern era name for the world) is wetter and cooler than
+Earth, with smaller deserts and larger forests. Tvahn is technically an
+alternate history, but more accurately alternate natural history. The
+main divergence occurs in the Mesozoic, after monotremes and therian
+mammals split. The dominant later mammalian branch evolved a staged
+reproductive system tying nursing, fertility, and male gamete production
+together, meaning reproduction cannot occur through a lone mother. This
+biology strongly shapes PSA’s grammar, especially its process-based noun
+classes: Bearing, Traveling, and Nursing. PSA speakers live in a
+riverine, forested region (The Orinoco vally at first then expanding
+west and north) where fishing, wetland animals, early pig-analog
+management, and household obligation are central. The language is
+reconstructed for the period just before a major expansion, likely
+connected to improved fish and pig farming, river travel, and growing
+inter-household ritual networks.</p>
+<p>Two closely replated sapient species share this world. Their
+relationship resembles a caste-like social arrangement, though it is
+less directly exploitative than comparable human systems because their
+evolved social rewards encourage interspecies cooperation more than
+direct competition. The smaller A. minorus often appears uncomfortably
+subservient to American human observers, and this relationship may
+influence PSA’s deixis, address systems, obligation vocabulary, and
+social registers. Comunities have been mixed since predating A. minor’s
+develoupment of speach, so usually any variation between speices is
+closer to class based “dialects” or “private languages” among an
+extended family then true seperate languages, and even that level of
+difference is almost always a skew in ‘register’ use rather than a
+difference in capabilities. That is in a given region the linguistic
+varriation is larly between locations and households, not split into A.
+minor and M. major comunities. ‘Housholds’ are large by human standards,
+5 is the minimum realistic size, and &gt;10 is more normal. They don’t
+really pair bond the way we do, instead a given group is generaly fairly
+promiscous with sex being more about social status and comfort then
+either an pair bond or herem like system. This varies less then it does
+in humans, but this should still be considered just the standard base
+line, the way small extended families is the human default.</p>
+<p>PSA speakers are short-muzzled mammals with carnivore-descended
+dentition, but their lips, tongue, and jaw control support broadly
+humanlike articulation. Their front teeth and lips permit bilabials and
+rounded vowels, while their non-primate tooth pattern makes labiodentals
+and dental fricatives rare or absent. PSA therefore favors bilabials,
+alveolar/postalveolar stops and affricates, velars, nasals, liquids,
+glides, /s h/, and glottal contrasts rather than fine dental or
+labiodental contrasts.</p>
+<p>## phonotactic notes from examining the PPSA_to_PSA.lsc file</p>
+<p>PSA strongly prefers open or simple closed syllables, with no
+ordinary consonant clusters. The normal surface syllable shapes are V,
+CV, VC, and CVC, though V and VC mostly occur word-initially or through
+erosion. The affricate /ts/ behaves as a single consonant, not a
+cluster.</p>
+<p>Complexity is concentrated in the nucleus rather than the margins.
+High vowels become glides beside other vowels, producing surface /j w/
+and vowel-glide sequences. Older long vowels and vowel sequences often
+become diphthongs or glide-vowel transitions.</p>
+<p>Final nasals are unstable. Earlier /n/ nasalizes the preceding vowel
+and is then lost word-finally or before consonants, producing nasal
+vowels /ã ĩ ũ/. Coda consonants survive best as oral stops, /s/, /m/,
+/k/, /t/, and fossilized remnants of older nasal clusters.</p>
+<p>The glottal stop /ʔ/ marks prosodic word boundaries and vowel-initial
+words. It is not a normal coda and is deleted or suppressed near
+consonants.</p>
+<section id="field-notes-1" class="notes-page">
+<h2>Field Notes 1</h2>
+</section>
+<section id="field-notes-2" class="notes-page">
+<h2>Field Notes 2</h2>
+</section>
+<section id="field-notes-3" class="notes-page">
+<h2>Field Notes 3</h2>
+</section>
+</body>
+</html>

@@ -1,0 +1,4065 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PWT</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">@page { margin: 0.65in; }
+body {
+color: #111;
+font-family: "DejaVu Serif", Georgia, serif;
+font-size: 10.5pt;
+line-height: 1.35;
+}
+h1, h2, h3, h4 { page-break-after: avoid; }
+h1 { font-size: 22pt; margin-top: 0; }
+h2 { font-size: 16pt; border-bottom: 1px solid #bbb; padding-bottom: 0.12in; margin-top: 0.3in; }
+h3 { font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; }
+th, td { border: 1px solid #ccc; padding: 3px 5px; vertical-align: top; }
+th { background: #eee; }
+pre {
+white-space: pre-wrap;
+font-family: "DejaVu Sans Mono", monospace;
+font-size: 9pt;
+border-left: 3px solid #ccc;
+padding-left: 0.12in;
+}
+code { font-family: "DejaVu Sans Mono", monospace; }
+img { max-width: 100%; height: auto; }
+.pagebreak { page-break-before: always; }
+.source-note { color: #555; font-size: 9pt; }
+.notes-page {
+page-break-before: always;
+min-height: 9in;
+background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 0.31in, #ddd 0.32in);
+}
+.notes-page h2 { border: 0; }
+.glyphs { font-family: "Sahumank", "DejaVu Sans", sans-serif; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PWT</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#pwt-print-packet">PWT Print Packet</a>
+<ul>
+<li><a href="#source-inventory">Source Inventory</a></li>
+</ul></li>
+<li><a href="#proto-wind-tribe-pwt-phonology-and-phonotactics-summary">Proto-Wind-Tribe
+(PWT) Phonology and Phonotactics Summary</a>
+<ul>
+<li><a href="#general-character">General Character</a></li>
+</ul></li>
+<li><a href="#phonemic-inventory">Phonemic Inventory</a>
+<ul>
+<li><a href="#vowels">Vowels</a></li>
+<li><a href="#consonants">Consonants</a>
+<ul>
+<li><a href="#stops">Stops</a></li>
+<li><a href="#affricates">Affricates</a></li>
+<li><a href="#fricatives">Fricatives</a></li>
+<li><a href="#nasals">Nasals</a></li>
+<li><a href="#liquids-and-glides">Liquids and Glides</a></li>
+<li><a href="#glottal-stop">Glottal Stop</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#the-palato-postalveolar-column">The Palato-Postalveolar
+Column</a></li>
+<li><a href="#phonotactics">Phonotactics</a>
+<ul>
+<li><a href="#preferred-root-shapes">Preferred Root Shapes</a></li>
+<li><a href="#syllable-structure">Syllable Structure</a></li>
+</ul></li>
+<li><a href="#onsets">Onsets</a>
+<ul>
+<li><a href="#simple-onsets">Simple Onsets</a></li>
+<li><a href="#common-clusters">Common Clusters</a>
+<ul>
+<li><a href="#stop-liquid">Stop + Liquid</a></li>
+<li><a href="#stop-glide">Stop + Glide</a></li>
+<li><a href="#fricative-clusters">Fricative Clusters</a></li>
+</ul></li>
+<li><a href="#marked-or-restricted-clusters">Marked or Restricted
+Clusters</a></li>
+</ul></li>
+<li><a href="#codas">Codas</a>
+<ul>
+<li><a href="#common-single-consonant-codas">Common Single-Consonant
+Codas</a></li>
+<li><a href="#common-final-clusters">Common Final Clusters</a>
+<ul>
+<li><a href="#liquid-stop">Liquid + Stop</a></li>
+<li><a href="#nasal-stop">Nasal + Stop</a></li>
+<li><a href="#glide-stop">Glide + Stop</a></li>
+<li><a href="#fricative-clusters-1">Fricative Clusters</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#distributional-tendencies">Distributional
+Tendencies</a></li>
+<li><a href="#phonological-character">Phonological Character</a></li>
+<li><a href="#proto-windic-grammar">Proto-Windic Grammar</a>
+<ul>
+<li><a href="#typological-sketch">Typological sketch</a></li>
+<li><a href="#basic-clause-structure">2. Basic Clause Structure</a></li>
+<li><a href="#argument-and-postpositional-marking">Argument and
+Postpositional Marking</a>
+<ul>
+<li><a href="#topicframe-marker-to">Topic/Frame marker “to”</a></li>
+<li><a href="#subject-marker-yayo">Subject marker
+<strong>yayo</strong></a></li>
+<li><a href="#object-and-theme-markers-i-and-ro">Object and theme
+markers <strong>i</strong> and <strong>ro</strong></a></li>
+</ul></li>
+<li><a href="#other-postpositional-marking">Other Postpositional
+Marking</a>
+<ul>
+<li><a href="#genitive-xo">Genitive xo</a></li>
+<li><a href="#instramental-e">Instramental e</a></li>
+<li><a href="#locative-relational-postpositions">Locative / relational
+postpositions</a></li>
+<li><a href="#locative-and-relational-postpositions">Locative and
+relational postpositions</a></li>
+</ul></li>
+<li><a href="#specific-postpositional-phrases">Specific Postpositional
+Phrases</a>
+<ul>
+<li><a href="#repeated-postpositional-phrases">Repeated postpositional
+phrases</a></li>
+<li><a href="#reciprocal-possession-lipa-lipa-yayo-xo">Reciprocal
+possession: <strong>lipa-lipa yayo-xo</strong></a></li>
+</ul></li>
+<li><a href="#commands-and-cohortatives">Commands and
+cohortatives</a></li>
+<li><a href="#most-common-postpositions">Most common
+postpositions:</a></li>
+<li><a href="#number-and-exaggeration-tþuwx">5. Number and exaggeration:
+<strong>tþuwx</strong></a></li>
+<li><a href="#topic-marker-to">6. Topic marker
+<strong>to</strong></a></li>
+<li><a href="#clause-initial-to">7. Clause-initial
+<strong>to</strong></a></li>
+<li><a href="#subject-marker-yayo-1">8. Subject marker
+<strong>yayo</strong></a></li>
+<li><a href="#the-heavens">10. “The heavens”</a></li>
+<li><a href="#temporal-framing-with-x-xo-tþit">11. Temporal framing with
+<strong>[X] xo tþit</strong></a></li>
+<li><a href="#glam-nursing-settling-inhabiting">12.
+<strong>glam</strong>: nursing, settling, inhabiting</a></li>
+<li><a href="#consequence-and-purpose-clauses">13. Consequence and
+purpose clauses</a></li>
+<li><a href="#directional-metaphor-bwebo">14. Directional metaphor:
+<strong>bwebo</strong></a></li>
+<li><a href="#object-marking-i-and-ro">15. Object marking:
+<strong>i</strong> and <strong>ro</strong></a></li>
+<li><a href="#tito">16. <strong>tito</strong></a></li>
+<li><a href="#mass-classifier-ʃi">17. Mass classifier
+<strong>ʃi</strong></a></li>
+<li><a href="#guwu-lix-and-wu-tþit">18. <strong>guwu lix</strong> and
+<strong>wu tþit</strong></a></li>
+<li><a href="#bare-numerals">Bare numerals</a></li>
+<li><a href="#long-class-counters">LONG-class counters</a></li>
+<li><a href="#people-class-counters">PEOPLE-class counters</a></li>
+<li><a href="#flat-class-counters">FLAT-class counters</a></li>
+<li><a href="#round-class-counters">ROUND-class counters</a></li>
+<li><a href="#wall-class-counters">WALL-class counters</a></li>
+</ul></li>
+<li><a href="#proto-windic-tower-of-babel-translation-with-gloss-and-grammar-notes">Proto-Windic
+Tower of Babel Translation, with Gloss and Grammar Notes</a>
+<ul>
+<li><a href="#phonology">Phonology</a></li>
+</ul></li>
+<li><a href="#proto-wind-tribe-pwt-phonology-and-phonotactics-summary-1">Proto-Wind-Tribe
+(PWT) Phonology and Phonotactics Summary</a>
+<ul>
+<li><a href="#general-character-1">General Character</a></li>
+</ul></li>
+<li><a href="#phonemic-inventory-1">Phonemic Inventory</a>
+<ul>
+<li><a href="#vowels-1">Vowels</a></li>
+<li><a href="#consonants-1">Consonants</a>
+<ul>
+<li><a href="#stops-1">Stops</a></li>
+<li><a href="#affricates-1">Affricates</a></li>
+<li><a href="#fricatives-1">Fricatives</a></li>
+<li><a href="#nasals-1">Nasals</a></li>
+<li><a href="#liquids-and-glides-1">Liquids and Glides</a></li>
+<li><a href="#glottal-stop-1">Glottal Stop</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#the-palato-postalveolar-column-1">The Palato-Postalveolar
+Column</a>
+<ul>
+<li><a href="#typological-sketch-1">Typological sketch</a></li>
+</ul></li>
+<li><a href="#text">Text</a>
+<ul>
+<li><a href="#genesis-111">Genesis 11:1</a></li>
+<li><a href="#genesis-112">Genesis 11:2</a></li>
+<li><a href="#genesis-113">Genesis 11:3</a></li>
+<li><a href="#genesis-114">Genesis 11:4</a></li>
+<li><a href="#genesis-115">Genesis 11:5</a></li>
+<li><a href="#genesis-116">Genesis 11:6</a></li>
+<li><a href="#genesis-117">Genesis 11:7</a></li>
+<li><a href="#genesis-118">Genesis 11:8</a></li>
+<li><a href="#genesis-119">Genesis 11:9</a></li>
+</ul></li>
+<li><a href="#grammar-and-usage-notes">Grammar and usage notes</a>
+<ul>
+<li><a href="#say-someones-name">1. “Say someone’s name”</a></li>
+<li><a href="#the-conjunction-ti">2. The conjunction
+<strong>ti</strong></a></li>
+<li><a href="#repeated-adpositional-phrases">3. Repeated adpositional
+phrases</a>
+<ul>
+<li><a href="#reciprocal">Reciprocal</a></li>
+<li><a href="#distributive-or-chained">Distributive or chained</a></li>
+<li><a href="#appositional">Appositional</a></li>
+</ul></li>
+<li><a href="#reciprocal-possession-and-lipa-lipa-yayo-xo">4. Reciprocal
+possession and <strong>lipa-lipa yayo-xo</strong></a></li>
+<li><a href="#number-and-exaggeration-tþuwx-1">5. Number and
+exaggeration: <strong>tþuwx</strong></a></li>
+<li><a href="#topic-marker-to-1">6. Topic marker
+<strong>to</strong></a></li>
+<li><a href="#clause-initial-to-1">7. Clause-initial
+<strong>to</strong></a></li>
+<li><a href="#subject-marker-yayo-2">8. Subject marker
+<strong>yayo</strong></a></li>
+<li><a href="#commands-and-cohortatives-1">9. Commands and
+cohortatives</a></li>
+<li><a href="#the-heavens-1">10. “The heavens”</a></li>
+<li><a href="#temporal-framing-with-x-xo-tþit-1">11. Temporal framing
+with <strong>[X] xo tþit</strong></a></li>
+<li><a href="#glam-nursing-settling-inhabiting-1">12.
+<strong>glam</strong>: nursing, settling, inhabiting</a></li>
+<li><a href="#consequence-and-purpose-clauses-1">13. Consequence and
+purpose clauses</a></li>
+<li><a href="#directional-metaphor-bwebo-1">14. Directional metaphor:
+<strong>bwebo</strong></a></li>
+<li><a href="#object-marking-i-and-ro-1">15. Object marking:
+<strong>i</strong> and <strong>ro</strong></a></li>
+<li><a href="#tito-1">16. <strong>tito</strong></a></li>
+<li><a href="#mass-classifier-ʃi-1">17. Mass classifier
+<strong>ʃi</strong></a></li>
+<li><a href="#guwu-lix-and-wu-tþit-1">18. <strong>guwu lix</strong> and
+<strong>wu tþit</strong></a></li>
+</ul></li>
+<li><a href="#feedback-im-especially-interested-in">Feedback I’m
+especially interested in</a>
+<ul>
+<li><a href="#babalon">Babalon</a></li>
+<li><a href="#sorted">sorted</a></li>
+<li><a href="#raw">raw</a></li>
+<li><a href="#field-notes-1">Field Notes 1</a></li>
+<li><a href="#field-notes-2">Field Notes 2</a></li>
+<li><a href="#field-notes-3">Field Notes 3</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="pwt-print-packet">PWT Print Packet</h1>
+<p>Proto-Windic / Proto-Wind-Tribe working notes</p>
+<p>Generated: 2026-08-10</p>
+<h2 id="source-inventory">Source Inventory</h2>
+<ul>
+<li><code>PWT/Phonology.md</code></li>
+<li><code>PWT/Grammar.md</code></li>
+<li><code>PWT/Counting.md</code></li>
+<li><code>PWT/Babalon.md</code></li>
+<li><code>PWT/Babalon.txt</code></li>
+<li><code>PWT/sorted.txt</code></li>
+<li><code>PWT/raw.txt</code></li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/Phonology.md</code>
+</p>
+<h1 id="proto-wind-tribe-pwt-phonology-and-phonotactics-summary">Proto-Wind-Tribe
+(PWT) Phonology and Phonotactics Summary</h1>
+<h2 id="general-character">General Character</h2>
+<p>PWT is intended to sound:</p>
+<ul>
+<li>Moderately large in consonant inventory.</li>
+<li>Rich in codas and short roots.</li>
+<li>Fairly rugged, with several unusual dorsal and dental sounds.</li>
+<li>Strongly head-final and isolating, but with enough phonological
+texture to support later daughter-language divergence.</li>
+</ul>
+<hr />
+<h1 id="phonemic-inventory">Phonemic Inventory</h1>
+<h2 id="vowels">Vowels</h2>
+<p>PWT has a simple five-vowel system:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Front</th>
+<th>Central</th>
+<th>Back</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>i</td>
+<td>a</td>
+<td>u</td>
+</tr>
+<tr class="even">
+<td>e</td>
+<td></td>
+<td>o</td>
+</tr>
+</tbody>
+</table>
+<p>No phonemic vowel length, tone, or phonation distinctions have yet
+been established.</p>
+<hr />
+<h2 id="consonants">Consonants</h2>
+<h3 id="stops">Stops</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Bilabial</th>
+<th>Alveolar</th>
+<th>Palato-postalveolar</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>p</td>
+<td>t</td>
+<td>c</td>
+<td>k</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>d</td>
+<td>j</td>
+<td>g</td>
+</tr>
+</tbody>
+</table>
+<h3 id="affricates">Affricates</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Alveolar</th>
+<th>Dental</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ts</td>
+<td>tþ</td>
+<td>kx</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>tþ</strong> is a dental affricate, approximately [t̪θ].</li>
+<li><strong>kx</strong> is a dorsal affricate or strongly fricated velar
+release, approximately [k͡x].</li>
+</ul>
+<h3 id="fricatives">Fricatives</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Dental</th>
+<th>Alveolar</th>
+<th>Postalveolar</th>
+<th>Velar</th>
+<th>Glottal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>þ</td>
+<td>s</td>
+<td>ʃ</td>
+<td>x</td>
+<td>h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nasals">Nasals</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Bilabial</th>
+<th>Alveolar</th>
+<th>Palatal</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>m</td>
+<td>n</td>
+<td>ñ</td>
+<td>ŋ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="liquids-and-glides">Liquids and Glides</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Liquids</th>
+<th>Glides</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>l, r</td>
+<td>y, w</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glottal-stop">Glottal Stop</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Consonant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>’</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="the-palato-postalveolar-column">The Palato-Postalveolar
+Column</h1>
+<p>PWT treats one articulatory region as a single phonological category
+whose realization depends on manner of articulation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Manner</th>
+<th>Realization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stop</td>
+<td>c, j</td>
+</tr>
+<tr class="even">
+<td>Fricative</td>
+<td>ʃ</td>
+</tr>
+<tr class="odd">
+<td>Nasal</td>
+<td>ñ</td>
+</tr>
+<tr class="even">
+<td>Glide</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+<p>This is a single place feature in the language’s organization rather
+than a set of unrelated consonants.</p>
+<p>This column is expected to evolve differently in daughter
+languages.</p>
+<hr />
+<h1 id="phonotactics">Phonotactics</h1>
+<h2 id="preferred-root-shapes">Preferred Root Shapes</h2>
+<p>Common root patterns:</p>
+<ul>
+<li>CV</li>
+<li>CVC</li>
+<li>CVCV</li>
+<li>CCVC</li>
+<li>CVCVC</li>
+<li>CVCCV</li>
+</ul>
+<p>The language favors relatively short roots.</p>
+<hr />
+<h2 id="syllable-structure">Syllable Structure</h2>
+<p>General template:</p>
+<pre class="text"><code>(C)(C)V(C)(C)</code></pre>
+<p>Not every cluster is permitted, and heavy syllables are less common
+than light ones.</p>
+<hr />
+<h1 id="onsets">Onsets</h1>
+<h2 id="simple-onsets">Simple Onsets</h2>
+<p>All consonants may occur as simple onsets.</p>
+<hr />
+<h2 id="common-clusters">Common Clusters</h2>
+<p>Likely permitted clusters include:</p>
+<h3 id="stop-liquid">Stop + Liquid</h3>
+<ul>
+<li>pl</li>
+<li>pr</li>
+<li>bl</li>
+<li>br</li>
+<li>kl</li>
+<li>kr</li>
+<li>gl</li>
+<li>gr</li>
+<li>tl</li>
+<li>tr</li>
+<li>dl</li>
+<li>dr</li>
+</ul>
+<h3 id="stop-glide">Stop + Glide</h3>
+<ul>
+<li>pw</li>
+<li>py</li>
+<li>bw</li>
+<li>by</li>
+<li>kw</li>
+<li>ky</li>
+<li>gw</li>
+<li>gy</li>
+<li>tw</li>
+<li>ty</li>
+<li>dw</li>
+<li>dy</li>
+</ul>
+<h3 id="fricative-clusters">Fricative Clusters</h3>
+<ul>
+<li>sw</li>
+<li>sy</li>
+<li>sl</li>
+<li>xw</li>
+<li>xy</li>
+</ul>
+<hr />
+<h2 id="marked-or-restricted-clusters">Marked or Restricted
+Clusters</h2>
+<p>These exist only sparingly, if at all:</p>
+<ul>
+<li>sr</li>
+<li>xl</li>
+<li>jl</li>
+</ul>
+<p>Such clusters may later become characteristic of particular daughter
+branches.</p>
+<hr />
+<h1 id="codas">Codas</h1>
+<p>PWT allows codas freely.</p>
+<h2 id="common-single-consonant-codas">Common Single-Consonant
+Codas</h2>
+<ul>
+<li>p</li>
+<li>t</li>
+<li>k</li>
+<li>’</li>
+<li>m</li>
+<li>n</li>
+<li>ŋ</li>
+<li>s</li>
+<li>x</li>
+<li>l</li>
+<li>r</li>
+</ul>
+<hr />
+<h2 id="common-final-clusters">Common Final Clusters</h2>
+<h3 id="liquid-stop">Liquid + Stop</h3>
+<ul>
+<li>lp</li>
+<li>lt</li>
+<li>lk</li>
+<li>rp</li>
+<li>rt</li>
+<li>rk</li>
+</ul>
+<h3 id="nasal-stop">Nasal + Stop</h3>
+<ul>
+<li>mp</li>
+<li>nt</li>
+<li>ŋk</li>
+</ul>
+<h3 id="glide-stop">Glide + Stop</h3>
+<ul>
+<li>wp</li>
+<li>yt</li>
+</ul>
+<h3 id="fricative-clusters-1">Fricative Clusters</h3>
+<p>Possibly:</p>
+<ul>
+<li>lx</li>
+<li>rx</li>
+</ul>
+<hr />
+<h1 id="distributional-tendencies">Distributional Tendencies</h1>
+<ul>
+<li><p>CVC roots are extremely common.</p></li>
+<li><p>Longer clusters are comparatively rare and therefore perceptually
+salient.</p></li>
+<li><p>Very short roots (CV and some CVC roots) are likely to
+become:</p>
+<ul>
+<li>pronouns,</li>
+<li>particles,</li>
+<li>postpositions,</li>
+<li>grammatical markers.</li>
+</ul></li>
+</ul>
+<hr />
+<h1 id="phonological-character">Phonological Character</h1>
+<p>PWT should sound:</p>
+<ul>
+<li>compact,</li>
+<li>consonant-rich,</li>
+<li>somewhat rough and earthy,</li>
+<li>suited to riverbanks, storms, reefs, and trade ports,</li>
+<li>not especially “windy” in its proto stage.</li>
+</ul>
+<p>The later association of Wind Tribe cultures with mountains,
+highlands, and wind symbolism is a historical development rather than an
+original feature of PWT.</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/Grammar.md</code>
+</p>
+<h1 id="proto-windic-grammar">Proto-Windic Grammar</h1>
+<p>This is meant as an refrence grammer for PWT/Proto-Windic, for now
+examples are mostly from the Bable translation.</p>
+<h2 id="typological-sketch">Typological sketch</h2>
+<p>Proto-Windic is broadly:</p>
+<ul>
+<li>SOV</li>
+<li>postpositional</li>
+<li>topic-first / frame-first</li>
+<li>pro-drop</li>
+<li>strongly discourse-particle driven</li>
+<li>noun-class / classifier heavy</li>
+<li>comfortable with ellipsis and zero verbs, especially in relative or
+repeated-clause contexts (To the point that it lacks a coupla.)</li>
+</ul>
+<h2 id="basic-clause-structure">2. Basic Clause Structure</h2>
+<p>PWT is broadly SOV, but this description is somewhat misleading. The
+language is strongly topic-first, allows pro-drop, and frequently
+permits verbless clauses. A more useful description is that a clause
+consists of an optional topic/frame field, followed by a stack of marked
+argument and adjunct phrases, followed by a clause-final verb complex
+when one is present.</p>
+<p>Schematically:</p>
+<pre class="text"><code>(to-PHRASE)*  (yayo/i/ro/etc. PHRASES)*  VERB–ADVERBIALS–LINKERS</code></pre>
+<p>This is the normal clause skeleton, not a completely rigid
+slot-filling grammar. For example, adpositional phrases can be fronted,
+as in many languages, but this produces a marked construction. Compare
+English “At the store, I will buy a hot dog”: this is grammatical, but
+less neutral than “I will buy a hot dog at the store.”</p>
+<h2 id="argument-and-postpositional-marking">Argument and Postpositional
+Marking</h2>
+<h3 id="topicframe-marker-to">Topic/Frame marker “to”</h3>
+<p>The topic/frame spot is marked with <strong>to</strong> (or in
+certian constructions <strong>yayo</strong>), and is strongly pefered to
+be clause first, but the slot can have <em>multiple</em> “to” (TOPIC)
+phrases in a single clause.</p>
+<p>Multiple to phrases normally imply that all of them belong to the
+same topic/frame, not that the clause has multiple independent
+subjects.</p>
+<p>An empty <strong>to</strong> phrase, which can be analyzed as a bare
+discourse particle rather than as a postposition, is used to call
+attention to the speaker or utterance.</p>
+<h3 id="subject-marker-yayo">Subject marker <strong>yayo</strong></h3>
+<p><strong>yayo</strong> is used when a clause contains both a topic and
+a separate subject. It also appears in certain constructions, including
+commands and relative clauses. This is glossed as SUBJ but can be
+considered more of an non-topic subject / nominative-ish participant /
+promoted participant.</p>
+<p>In relative clauses, the default discourse organization is partly
+reversed: <strong>yayo</strong> becomes the unmarked participant marker,
+while <strong>to</strong> is used only if a distinct topic must be
+introduced. How ever the ordering stays <strong>to</strong> then
+<strong>yayo</strong>.</p>
+<h3 id="object-and-theme-markers-i-and-ro">Object and theme markers
+<strong>i</strong> and <strong>ro</strong></h3>
+<p>PWT has more than one object-like marker.</p>
+<p><strong>i</strong> is the ordinary object marker.</p>
+<p><strong>ro</strong>, glossed here as THEME, is used especially with
+verbs of holding, bringing, giving, or finding. It can also change the
+meaning of a verb.</p>
+<p>For example:</p>
+<p><strong>X i bwax</strong> “they see X”</p>
+<p>But:</p>
+<p><strong>X ro bwax</strong> “they find X”</p>
+<p>This use of <strong>ro</strong> developed from longer expressions
+meaning something like “they saw X and brought news of it.”</p>
+<p>In some daughter languages, <strong>ro</strong> becomes the default
+direct object marker, while <strong>i</strong> is lost or restricted to
+certain verb classes.</p>
+<h2 id="other-postpositional-marking">Other Postpositional Marking</h2>
+<h3 id="genitive-xo">Genitive xo</h3>
+<p><strong>xo</strong> is a fairly standard possesive marker, much like
+“of” in English, “de” in Spanish, or “no” in Japanese. Note that
+befiting PWT’s use of postpositions, the possesor precedes xo and the
+possessed noun follows it: “X xo Y” means “X’s Y” or “Y of X”. Strings
+of xo are ambiguous because each xo phrase may either modify the
+following noun directly or be nested inside the next possessive phrase.
+That is “X xo Y xo Z” can either mean “Z of X’s Y” or “X, aka Y,’s
+Z”.</p>
+<h3 id="instramental-e">Instramental e</h3>
+<p><strong>e</strong> is an instrumental/source marker. Like one of the
+meanings of english “with”, however, instead of also having the meaning
+of “against”, it can be used in phrases where english would use “out
+of”, “of”, or “from”, such as saying they “made bircks out of clay”, or
+“they carved the whistle the whistle from wood”.</p>
+<h3 id="locative-relational-postpositions">Locative / relational
+postpositions</h3>
+<h3 id="locative-and-relational-postpositions">Locative and relational
+postpositions</h3>
+<p>PWT uses postpositions for locative and relational meanings such as
+“in,” “on,” “near,” “under,” “toward,” “from,” and similar spatial or
+abstract relations. These phrases normally appear in the marked phrase
+stack before the final verb complex, though they may be fronted when
+they are topical, contrastive, or otherwise discourse-prominent.</p>
+<p>Locative and relational postpositions are not core argument markers
+in the same sense as <strong>to</strong>, <strong>yayo</strong>,
+<strong>i</strong>, and <strong>ro</strong>, but they participate in the
+same general phrase-stack structure. They can mark physical location,
+motion, source, goal, accompaniment, or more abstract relations
+depending on the postposition and the verb.</p>
+<h2 id="specific-postpositional-phrases">Specific Postpositional
+Phrases</h2>
+<h3 id="repeated-postpositional-phrases">Repeated postpositional
+phrases</h3>
+<p>PWT allows adjacent phrases headed by the same postposition. These
+repeated postpositional phrases are often interpreted as parallel,
+paired, reciprocal, distributive, or appositional constructions.</p>
+<p>The fixed phrase:</p>
+<p><strong>lipa bo lipa bo</strong> one.PERSON TO one.PERSON TO</p>
+<p>means:</p>
+<blockquote>
+<p>“one to another” / “to each other”</p>
+</blockquote>
+<p>This belongs to a broader pattern in which repeated postpositional
+phrases are interpreted according to context.</p>
+<h4 id="reciprocal-use">Reciprocal use</h4>
+<p><strong>lipa bo lipa bo</strong> one.PERSON TO one.PERSON TO</p>
+<blockquote>
+<p>“one to another” / “to each other”</p>
+</blockquote>
+<h4 id="distributive-or-chained-use">Distributive or chained use</h4>
+<p><strong>lipa ro lipa ro</strong> one.PERSON THEME one.PERSON
+THEME</p>
+<blockquote>
+<p>“one by one”</p>
+</blockquote>
+<h4 id="appositional-use">Appositional use</h4>
+<p><strong>shinar ro woŋ ro</strong> Shinar THEME lowland THEME</p>
+<blockquote>
+<p>“Shinar, a lowland”</p>
+</blockquote>
+<p>In appositional uses, the repeated phrases are more parallel than
+their usual English translations suggest. Rather than one phrase simply
+modifying the other, both phrases present compatible descriptions of the
+same referent.</p>
+<hr />
+<h3 id="reciprocal-possession-lipa-lipa-yayo-xo">Reciprocal possession:
+<strong>lipa-lipa yayo-xo</strong></h3>
+<p>When a reciprocal relationship would require two different
+postpositions, PWT can use a contracted reciprocal construction:</p>
+<p><strong>lipa-lipa yayo-xo</strong></p>
+<p>This is roughly equivalent to an expanded form like:</p>
+<p><strong>lipa yayo lipa yayo lipa xo lipa xo</strong></p>
+<p>The construction means that each person is paired with another
+person, rather than with themselves.</p>
+<p>By contrast, a simpler phrase such as:</p>
+<p><strong>lipa yayo lipa xo</strong></p>
+<p>would normally be interpreted reflexively, with the subject and
+possessor referring to the same person.</p>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## The conjunction <strong>ti</strong></td>
+</tr>
+<tr class="even">
+<td><strong>ti</strong> is a conjunction clitic used to coordinate both
+clauses and noun phrases. It has three surface forms:</td>
+</tr>
+<tr class="odd">
+<td>* <strong>ti</strong> — the full form, used in careful speech and
+after most consonants * <strong>t</strong> — a reduced form used after
+vowels, especially on pronouns * <strong>i</strong> — a reduced form
+used after certain consonants: /p t b d tþ ts/</td>
+</tr>
+<tr class="even">
+<td>All three forms can coordinate noun phrases or clauses.</td>
+</tr>
+<tr class="odd">
+<td>However, <strong>ti</strong> is not used to coordinate
+postpositional phrases directly. Instead, PWT uses one of two
+strategies:</td>
+</tr>
+<tr class="even">
+<td>1. repeated postpositional phrases 2. coordination inside the
+phrase, before the postposition</td>
+</tr>
+<tr class="odd">
+<td>When the first conjunct is a full clause, the second conjunct may
+replace its verb with a non-reduced <strong>ti</strong>. In this use,
+<strong>ti</strong> is interpreted as repeating or carrying forward the
+verb from the first clause.</td>
+</tr>
+<tr class="even">
+<td>The reduced forms are generally interchangeable with the full form,
+except in fused or lexicalized forms such as <strong>tito</strong>, the
+foregrounding discourse marker.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="commands-and-cohortatives">Commands and cohortatives</h2>
+<p>Commands are formed with:</p>
+<ol type="1">
+<li>the pronoun <strong>dlo</strong></li>
+<li>the subject marker <strong>yayo</strong>, marking the commanded
+agent</li>
+</ol>
+<p>A basic command therefore looks like:</p>
+<p><strong>dlo yayo xaþt</strong> 2ND.COMMAND SUBJ come</p>
+<blockquote>
+<p>“Come!”</p>
+</blockquote>
+<p>The phrase <strong>dlo t xya</strong>, literally “command-and
+people,” functions as an inclusive cohortative.</p>
+<p>For example:</p>
+<p><strong>dlo t xya yayo tlas i gits-i wu sirt</strong> 2ND.COMMAND
+CONJ COLL.PERSON SUBJ brick OBJ make-CONJ completely bake</p>
+<blockquote>
+<p>“Let us make bricks and bake them thoroughly.”</p>
+</blockquote>
+<p>This contrasts with a construction such as:</p>
+<p><strong>dlo yayo xya koko [verb]</strong></p>
+<p>which commands the addressee to do something with a separate
+third-party group, rather than including the speaker in the action.</p>
+<p>TODO: OTHER STUF</p>
+<p>the final verb + adverb phrase consists of an verb slot, adverbal
+markers (such as the Neg marker, ge) then consequence and purpose
+markers, then ti. Note that “tito” is rythmicly/intonationally grouped
+with the second conjuct, where as “ti” by it self is grouped with the
+first.</p>
+<p>Theres two different (or Three) situations where a clause can have
+zero verb. Identifying two noun phrases is done by just adding the
+ordinary object postposition to both. And similuarly asigninging an
+adjective to a noun (Like “The house is red”) just consists of the noun
+phrase, marked by any of to/yayo/i somewhat depending on context, but
+also as free variation, and then the bare adjective word.</p>
+<p>The other distinct case is that an clause that is introduced with
+clause level ti (or a reduced form) can be ended with ti, and this is
+interpreted as just repeating the first conjunct’s verb.</p>
+<h2 id="most-common-postpositions">Most common postpositions:</h2>
+<ul>
+<li><p><strong>to</strong> — topic marker / discourse frame
+marker</p></li>
+<li><p><strong>yayo</strong> — subject marker, used when a topic and
+subject both occur, and in certain constructions such as commands and
+relative clauses</p></li>
+<li><p><strong>i</strong> — ordinary object marker</p></li>
+<li><p><strong>ro</strong> — theme/object marker used especially with
+holding, bringing, giving, finding, or “seeing-and-reporting”
+semantics</p></li>
+<li><p><strong>ti</strong> — conjunction / clause-linking
+clitic</p></li>
+<li><p><strong>ʃi</strong> — mass classifier/counter</p></li>
+<li><p><strong>xya</strong> — collective/person group</p></li>
+<li><p><strong>rol</strong> — long collective</p></li>
+<li><p><strong>rolip</strong> — one-long / single continuous
+thing</p></li>
+</ul>
+<hr />
+<h2 id="number-and-exaggeration-tþuwx">5. Number and exaggeration:
+<strong>tþuwx</strong></h2>
+<p>PWT uses a base-12 system.</p>
+<p><strong>tþuwx</strong> literally means <strong>144</strong>, but it
+also functions idiomatically as “a multitude” or “a large number.”</p>
+<p>That is why the translation sometimes shifts between literal and
+idiomatic readings:</p>
+<p><strong>tþuwx xya</strong> “144 people” → “hundreds / many people /
+the multitude”</p>
+<hr />
+<h2 id="topic-marker-to">6. Topic marker <strong>to</strong></h2>
+<p><strong>to</strong> marks the clause topic or discourse frame. A
+<strong>to</strong> phrase usually precedes the main predication and
+typically comes before explicit subjects or other arguments.</p>
+<p>It may mark:</p>
+<ul>
+<li><p>the main discourse topic <strong>xya to</strong> — “as for the
+people…”</p></li>
+<li><p>a temporal frame <strong>[X] xo tþit to</strong> — “when / at the
+time of X…”</p></li>
+<li><p>a conditional or contrastive frame <strong>ge kyek to</strong> —
+“without the tower / otherwise…”</p></li>
+</ul>
+<hr />
+<h2 id="clause-initial-to">7. Clause-initial <strong>to</strong></h2>
+<p>A separate clause-initial <strong>to</strong> may appear at discourse
+openings or before especially long or complex topical frames.</p>
+<p>This use is not exactly the ordinary topic marker. It functions more
+like an attention-directing particle, foregrounding the following topic
+or frame as a single discourse unit.</p>
+<p>In constructions that require <strong>yayo</strong>, the phrase
+following this attention particle can end in <strong>yayo</strong>
+instead of <strong>to</strong>.</p>
+<p>In the opening line of the Babel passage, both uses of
+<strong>to</strong> occur together:</p>
+<p><strong>to ’ami rol bo tþuwx xya xo ŋewt to lip rolip</strong></p>
+<p>The first <strong>to</strong> is the clause-initial attention
+particle. The later <strong>to</strong> marks the actual topical
+phrase.</p>
+<hr />
+<h2 id="subject-marker-yayo-1">8. Subject marker
+<strong>yayo</strong></h2>
+<p><strong>yayo</strong> is used when a clause contains both a topic and
+a separate subject. It also appears in certain constructions, including
+commands and relative clauses.</p>
+<p>In relative clauses, the default discourse organization is partly
+reversed: <strong>yayo</strong> becomes the unmarked participant marker,
+while <strong>to</strong> is used only if a distinct topic must be
+introduced.</p>
+<hr />
+<h2 id="the-heavens">10. “The heavens”</h2>
+<p>The phrase:</p>
+<p><strong>tþeŋ ti ’erk rol</strong></p>
+<p>literally means something like:</p>
+<p>“the black-and-white long things”</p>
+<p>but idiomatically means <strong>the heavens</strong>.</p>
+<hr />
+<h2 id="temporal-framing-with-x-xo-tþit">11. Temporal framing with
+<strong>[X] xo tþit</strong></h2>
+<p>PWT often uses:</p>
+<p><strong>[X] xo tþit</strong></p>
+<p>literally “the time of X,” as an adverbial temporal construction.</p>
+<p>Because PWT strongly disfavors turning verbs into nouns, this is
+often used where English would say something like “when X was
+happening.”</p>
+<p>For example:</p>
+<p><strong>þams xo bwe he kxol xo tþit to</strong> “at the time of the
+inland walking of the families”</p>
+<p>Loose English:</p>
+<p>“As people moved eastward…”</p>
+<p>This construction preserves an ambiguity: it is not fully clear
+whether “inland” describes the direction of walking, or whether the
+families were already inland and walking somewhere specific.</p>
+<hr />
+<h2 id="glam-nursing-settling-inhabiting">12. <strong>glam</strong>:
+nursing, settling, inhabiting</h2>
+<p><strong>glam</strong> originally means:</p>
+<p>“to nurse / feed milk to, especially babies”</p>
+<p>By extension, it also means:</p>
+<p>“to settle in, inhabit, cultivate, or make use of a place as a
+home.”</p>
+<p>This semantic extension comes from catgirl life history in the
+setting. Catgirls travel with infants or while pregnant much less often
+than humans do, because milk rather than pregnancy is the bottleneck.
+The birth mother also cannot normally be the nurse mother, because
+ovaries and breasts are active at different life stages.</p>
+<p>So “nursing” becomes a natural metaphor for making a place usable as
+a home.</p>
+<hr />
+<h2 id="consequence-and-purpose-clauses">13. Consequence and purpose
+clauses</h2>
+<p>If/then or so-that relations are expressed with either:</p>
+<p><strong>[noun phrase] TOP [verb phrase] MARKER</strong></p>
+<p>or:</p>
+<p><strong>[clause]. [clause] MARKER</strong></p>
+<p>There are three major markers:</p>
+<ul>
+<li><strong>’aha</strong> — telic marker; the consequence is intended or
+chosen</li>
+<li><strong>swuhi</strong> — hypothetical marker; “if this is true, then
+that is true”</li>
+<li><strong>pasla</strong> — consequential marker; the first clause is
+true, therefore the second follows</li>
+</ul>
+<p>Example:</p>
+<p><strong>gu-ŋoja to tþuwx xya yayo tlu-ya xo ’ins i nox ’aha</strong>
+“Why? So that many people will say our name.”</p>
+<p>Here <strong>’aha</strong> marks intended consequence.</p>
+<hr />
+<h2 id="directional-metaphor-bwebo">14. Directional metaphor:
+<strong>bwebo</strong></h2>
+<p><strong>bwebo</strong> literally means:</p>
+<p>“upstream of / on top of / inland from”</p>
+<p>It is also used temporally to mean <strong>before</strong>.</p>
+<p>There are two possible metaphors behind this:</p>
+<ol type="1">
+<li>upstream as the future or source from which events come toward
+you</li>
+<li>layers deposited one after another, where the top layer is the most
+recent</li>
+</ol>
+<p>The ambiguity is probably still present in PWT.</p>
+<p>The related form <strong>bwe</strong> appears in the physical
+directional sense in the Shinar line.</p>
+<hr />
+<h2 id="object-marking-i-and-ro">15. Object marking: <strong>i</strong>
+and <strong>ro</strong></h2>
+<p>PWT has more than one object-like marker.</p>
+<p><strong>i</strong> is the ordinary object marker.</p>
+<p><strong>ro</strong>, glossed here as THEME, is used especially with
+verbs of holding, bringing, giving, or finding. It can also change the
+meaning of a verb.</p>
+<p>For example:</p>
+<p><strong>X i bwax</strong> “they see X”</p>
+<p>But:</p>
+<p><strong>X ro bwax</strong> “they find X”</p>
+<p>This use of <strong>ro</strong> developed from longer expressions
+meaning something like “they saw X and brought news of it.”</p>
+<p>In some daughter languages, <strong>ro</strong> becomes the default
+direct object marker, while <strong>i</strong> is lost or restricted to
+certain verb classes.</p>
+<hr />
+<h2 id="tito">16. <strong>tito</strong></h2>
+<p><strong>tito</strong> is a discourse marker made from the attention
+particle <strong>to</strong> plus the conjunction
+<strong>ti</strong>.</p>
+<p>It is not quite the same as English “but” or “however.” It sits
+somewhere between:</p>
+<ul>
+<li>“but”</li>
+<li>“and then”</li>
+<li>“but also”</li>
+<li>“and importantly”</li>
+<li>“and therefore”</li>
+</ul>
+<p>The key point is not necessarily contrast. Instead,
+<strong>tito</strong> marks that the next clause is new, important, or
+narratively foregrounded.</p>
+<p>In the Babel passage, it often works well as English “but” because
+the narrative pivots from human action to divine response.</p>
+<hr />
+<h2 id="mass-classifier-ʃi">17. Mass classifier <strong>ʃi</strong></h2>
+<p><strong>ʃi</strong> is the mass classifier/counter.</p>
+<p>With normally countable nouns, it treats the referent as an uncounted
+substance, aggregate, or mass rather than as discrete units.</p>
+<p>For example:</p>
+<p><strong>ʃi-klik</strong></p>
+<p>literally means something like:</p>
+<p>“house/building as mass”</p>
+<p>In this passage, it means the built-up settlement, city mass, or mass
+of buildings.</p>
+<hr />
+<h2 id="guwu-lix-and-wu-tþit">18. <strong>guwu lix</strong> and
+<strong>wu tþit</strong></h2>
+<p><strong>guwu lix</strong> literally means something like:</p>
+<p>“unfinished / ongoing thing”</p>
+<p>But with the round/singular counter, it is lexicalized as:</p>
+<p>“starting point” or “commencement.”</p>
+<p>It contrasts with:</p>
+<p><strong>wu tþit</strong></p>
+<p>literally:</p>
+<p>“finished time”</p>
+<p>meaning:</p>
+<p>“ending-time / completion-time.”</p>
+<p>This lets the Babel passage phrase “they have begun to do this” as
+something closer to:</p>
+<p>“behold the starting point of the tower built by the people using one
+language before now.”</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/Counting.md</code>
+</p>
+<h2 id="bare-numerals">Bare numerals</h2>
+<pre class="text"><code>1   lip
+2   makrul
+3   hu
+4   sat
+5   salp
+6   sakrul
+7   satxu
+8   makrat
+9   makralp
+10  makramak
+11  makru
+12  hut / rolip hut
+
+13  hut lip
+etc.
+
+24  romak hut
+25  romak hut lip
+etc.
+
+36  rou hut
+37  rou hut lip
+etc.
+
+48  rot hut
+49  rot hut lip
+etc.
+
+60  rolp hut
+61  rolp hut lip
+etc.
+
+72  sakrul-rol hut
+73  sakrul-rol hut lip
+etc.
+
+96  makrat-rol hut
+97  makrat-rol hut lip
+etc.
+
+132 makru-rol hut
+133 makru-rol hut lip
+etc.
+
+144 tþuwx
+145 tþuwx lip
+etc.</code></pre>
+<p>Sets of twelve use the <strong>LONG</strong> class counter. This is
+why both <strong>rolip hut</strong> “one dozen” and <strong>makrat-rol
+hut</strong> “eight dozen” use LONG-class forms.</p>
+<p>Conventionally, the collective form is used for dozen-counting, even
+though many other LONG-class objects would use the paucal for groups up
+to eleven.</p>
+<p>Bare numerals are rare. They are mostly used for emphasis, or when
+talking about numerals themselves. In ordinary counting, or when talking
+about sets of objects, PWT uses counters. These counters are also used
+pronominally.</p>
+<p>Technically, what I gloss as <strong>COLL</strong> is closer to a
+plural. However, since this behaves differently from plural marking in
+languages like English, I use <strong>COLL</strong> for “collective”
+instead.</p>
+<hr />
+<h2 id="long-class-counters">LONG-class counters</h2>
+<pre class="text"><code>1   rolip
+2   romak
+3   rou
+4   rot
+5   rolp
+
+Paucal: rouku
+COLL:   rol</code></pre>
+<p>For numbers above five, the bare numeral modifies either the paucal
+or collective counter.</p>
+<hr />
+<h2 id="people-class-counters">PEOPLE-class counters</h2>
+<pre class="text"><code>1   lipa
+2   marka
+3   huta
+4   sata
+5   salip
+6   samark
+7   saxut
+
+Paucal: xalipa
+COLL:   xya</code></pre>
+<hr />
+<h2 id="flat-class-counters">FLAT-class counters</h2>
+<pre class="text"><code>1   lep
+2   mek
+3   heʃ
+4   ʃeʃ
+
+Paucal: helt
+COLL:   he</code></pre>
+<hr />
+<h2 id="round-class-counters">ROUND-class counters</h2>
+<pre class="text"><code>1   lix
+2   mix
+3   hiʃ
+4   ʃeʃ
+
+Paucal: helt
+COLL:   he</code></pre>
+<hr />
+<h2 id="wall-class-counters">WALL-class counters</h2>
+<pre class="text"><code>1   bapig
+2   bamak
+3   buta
+4   bot
+5   bolt
+
+Paucal: boku
+COLL:   bol</code></pre>
+<hr />
+<p>The marker <strong>ʃi</strong> turns count nouns into mass nouns.</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/Babalon.md</code>
+</p>
+<h1 id="proto-windic-tower-of-babel-translation-with-gloss-and-grammar-notes">Proto-Windic
+Tower of Babel Translation, with Gloss and Grammar Notes</h1>
+<p>I’ve been working on Proto-Windic / PWT, a head-final,
+topic-prominent language family from my setting, and I wanted to share a
+Babel passage translation as a stress test for the grammar.</p>
+<p>The gloss is mostly in place, but I’m especially interested in
+feedback on whether the discourse particles, repeated adpositional
+phrases, and clause-linking strategies are readable from the
+examples.</p>
+<h2 id="phonology">Phonology</h2>
+<h1 id="proto-wind-tribe-pwt-phonology-and-phonotactics-summary-1">Proto-Wind-Tribe
+(PWT) Phonology and Phonotactics Summary</h1>
+<h2 id="general-character-1">General Character</h2>
+<p>PWT is intended to sound:</p>
+<ul>
+<li>Moderately large in consonant inventory.</li>
+<li>Rich in codas and short roots.</li>
+<li>Fairly rugged, with several unusual dorsal and dental sounds.</li>
+<li>Strongly head-final and isolating, but with enough phonological
+texture to support later daughter-language divergence.</li>
+</ul>
+<hr />
+<h1 id="phonemic-inventory-1">Phonemic Inventory</h1>
+<h2 id="vowels-1">Vowels</h2>
+<p>PWT has a simple five-vowel system:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Front</th>
+<th>Central</th>
+<th>Back</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>i</td>
+<td>a</td>
+<td>u</td>
+</tr>
+<tr class="even">
+<td>e</td>
+<td></td>
+<td>o</td>
+</tr>
+</tbody>
+</table>
+<p>No phonemic vowel length, tone, or phonation distinctions have yet
+been established.</p>
+<hr />
+<h2 id="consonants-1">Consonants</h2>
+<h3 id="stops-1">Stops</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Bilabial</th>
+<th>Alveolar</th>
+<th>Palato-postalveolar</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>p</td>
+<td>t</td>
+<td>c</td>
+<td>k</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>d</td>
+<td>j</td>
+<td>g</td>
+</tr>
+</tbody>
+</table>
+<h3 id="affricates-1">Affricates</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Alveolar</th>
+<th>Dental</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ts</td>
+<td>tþ</td>
+<td>kx</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>tþ</strong> is a dental affricate, approximately [t̪θ].</li>
+<li><strong>kx</strong> is a dorsal affricate or strongly fricated velar
+release, approximately [k͡x].</li>
+</ul>
+<h3 id="fricatives-1">Fricatives</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Dental</th>
+<th>Alveolar</th>
+<th>Postalveolar</th>
+<th>Velar</th>
+<th>Glottal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>þ</td>
+<td>s</td>
+<td>ʃ</td>
+<td>x</td>
+<td>h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nasals-1">Nasals</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Bilabial</th>
+<th>Alveolar</th>
+<th>Palatal</th>
+<th>Velar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>m</td>
+<td>n</td>
+<td>ñ</td>
+<td>ŋ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="liquids-and-glides-1">Liquids and Glides</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Liquids</th>
+<th>Glides</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>l, r</td>
+<td>y, w</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glottal-stop-1">Glottal Stop</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Consonant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>’</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="the-palato-postalveolar-column-1">The Palato-Postalveolar
+Column</h1>
+<p>PWT treats one articulatory region as a single phonological category
+whose realization depends on manner of articulation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Manner</th>
+<th>Realization</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stop</td>
+<td>c, j</td>
+</tr>
+<tr class="even">
+<td>Fricative</td>
+<td>ʃ</td>
+</tr>
+<tr class="odd">
+<td>Nasal</td>
+<td>ñ</td>
+</tr>
+<tr class="even">
+<td>Glide</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+<p>This is a single place feature in the language’s organization rather
+than a set of unrelated consonants.</p>
+<p>This column is expected to evolve differently in daughter
+languages.</p>
+<h2 id="typological-sketch-1">Typological sketch</h2>
+<p>Proto-Windic is broadly:</p>
+<ul>
+<li>SOV</li>
+<li>postpositional</li>
+<li>topic-first / frame-first</li>
+<li>pro-drop</li>
+<li>strongly discourse-particle driven</li>
+<li>noun-class / classifier heavy</li>
+<li>comfortable with ellipsis and zero verbs, especially in relative or
+repeated-clause contexts</li>
+</ul>
+<p>Some key markers that show up repeatedly in the passage:</p>
+<ul>
+<li><strong>to</strong> — topic marker / discourse frame marker</li>
+<li><strong>yayo</strong> — subject marker, used when a topic and
+subject both occur, and in certain constructions such as commands and
+relative clauses</li>
+<li><strong>i</strong> — ordinary object marker</li>
+<li><strong>ro</strong> — theme/object marker used especially with
+holding, bringing, giving, finding, or “seeing-and-reporting”
+semantics</li>
+<li><strong>ti</strong> — conjunction / clause-linking clitic</li>
+<li><strong>ʃi</strong> — mass classifier/counter</li>
+<li><strong>xya</strong> — collective/person group</li>
+<li><strong>rol</strong> — long collective</li>
+<li><strong>rolip</strong> — one-long / single continuous thing</li>
+</ul>
+<hr />
+<h1 id="text">Text</h1>
+<h2 id="genesis-111">Genesis 11:1</h2>
+<p><strong>to ’ami rol bo tþuwx xya xo ŋewt to lip rolip</strong> ATTN
+shoreland COLL.LONG ON 144 people GEN language TOP one one.LONG</p>
+<p><strong>Narrow translation:</strong> Listen! On all the lands, the
+thousands of peoples’ language was one single tongue.</p>
+<p><strong>Loose translation:</strong> Now, in all the world there was
+one language, one common tongue.</p>
+<hr />
+<h2 id="genesis-112">Genesis 11:2</h2>
+<p><strong>þams xo bwe he kxol xo tþit to shinar ro woŋ ro bwax ti lep
+bo glam</strong> family GEN inland COLL.FLAT foot GEN time TOP Shinar
+THEME lowland THEME see CONJ SG.FLAT ON nurse</p>
+<p><strong>Narrow translation:</strong> At the time of the walking
+inland of the families, they found Shinar, a lowland, and settled on
+it.</p>
+<p><strong>Loose translation:</strong> As people moved eastward, they
+found a plain in Shinar and settled there.</p>
+<hr />
+<h2 id="genesis-113">Genesis 11:3</h2>
+<p><strong>xya to lipa bo lipa bo</strong> COLL.PERSON TOP SG.PERSON TO
+SG.PERSON TO</p>
+<p><strong>Narrow translation:</strong> They said to each other,</p>
+<p><strong>Loose translation:</strong> They said to each other,</p>
+<p><strong>iyi “dlo yayo xaþt, dlo t xya yayo tlas i gits-i wu sirt” iyi
+nox.</strong> QUOTE 2ND.COMMAND SUBJ come 2ND.COMMAND CONJ COLL.PERSON
+SUBJ brick OBJ make-CONJ completely bake QUOTE say</p>
+<p><strong>Narrow translation:</strong> “Come, let’s make bricks and
+bake them thoroughly.”</p>
+<p><strong>Loose translation:</strong> “Come, let’s make bricks and bake
+them thoroughly.”</p>
+<p><strong>tlas e twex gu e gits i tþeŋ ʃi e ’erk ʃi gu e ti.</strong>
+brick INSTR stone NEG INSTR make CONJ black MASS INSTR white MASS NEG
+INSTR CONJ</p>
+<p><strong>Narrow translation:</strong> They built with brick, not with
+stone, and with tar, not lime.</p>
+<p><strong>Loose translation:</strong> They used brick instead of stone,
+and tar for mortar.</p>
+<hr />
+<h2 id="genesis-114">Genesis 11:4</h2>
+<p><strong>xya to iyi “dlo yayo xaþt,</strong> COLL.PERSON TOP QUOTE
+2ND.COMMAND SUBJ come</p>
+<p><strong>Narrow translation:</strong> Then they said, “Come,</p>
+<p><strong>dlo t xya yayo hut-tþuwx-ʃi-klik i gits-i tþeŋ-ti-’erk-rol ro
+yotus rolip kyek ti.</strong> 2ND.COMMAND CONJ COLL.PERSON SUBJ
+twelve-gross-MASS-house OBJ build-CONJ black-CONJ-white-COLL.LONG THEME
+touch one.LONG watchtower CONJ</p>
+<p><strong>Narrow translation:</strong> Let’s build a metropolis and, in
+it, a watchtower that reaches the heavens.</p>
+<p><strong>Loose translation:</strong> Let us build ourselves a city,
+with a tower that reaches to the heavens,</p>
+<p><strong>gu-ŋoja to tþuwx xya yayo tlu-ya xo ’ins i nox ’aha.</strong>
+NEG-reason TOP 144 COLL.PERSON SUBJ 1ST.COLL GEN name OBJ say TELIC</p>
+<p><strong>Narrow translation:</strong> Why? So hundreds will say our
+names.</p>
+<p><strong>Loose translation:</strong> So that we may make a name for
+ourselves;</p>
+<p><strong>ge kyek to tlu-ya ro lipa ro lipa ro woŋ he bo tsikxit ’aha
+ge.</strong> NEG watchtower TOP 1ST.COLL THEME one.person THEME
+one.person THEME lowlands COLL.FLAT ON blow TELIC NEG</p>
+<p><strong>Narrow translation:</strong> If we do not build the tower,
+then we shall be blown one by one onto all the lowlands.</p>
+<p><strong>Loose translation:</strong> Otherwise we will be scattered
+over the face of the whole earth.</p>
+<hr />
+<h2 id="genesis-115">Genesis 11:5</h2>
+<p><strong>tito YHWH to xya yayo guwu gits ʃi-klik ti kyek i xaþt-i
+bwax.</strong> CONJ-ATTN YHWH TOP COLL.PERSON SUBJ IMPERF make
+MASS-house CONJ tower OBJ come-CONJ see</p>
+<p><strong>Narrow translation:</strong> But YHWH came and saw the mass
+of buildings and the tower that the people were building.</p>
+<p><strong>Loose translation:</strong> But the LORD came down to see the
+city and the tower the people were building.</p>
+<hr />
+<h2 id="genesis-116">Genesis 11:6</h2>
+<p><strong>YHWH to iyi “xya to lip-ʃi-xya yayo rolip ŋewt e gits kyak xo
+guwu lix i þimp bwebo dlo-yayo-bwax</strong> YHWH TOP QUOTE COLL.person
+TOP one-MASS-COLL.PERSON SUBJ one.LONG language INSTR build watchtower
+GEN unfinished SINGULAR.round OBJ now upstream-of command-SUBJ-see</p>
+<p><strong>Narrow translation:</strong> YHWH said, “About them, behold
+the starting point of the tower built by the people using one language
+before now.</p>
+<p><strong>Loose translation:</strong> The LORD said, “If as one people
+speaking the same language they have begun to do this,</p>
+<p><strong>xya xo ’ahanox xo bapig xo gelip xo wu tþit to ge xexk
+pasla</strong> COLL.PERSON GEN plan GEN one.FLAT GEN not-one GEN
+finished time TOP NEG possess CONSEQ</p>
+<p><strong>Narrow translation:</strong> So, of their plans, not one will
+lack a finishing-time.</p>
+<p><strong>Loose translation:</strong> Then nothing they plan to do will
+be impossible for them.</p>
+<hr />
+<h2 id="genesis-117">Genesis 11:7</h2>
+<p><strong>dlo yayo xaþt, dlo t xya yayo ʃi-klik i ŋomp-i ŋewt e mut-mut
+ibwu gits.</strong> 2ND.COMMAND SUBJ come 2ND.COMMAND CONJ COLL.PERSON
+SUBJ MASS-house OBJ go-CONJ language INSTR mutterings INTO make</p>
+<p><strong>Narrow translation:</strong> Come, let us go to their
+buildings and turn their language into mutterings.</p>
+<p><strong>Loose translation:</strong> Come, let us go down and confuse
+their language.</p>
+<p><strong>gu-ŋoja to lipa-lipa yayo-xo ’ins i nox-ge</strong>
+NEG-reason TOP one.person-one.person SUBJ-GEN name OBJ say-NEG</p>
+<p><strong>Narrow translation:</strong> Why? So that they will not say
+each other’s names.</p>
+<p><strong>Loose translation:</strong> So they will not understand each
+other.</p>
+<hr />
+<h2 id="genesis-118">Genesis 11:8</h2>
+<p><strong>tito, YHWH yayo xya ro lipa ro lipa ro woŋ he bo tsikxit-i
+klik-i guwu ge gits</strong> CONJ-ATTN YHWH SUBJ COLL.person THEME
+one.person THEME one.person THEME lowlands COLL.FLAT ON blow-CONJ house
+OBJ NEG-FINISHED NEG make</p>
+<p><strong>Narrow translation:</strong> Then YHWH blew them one by one
+onto all the lowlands, and they did not continue to build the city.</p>
+<p><strong>Loose translation:</strong> So the LORD scattered them from
+there over all the earth, and they stopped building the city.</p>
+<hr />
+<h2 id="genesis-119">Genesis 11:9</h2>
+<p><strong>keŋt to ʃi xo ’ins i babel i ’aha-pasla, ʃi xo lep bo YHWH to
+’ami rol ŋewt e mut-mut ibwu gits.</strong> story TOP MASS GEN name OBJ
+Babel OBJ TELIC-CONSEQ MASS GEN one.FLAT ON YHWH TOP shoreland COLL.long
+language INSTR mutterings INTO make</p>
+<p><strong>Narrow translation:</strong> This story is why its name is
+Babel; there, YHWH made the language of all the lands into
+mutterings.</p>
+<p><strong>Loose translation:</strong> That is why it was called
+Babel—because there the LORD confused the language of the whole
+world.</p>
+<hr />
+<h1 id="grammar-and-usage-notes">Grammar and usage notes</h1>
+<h2 id="say-someones-name">1. “Say someone’s name”</h2>
+<p>In PWT, <strong>“say someone’s name”</strong> can mean to address
+them, successfully speak with them, or be understood by them.</p>
+<p>This lets the Babel passage render the Hebrew idea of “understanding
+another’s speech” as:</p>
+<p><strong>lipa-lipa yayo-xo ’ins i nox-ge</strong> “they will not say
+each other’s names”</p>
+<p>This is related to, but distinct from, the earlier use of
+<strong>’ins i nox</strong>, “say a name,” meaning something closer to
+“make a name known” or “become well known.”</p>
+<p>So the same phrase family can cover both:</p>
+<ul>
+<li>“people will say our name” → we will become famous</li>
+<li>“they will not say each other’s names” → they will not successfully
+address / understand one another</li>
+</ul>
+<hr />
+<h2 id="the-conjunction-ti">2. The conjunction <strong>ti</strong></h2>
+<p><strong>ti</strong> is a clause-level conjunction clitic. It has
+three surface forms:</p>
+<ul>
+<li><strong>ti</strong> — full form, used in careful speech and after
+most consonants</li>
+<li><strong>t</strong> — reduced form after vowels, especially on
+pronouns</li>
+<li><strong>i</strong> — reduced form after certain consonants: /p t b d
+tþ ts/</li>
+</ul>
+<p>All three forms can coordinate noun phrases or clauses. However,
+<strong>ti</strong> is not used to coordinate adpositional phrases.</p>
+<p>When the first conjunct is a full clause, the second conjunct may
+replace its verb with a non-reduced <strong>ti</strong>, interpreted as
+repeating or carrying forward the first clause’s verb.</p>
+<hr />
+<h2 id="repeated-adpositional-phrases">3. Repeated adpositional
+phrases</h2>
+<p>The phrase:</p>
+<p><strong>lipa bo lipa bo</strong> “one to one” → “to each other”</p>
+<p>is a fixed reciprocal phrase. It belongs to a broader pattern where
+adjacent phrases can be headed by the same postposition.</p>
+<p>These constructions can imply several relationships depending on
+context:</p>
+<h3 id="reciprocal">Reciprocal</h3>
+<p><strong>lipa bo lipa bo</strong> “one to another / to each other”</p>
+<h3 id="distributive-or-chained">Distributive or chained</h3>
+<p><strong>lipa ro lipa ro</strong> “one by one”</p>
+<h3 id="appositional">Appositional</h3>
+<p><strong>shinar ro woŋ ro</strong> “Shinar, a lowland”</p>
+<p>In appositional uses, the repeated phrases are more parallel than the
+English translation makes them look.</p>
+<hr />
+<h2 id="reciprocal-possession-and-lipa-lipa-yayo-xo">4. Reciprocal
+possession and <strong>lipa-lipa yayo-xo</strong></h2>
+<p>When a reciprocal relationship would require two different
+adpositions, the phrase can contract into a special reciprocal form:</p>
+<p><strong>lipa-lipa yayo-xo</strong></p>
+<p>This is roughly a contraction of something like:</p>
+<p><strong>lipa yayo lipa yayo lipa xo lipa xo</strong></p>
+<p>with the narrower meaning that each person is paired with another
+person.</p>
+<p>A simpler phrase like:</p>
+<p><strong>lipa yayo lipa xo</strong></p>
+<p>would imply the same person, since reflexive interpretation is the
+default.</p>
+<hr />
+<h2 id="number-and-exaggeration-tþuwx-1">5. Number and exaggeration:
+<strong>tþuwx</strong></h2>
+<p>PWT uses a base-12 system.</p>
+<p><strong>tþuwx</strong> literally means <strong>144</strong>, but it
+also functions idiomatically as “a multitude” or “a large number.”</p>
+<p>That is why the translation sometimes shifts between literal and
+idiomatic readings:</p>
+<p><strong>tþuwx xya</strong> “144 people” → “hundreds / many people /
+the multitude”</p>
+<hr />
+<h2 id="topic-marker-to-1">6. Topic marker <strong>to</strong></h2>
+<p><strong>to</strong> marks the clause topic or discourse frame. A
+<strong>to</strong> phrase usually precedes the main predication and
+typically comes before explicit subjects or other arguments.</p>
+<p>It may mark:</p>
+<ul>
+<li><p>the main discourse topic <strong>xya to</strong> — “as for the
+people…”</p></li>
+<li><p>a temporal frame <strong>[X] xo tþit to</strong> — “when / at the
+time of X…”</p></li>
+<li><p>a conditional or contrastive frame <strong>ge kyek to</strong> —
+“without the tower / otherwise…”</p></li>
+</ul>
+<hr />
+<h2 id="clause-initial-to-1">7. Clause-initial <strong>to</strong></h2>
+<p>A separate clause-initial <strong>to</strong> may appear at discourse
+openings or before especially long or complex topical frames.</p>
+<p>This use is not exactly the ordinary topic marker. It functions more
+like an attention-directing particle, foregrounding the following topic
+or frame as a single discourse unit.</p>
+<p>In constructions that require <strong>yayo</strong>, the phrase
+following this attention particle can end in <strong>yayo</strong>
+instead of <strong>to</strong>.</p>
+<p>In the opening line of the Babel passage, both uses of
+<strong>to</strong> occur together:</p>
+<p><strong>to ’ami rol bo tþuwx xya xo ŋewt to lip rolip</strong></p>
+<p>The first <strong>to</strong> is the clause-initial attention
+particle. The later <strong>to</strong> marks the actual topical
+phrase.</p>
+<hr />
+<h2 id="subject-marker-yayo-2">8. Subject marker
+<strong>yayo</strong></h2>
+<p><strong>yayo</strong> is used when a clause contains both a topic and
+a separate subject. It also appears in certain constructions, including
+commands and relative clauses.</p>
+<p>In relative clauses, the default discourse organization is partly
+reversed: <strong>yayo</strong> becomes the unmarked participant marker,
+while <strong>to</strong> is used only if a distinct topic must be
+introduced.</p>
+<hr />
+<h2 id="commands-and-cohortatives-1">9. Commands and cohortatives</h2>
+<p>Commands are formed with:</p>
+<ol type="1">
+<li>the pronoun <strong>dlo</strong></li>
+<li>the subject marker <strong>yayo</strong> marking the agent</li>
+</ol>
+<p>A basic command therefore looks like:</p>
+<p><strong>dlo yayo xaþt</strong> “come!”</p>
+<p>However, the phrase:</p>
+<p><strong>dlo t xya</strong></p>
+<p>literally “command-and people,” functions as an inclusive
+cohortative:</p>
+<p><strong>dlo t xya yayo tlas i gits-i wu sirt</strong> “let us make
+bricks and bake them thoroughly”</p>
+<p>This contrasts with something like:</p>
+<p><strong>dlo yayo xya koko [verb]</strong></p>
+<p>which would command the addressee to do something with a separate
+group, rather than including the speaker in the action.</p>
+<hr />
+<h2 id="the-heavens-1">10. “The heavens”</h2>
+<p>The phrase:</p>
+<p><strong>tþeŋ ti ’erk rol</strong></p>
+<p>literally means something like:</p>
+<p>“the black-and-white long things”</p>
+<p>but idiomatically means <strong>the heavens</strong>.</p>
+<hr />
+<h2 id="temporal-framing-with-x-xo-tþit-1">11. Temporal framing with
+<strong>[X] xo tþit</strong></h2>
+<p>PWT often uses:</p>
+<p><strong>[X] xo tþit</strong></p>
+<p>literally “the time of X,” as an adverbial temporal construction.</p>
+<p>Because PWT does not strongly favor turning verbs into nouns, this is
+often used where English would say something like “when X was
+happening.”</p>
+<p>For example:</p>
+<p><strong>þams xo bwe he kxol xo tþit to</strong> “at the time of the
+inland walking of the families”</p>
+<p>Loose English:</p>
+<p>“As people moved eastward…”</p>
+<p>This construction preserves an ambiguity: it is not fully clear
+whether “inland” describes the direction of walking, or whether the
+families were already inland and walking somewhere specific.</p>
+<hr />
+<h2 id="glam-nursing-settling-inhabiting-1">12. <strong>glam</strong>:
+nursing, settling, inhabiting</h2>
+<p><strong>glam</strong> originally means:</p>
+<p>“to nurse / feed milk to, especially babies”</p>
+<p>By extension, it also means:</p>
+<p>“to settle in, inhabit, cultivate, or make use of a place as a
+home.”</p>
+<p>This semantic extension comes from catgirl life history in the
+setting. Catgirls travel with infants or while pregnant much less often
+than humans do, because milk rather than pregnancy is the bottleneck.
+The birth mother also cannot normally be the nurse mother, because
+ovaries and breasts are active at different life stages.</p>
+<p>So “nursing” becomes a natural metaphor for making a place usable as
+a home.</p>
+<hr />
+<h2 id="consequence-and-purpose-clauses-1">13. Consequence and purpose
+clauses</h2>
+<p>If/then or so-that relations are expressed with either:</p>
+<p><strong>[noun phrase] TOP [verb phrase] MARKER</strong></p>
+<p>or:</p>
+<p><strong>[clause]. [clause] MARKER</strong></p>
+<p>There are three major markers:</p>
+<ul>
+<li><strong>’aha</strong> — telic marker; the consequence is intended or
+chosen</li>
+<li><strong>swuhi</strong> — hypothetical marker; “if this is true, then
+that is true”</li>
+<li><strong>pasla</strong> — consequential marker; the first clause is
+true, therefore the second follows</li>
+</ul>
+<p>Example:</p>
+<p><strong>gu-ŋoja to tþuwx xya yayo tlu-ya xo ’ins i nox ’aha</strong>
+“Why? So that many people will say our name.”</p>
+<p>Here <strong>’aha</strong> marks intended consequence.</p>
+<hr />
+<h2 id="directional-metaphor-bwebo-1">14. Directional metaphor:
+<strong>bwebo</strong></h2>
+<p><strong>bwebo</strong> literally means:</p>
+<p>“upstream of / on top of / inland from”</p>
+<p>It is also used temporally to mean <strong>before</strong>.</p>
+<p>There are two possible metaphors behind this:</p>
+<ol type="1">
+<li>upstream as the future or source from which events come toward
+you</li>
+<li>layers deposited one after another, where the top layer is the most
+recent</li>
+</ol>
+<p>The ambiguity is probably still present in PWT.</p>
+<p>The related form <strong>bwe</strong> appears in the physical
+directional sense in the Shinar line.</p>
+<hr />
+<h2 id="object-marking-i-and-ro-1">15. Object marking:
+<strong>i</strong> and <strong>ro</strong></h2>
+<p>PWT has more than one object-like marker.</p>
+<p><strong>i</strong> is the ordinary object marker.</p>
+<p><strong>ro</strong>, glossed here as THEME, is used especially with
+verbs of holding, bringing, giving, or finding. It can also change the
+meaning of a verb.</p>
+<p>For example:</p>
+<p><strong>X i bwax</strong> “they see X”</p>
+<p>But:</p>
+<p><strong>X ro bwax</strong> “they find X”</p>
+<p>This use of <strong>ro</strong> developed from longer expressions
+meaning something like “they saw X and brought news of it.”</p>
+<p>In some daughter languages, <strong>ro</strong> becomes the default
+direct object marker, while <strong>i</strong> is lost or restricted to
+certain verb classes.</p>
+<hr />
+<h2 id="tito-1">16. <strong>tito</strong></h2>
+<p><strong>tito</strong> is a discourse marker made from the attention
+particle <strong>to</strong> plus the conjunction
+<strong>ti</strong>.</p>
+<p>It is not quite the same as English “but” or “however.” It sits
+somewhere between:</p>
+<ul>
+<li>“but”</li>
+<li>“and then”</li>
+<li>“but also”</li>
+<li>“and importantly”</li>
+<li>“and therefore”</li>
+</ul>
+<p>The key point is not necessarily contrast. Instead,
+<strong>tito</strong> marks that the next clause is new, important, or
+narratively foregrounded.</p>
+<p>In the Babel passage, it often works well as English “but” because
+the narrative pivots from human action to divine response.</p>
+<hr />
+<h2 id="mass-classifier-ʃi-1">17. Mass classifier
+<strong>ʃi</strong></h2>
+<p><strong>ʃi</strong> is the mass classifier/counter.</p>
+<p>With normally countable nouns, it treats the referent as an uncounted
+substance, aggregate, or mass rather than as discrete units.</p>
+<p>For example:</p>
+<p><strong>ʃi-klik</strong></p>
+<p>literally means something like:</p>
+<p>“house/building as mass”</p>
+<p>In this passage, it means the built-up settlement, city mass, or mass
+of buildings.</p>
+<hr />
+<h2 id="guwu-lix-and-wu-tþit-1">18. <strong>guwu lix</strong> and
+<strong>wu tþit</strong></h2>
+<p><strong>guwu lix</strong> literally means something like:</p>
+<p>“unfinished / ongoing thing”</p>
+<p>But with the round/singular counter, it is lexicalized as:</p>
+<p>“starting point” or “commencement.”</p>
+<p>It contrasts with:</p>
+<p><strong>wu tþit</strong></p>
+<p>literally:</p>
+<p>“finished time”</p>
+<p>meaning:</p>
+<p>“ending-time / completion-time.”</p>
+<p>This lets the Babel passage phrase “they have begun to do this” as
+something closer to:</p>
+<p>“behold the starting point of the tower built by the people using one
+language before now.”</p>
+<hr />
+<h1 id="feedback-im-especially-interested-in">Feedback I’m especially
+interested in</h1>
+<p>I’m most curious whether the following pieces feel legible from the
+examples:</p>
+<ol type="1">
+<li>the distinction between <strong>to</strong> as topic marker and
+clause-initial attention particle</li>
+<li>the role of <strong>yayo</strong> in clauses with both topic and
+subject</li>
+<li>the repeated-postposition constructions like <strong>lipa bo lipa
+bo</strong> and <strong>lipa ro lipa ro</strong></li>
+<li>the split between <strong>i</strong> and <strong>ro</strong> as
+object/theme markers</li>
+<li>whether the narrow translations are useful, or whether they make the
+post harder to read</li>
+</ol>
+<p>Any thoughts on presentation, glossing, or places where the grammar
+feels under-explained would be very welcome.</p>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/Babalon.txt</code>
+</p>
+<h2 id="babalon">Babalon</h2>
+<pre class="text"><code>to    &#39;ami       rol       bo tþuwx xya    xo    ŋewt     to   lip rolip
+ATTN   shoreland COLL.LONG ON 144 people GEN   language TOP  one one.LONG
+
+Listen! on all the lands, the thousands of peoples&#39; language was one single tongue.
+
+Now, in all the world there was one language, one common tongue.
+
+þams    xo  bwe     he kxol          xo  tþit  to   shinar ro    woŋ      ro    bwax  ti    lep      bo  glam
+family  GEN inland  COLL.FLAT foot   GEN time  TOP  shinar THEME lowland THEME  see   CONJ  SG.FLAT  ON  nurse
+
+At the time of the walking inland of the families, [they] found shinar, a lowland and settled on it.
+
+As people moved eastward, they found a plain in Shinar and settled there.
+
+xya         to  lipa      bo lipa      bo
+COLL.PERSON TOP SG.PERSON TO SG.PERSON TO
+They said to each other,
+
+iyi  &quot;dlo         yayo xaþt, dlo         t    xya         yayo  tlas  i    gits-i    wu         sirt&quot; iyi   nox.
+QUOTE 2ND.COMMAND SUBJ COME  2nd.COMMAND CONJ COLL.PERSON SUBJ. Brick OBJ. MAKE CONJ COMPLETELY Bake  QUOTE say
+“Come, let’s make bricks and bake them thoroughly.”
+
+tlas  e     twex  gu  e     gits i    tþeŋ  ʃi   e     &#39;erk  ʃi   gu  e    ti.
+Brick INSTR stone NEG INSTR make CONJ black MASS INSTR white Mass NEG INSTR CONJ.
+
+[They] built with brick not with stone, and with tar not lime.
+
+They used brick instead of stone, and tar for mortar.
+
+xya         to  iyi  &quot;dlo         yayo xaþt,
+COLL.PERSON TOP QUOTE 2ND.COMMAND SUBJ COME
+
+[then] they said &quot;Come,
+
+dlo         t    xya         yayo hut-tþuwx-ʃi-klik       i   gits-i     tþeŋ-ti-&#39;erk-rol           ro    yotus rolip    kyek ti.
+2nd.COMMAND CONJ COLL.PERSON SUBJ twelve-gross-MASS-house OBJ build CONJ black-CONJ-white-COLL.long THEME touch one.LONG watchtower CONJ.
+
+let&#39;s build a metropolus and [in it] a watchtower that reaches the heavens.
+
+let us build ourselves a city, with a tower that reaches to the heavens,
+
+gu-ŋoja    to  tþuwx xya         yayo tlu-ya   xo &#39;ins i nox &#39;aha.
+
+NEG-reason TOP 144   COLL.PERSON SUBJ 1st.COLL GEN NAME say TELIC.
+
+Why? So hundreds will say our names.
+
+so that we may make a name for ourselves;
+
+ge  kyek       to  tlu-ya   ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit &#39;aha ge.
+NEG watchtower TOP 1st.COLL THEME one.person THEME one.person THEME lowlands COLL.FLAT ON blow TELIC NEG.
+
+[if we] don&#39;t [build] the tower, then we shall be blown one by one onto all the lowlands.
+
+Otherwise we will be scattered over the face of the whole earth.
+
+tito     YHWH to  xya         yayo guwu    gits ʃi-klik    ti   kyek  i   xaþt-i    bwax.
+
+CONJ-ATTN YHWH TOP COLL.PERSON SUBJ IMPERF. make MASS-house CONJ Tower OBJ come-CONJ see.
+
+But, YHWH came and saw the mass of buildings and the tower that the people were building.
+
+but the LORD came down to see the city and the tower the people were building.
+
+YHWH to  iyi  &quot;xya         to  lip-ʃi-xya           yayo rolip    ŋewt     e     gits  kyak       xo  guwu       lix            i    þimp bwebo dlo-yayo-bwax
+
+YHWH TOP QUOTE COLL.person TOP One-MASS-COLL.PERSON SUBJ One.LONG language INSTR build watchtower GEN unfinished SINGULAR.round OBJ  now  UPSTREAM-OF command-SUBJ-see
+
+YHWH said &quot;About them, BEHOLD the starting point of the tower built by the people using one language before now.
+
+The Lord said, “If as one people speaking the same language they have begun to do this,
+
+xya xo &#39;ahanox xo gelip to bapig xo wu tþit ro ge xexh pasla
+COLL.PERSON GEN plan GEN not-one TOP one.WALL GEN finished time THEME NEG possess CONSE
+
+So, of their plans, not one will lack a finishing-time.
+
+then nothing they plan to do will be impossible for them.
+
+dlo         yayo xaþt, dlo         t    xya         yayo  ʃi-klik    i    ŋomp-i    ŋewt     e     mut-mut    ibwu gits.
+2ND.COMMAND SUBJ COME  2nd.COMMAND CONJ COLL.PERSON SUBJ. MASS-house OBJ. go-  CONJ language INSTR mutterings INTO make.
+
+Come, let us go to [their] buildings and turn [their] language into mutterings.
+
+Come, let us go down and confuse their language.
+
+gu-ŋoja    to  lipa-      lipa       yayo-xo  &#39;ins  i   nox-ge
+
+NEG-reason TOP one.person one.person SUBJ-GEN name OBJ say NEG.
+
+Why? So that they will not say each others&#39; names.
+
+so they will not understand each other.
+
+tito,     YHWH yayo xya         ro    lipa       ro    lipa       ro    woŋ      he        bo tsikxit-i   klik-i   guwu ge gits
+CONJ-ATTN YHWH SUBJ COLL.person THEME one.person THEME one.person THEME lowlands COLL.FLAT ON blow-CONJ house OBJ neg-FINISHED NEG make.
+
+Then YHWH did blow them one by one onto all the lowlands, and [they] didn&#39;t continue to build the city.
+
+So the Lord scattered them from there over all the earth, and they stopped building the city.
+
+keŋt  to  ʃi   xo  &#39;ins i   babel i   &#39;aha-pasla,  ʃi   xo  lep      bo YHWH to &#39;ami       rol       ŋewt     e     mut-mut    ibwu gits.
+story TOP MASS GEN name OBJ babel OBJ TELIC-CONSQ, MASS GEN ONE.FLAT ON YHWH TOP Shoreland COLL.long language INSTR mutterings INTO make.
+
+This story is why it&#39;s name is bable; there, the Lord made the language of all the lands into mutterings.
+
+That is why it was called Babel—because there the Lord confused the language of the whole world.
+
+----
+
+In PWT, “say someone’s name” can mean to address or successfully speak with them. In this passage it renders the Hebrew idiom “hear another’s speech,” giving the sense “understand one another.” This is a different shade of meaning then the earliear use of &quot;become well known&quot;.
+
+The conjunction ti is a clause-level clitic. Its reduced forms attach phonologically to the final word of the preceding clause, usually the predicate in SOV clauses.
+
+The conjuction has three forms a full form &quot;ti&quot; used in careful speech and after consonants other than (p t b d tþ ts), and a &quot;t&quot; form used after vowels, especially on pronouns, and an &quot;i&quot; only used after (p t b d tþ ts). All three of these can coordinate NP or clauses, but is not used to coordinate adpositional (a.k. PP) phrases.
+p;
+When the first conjuct is a clause, the second conjunct can replace the verb with a (nonreduced) &#39;ti&#39; , interpreted as replication of the first clause&#39;s verb.
+
+&#39;lipa bo lipa bo&#39; is a fixed phrase meaning &quot;one to another&quot;, &quot;to each other&quot;, or &quot;one to one&quot;. It is an example of a broader rule in which adjacent phrases may be headed by the same prepositions.. Such constructions have somewhat ambiguous semantics and may imply:
+
+pairing or reciprocal relations (lipa bo lipa bo &quot;to each other&quot;),
+chained or distributive interpretations (lipa ro lipa ro &quot;one by one&quot;),
+or appositional descriptions, where multiple phrases describe the same referent (shinar ro woŋ ro &quot;Shinar, a lowland&quot;).
+
+In appositional uses the repeated phrases are more parallel than their usual English translations.
+
+when its a reciprical relasionship that would use two different adpositions, the phrase gets re-aranged into &quot;lipa-lipa yayo-xo&quot; as an sort of contraction of &quot;lipa yayo lipa yayo lipa xo lipa xo&quot;, but with a narrower meaning, saying that each one is paird with another, &quot;lipa yayo lipa xo&quot; would imply it was the same person, the reflexive is the default.
+
+They use a base 12 system so tþuwx is both litterally 144 and just &#39;a multitude, a large number&#39;. Hense the somewhat uneven translations.
+
+&#39;to&#39; (topic marker)
+
+&#39;to&#39; marks the clause topic or discourse frame. The to-phrase precedes the main predication and typically comes before explicit subjects and other arguments. It may mark:
+
+* the main discourse topic (xya to “as for the people…”)
+* a temporal frame ([X] xo tþit to “when / at the time of X…”)
+* a conditional or contrastive frame (ge kyek to “without the tower / otherwise…”)
+
+clause-initial &#39;to&#39;
+
+A separate clause-initial to may appear at discourse openings or before especially long or complex topical frames. This functions as an attention-directing particle, foregrounding the following topic/frame as a single discourse unit. In constructions that demand the use of &#39;yayo&#39; the phrase following this use of &#39;to&#39; can end in &#39;yayo&#39; instead of &#39;to&#39;.
+
+In the opening line of the Babel passage, both &#39;to&#39; occur together (as they usually will): the first to is the clause-initial attention particle, while the later &#39;to&#39; marks the topical phrase itself.
+
+&#39;yayo&#39; (Subject marker)
+&#39;yayo&#39; is used when either there is both a topic and and a subject in the same clause, or in certian constructions (such as commands, and relative clauses),
+
+In relative clauses, the default discourse organization is reversed: yayo becomes the unmarked participant marker, while to is used only when a distinct topic must be introduced.
+
+Commands are formed by 1) using the pronoun dlo, and 2) using the yayo postposition to mark the agent. Usually this means dlo is part of the NP that gets marked with yayo.
+
+In command constructions, &#39;dlo t xya&#39; literally “command-and people” functions as an inclusive cohortative, unlike &quot;dlo yayo xya koko VERB&quot;, which commands the addressee to do the verb _with_ a seperate group.
+
+&quot;tþeŋ ti &#39;erk rol&quot; literally means &quot;the black and white (long) things&quot; but is how they say &quot;the heavens&quot;
+
+&quot;[X] xo tþit&quot; is used adverbially as &quot;when/during X&quot;, PWT doesn&#39;t like turning verbs into nouns that much so this is often used where english would say something like &quot;When the x were y-ing..&quot; with a noun associated with the action. For example above &quot;[..] xo he-kxol xo tþit to&quot; is used where english says &quot;As people moved eastward&quot; Though interesingly this replicates an ambiguity not in the english, its not clear what the relasionship between &quot;inland&quot; and walking is are they going inland, or are they already inland and walking somewhere in spicific.
+
+glam originally means “nurse, feed milk to, particularly babies&quot; and by extension “settle in / inhabit / cultivate a place.” Catgirls travel with infants or when pregnant much less often then humans do, because milk not pregnacies is the bottleneck, and nessarily the birth mother can&#39;t be the nurse mother. (because overies and breasts are active at different ages.) Therefor the term &quot;nurse&quot; also means &quot;use as an home&quot;.
+
+if then / so that statements are expresed using either [[noun phrase] TOP [verb phrase] MARKER] or [[clause]. [clause] MARKER] where the marker can be one of three options, the TELIC &#39;aha, indicating that the consiquence is an intent, so the &quot;if&quot; ness is refering to a choice, or the HYP swuhi meaning the &quot;if&quot; ness is a hypothetica, &quot;if that is true, then this is true&quot;, or the CONSG pasla indicating that first clause is inded true, and therefor so is the second.
+
+&quot;bwebo&quot; litterally means &quot;upstream of/on top of/inland from&quot;, but is used to mean &quot;before&quot;, you can see &quot;bwe&quot; used in the physical direction sense in the line about Shinar. Which metaphore, upstream being the future that will come to you, or layers deposited one after another so that the top is the most recent, is ambiguous.
+
+Windic typological notes:
+* SOV base order
+* postpositions (head-final adpositions)
+* topic-first framing
+* optional subject marking (yayo)
+* discourse particle system (to)
+* plus relativization via ellipsis / zero verbs
+
+&#39;ro&#39; (glossed as THEME) is a direct object marker used for holding, bringing, or giving. Using it can often change the meaning of a verb. &quot;X i bwax&quot; means &quot;[they] see the X&quot;, &quot;X ro bwax&quot; means &quot;[they] found the X&quot;, though with other verbs you just can&#39;t use &quot;i&quot; or must use &quot;i&quot;. The verb meaning modifying uses derived from longer phrases meaning &quot;they saw X and brought [news of] it&quot;. In some daughter languages &#39;ro&#39; becomes the default direct object marker, with &quot;i&quot; either being lost or being resticted to certian verb classes.
+
+&#39;tito&#39; - discourse marker, tito is composed of the attention getter &#39;to&#39; and the conjunction &#39;ti&#39; and isn&#39;t quite a contrastice like &quot;however&quot; or &quot;but&quot; but is rather somewhere between that, and &quot;and then&quot; or &quot;but also&quot;, the key point is not that the second clause is unexpected, but that it is new and interesting, or important. So can also be used where Enlgish would use &quot;and therefor:&quot; but here it does serve to say &quot;new event!&quot;.
+
+ʃi is the mass classifier/counter. With normally countable nouns, it treats the referent as an uncounted substance or aggregate rather than as discrete units. Thus ʃi-klik is literally something like “house/building as mass,” here meaning the built-up settlement or mass of buildings.
+
+guwu lix literally means something like “unfinished/ongoing thing,” but with the round/singular counter it is lexicalized as “starting point” or “commencement.” It contrasts with wu tþit, literally “finished time,” meaning “ending-time / completion-time.”
+
+---</code></pre>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/sorted.txt</code>
+</p>
+<h2 id="sorted">sorted</h2>
+<pre class="text"><code>&#39;a
+&#39;alk
+&#39;ami
+&#39;anx
+&#39;aŋp
+ba
+ba
+bapi
+bens
+bilux
+binx
+biŋx
+blas
+bli
+bli
+blit
+blo
+blok
+blos
+bluk
+bok
+bokxe
+bra
+bra
+bras
+bre
+bri
+bris
+bro
+brok
+bru
+bruk
+bulx
+bumos
+buñp
+bunx
+but
+buwx
+bwa
+bwa
+bwa
+bwax
+bwe
+bwex
+bwi
+bwi
+bwik
+bwip
+bwo
+bwo
+bwos
+bwu
+bwup
+bwus
+bya
+bya
+bya
+bye
+byu
+cacek
+cali
+capot
+cat
+cekxe
+cerk
+coms
+comx
+coñk
+corp
+culs
+cuns
+curep
+dadi
+dalk
+darp
+datso
+de
+deŋp
+det
+dimx
+dint
+dla
+dli
+dli
+dlo
+dlop
+dlos
+dlu
+domt
+doñp
+doŋx
+dorx
+dra
+dra
+drap
+drap
+drap
+dro
+dro
+drot
+drot
+drot
+druk
+drut
+duŋp
+duŋp
+dwa
+dwak
+dwi
+dwix
+dya
+dyap
+dyat
+dye
+dye
+dye
+dyes
+dyi
+dyot
+dyu
+&#39;e
+&#39;enx
+&#39;erk
+&#39;etses
+&#39;ewk
+gak
+gans
+garp
+garx
+gas
+ge
+gems
+gerk
+getþap
+ginp
+gitsa
+glak
+glak
+glas
+glax
+gles
+glok
+glop
+gluk
+go
+goñi
+gra
+grap
+gri
+gri
+gro
+gro
+gru
+gu
+gutses
+gwak
+gwap
+gwas
+gwat
+gwit
+gwos
+gwu
+gyas
+gyat
+gye
+gye
+gyek
+gyi
+gyik
+gyip
+gyo
+gyo
+ha
+hagis
+halx
+has
+hat
+hawi
+hax
+hax
+haxe
+he
+he
+henp
+heñx
+hi&#39;i
+hiŋi
+hiŋx
+hirux
+his
+hono
+hoŋk
+hoŋs
+hop
+hos
+hukxit
+hulk
+huls
+huns
+huñs
+hup
+hus
+hut
+hux
+&#39;igak
+&#39;ins
+jat
+jawk
+jes
+jewep
+jolk
+joŋe
+jo&#39;o
+josus
+jowx
+juls
+juŋu
+ka
+kamt
+kars
+kax
+ke
+kehi
+keñe
+keŋt
+kes
+kilp
+kiŋk
+kla
+klat
+kle
+klep
+kles
+kli
+kli
+klit
+klo
+klup
+klup
+kocax
+kohe
+kos
+kras
+krep
+kri
+kri
+krot
+krox
+kru
+kruk
+krup
+kuk
+kuk
+kulp
+kuwx
+kwap
+kwek
+kwi
+kwo
+kxamx
+kxank
+kxaŋp
+kxaŋx
+kxas
+kxatsa
+kxaws
+kxawx
+kxaxi
+kxene
+kxes
+kxewt
+kxi
+kxi
+kxikis
+kxilx
+kxins
+kxint
+kxinux
+kxiŋs
+kxiŋt
+kxip
+kxirs
+kxiwk
+kxiwp
+kxo
+kxoko
+kxokxop
+kxols
+kxoñp
+kxoŋt
+kxoŋx
+kxos
+kxowp
+kxowt
+kxu
+kxugit
+kxuku
+kxuñep
+kxuni
+kxuñs
+kxuñx
+kxuŋs
+kxuŋs
+kxurp
+kxuʃik
+kxuwp
+kxuxux
+kya
+kya
+kyak
+kyek
+kyu
+kyu
+kyu
+kyuk
+kyux
+la
+lado
+lagu
+lalt
+lanp
+lans
+lars
+las
+laxo
+le
+le
+lemp
+lemt
+leñx
+lewx
+li
+lilk
+lils
+liñs
+lint
+liŋk
+liŋx
+liwx
+lo
+lo
+lowx
+lu
+lunt
+lup
+lurk
+lus
+luwis
+ma
+ma
+ma&#39;i
+maŋp
+me
+meñp
+mert
+mims
+mimt
+miñx
+miwt
+miyap
+monk
+moŋp
+morx
+muŋt
+murek
+mut
+mut
+muwx
+na
+nadi
+ñalk
+ñalot
+ñañit
+nant
+nap
+ñap
+nart
+narx
+nas
+nasox
+ñatþu
+ñawx
+nax
+nax
+naþat
+ne
+ñe
+nelk
+ñelk
+nemt
+ñep
+ñerx
+ñes
+nesu
+ñet
+ñet
+ñetþut
+ñewe
+ñews
+nex
+ñikxet
+ñikxot
+nilt
+ñiluk
+nilx
+niñs
+ñiñt
+niŋs
+ñirk
+ñirs
+nis
+ñis
+ñis
+nitsop
+ñitþup
+niwt
+no
+ño
+ño
+ño
+nok
+nole
+ñolet
+ñolos
+nolx
+nolx
+noñat
+ñons
+ñons
+noŋx
+ñop
+nos
+noʃu
+nowk
+nox
+ñoye
+ñu
+ñu
+nuk
+nukxi
+nulk
+ñulup
+ñulx
+nump
+nuns
+ñuñs
+ñunt
+nunut
+nuñx
+ñunx
+ñunx
+nuŋp
+ñuru
+nurx
+ñuʃi
+ñutsop
+ñutþe
+nuwp
+ñuxek
+ŋanep
+ŋank
+ŋaŋp
+ŋap
+ŋedex
+ŋeñt
+ŋenx
+ŋetsu
+ŋetþe
+ŋetþi
+ŋewt
+ŋicot
+ŋik
+ŋimis
+ŋink
+ŋiñp
+ŋins
+ŋiŋt
+ŋiŋt
+ŋirk
+ŋiwx
+ŋoja
+ŋolx
+ŋomox
+ŋomp
+ŋoñt
+ŋoŋk
+ŋoŋk
+ŋop
+ŋotþe
+ŋuk
+ŋumt
+ŋuñis
+ŋuñp
+ŋut
+ŋuwk
+ŋux
+&#39;owx
+pamt
+pant
+panus
+pasek
+pat
+pe
+pelp
+perp
+pik
+pla
+pla
+plap
+ple
+plep
+plo
+plu
+plup
+poms
+pra
+prap
+pras
+pret
+prex
+pri
+pri
+prip
+pru
+pruk
+puda
+pukxax
+puñk
+puwa
+puwt
+pwa
+pwak
+pwap
+pwap
+pwe
+pwi
+pwi
+pwi
+pwo
+pwut
+pya
+pye
+pyi
+pyi
+pyi
+pyis
+pyis
+pyis
+pyo
+pyo
+pyop
+pyos
+pyox
+pyu
+pyuk
+ra
+ralk
+ramp
+rank
+rañp
+rañs
+rañx
+rark
+ratþut
+relx
+remp
+remt
+remu
+reñs
+reñx
+rep
+ret
+rewp
+ri
+ri
+ri
+rimk
+rims
+riŋp
+ris
+riwx
+ro
+ro
+ro
+rokxe
+rolip
+rons
+rot
+rotsa
+rukxe
+rumx
+ruñt
+ruñt
+runx
+rux
+ruyox
+sa
+sak
+sawt
+selt
+si
+simp
+simp
+sini
+siñk
+sirt
+sit
+sla
+slap
+slas
+slek
+slek
+slet
+sli
+sli
+slo
+slo
+slos
+slot
+slu
+slu
+slu
+slup
+slus
+slux
+solp
+soñk
+soñk
+sonp
+soŋk
+soŋp
+sop
+sopa
+sorat
+sowk
+suk
+suña
+suŋk
+sutsa
+suwt
+swa
+swe
+swi
+swi
+swi
+swis
+swis
+swit
+swo
+swo
+swo
+swop
+swu
+swu
+swuk
+sya
+sya
+sye
+sye
+sye
+sye
+syes
+syi
+syo
+syos
+syot
+syot
+syu
+syu
+syu
+ʃa
+ʃamus
+ʃanp
+ʃap
+ʃase
+ʃatso
+ʃelx
+ʃeñk
+ʃeños
+ʃeŋx
+ʃers
+ʃerx
+ʃet
+ʃi
+ʃi
+ʃikxe
+ʃila
+ʃilx
+ʃinx
+ʃirk
+ʃoñep
+ʃonp
+ʃore
+ʃot
+ʃoto
+ʃowk
+ʃowp
+ʃowus
+ʃuge
+ʃuŋs
+ʃuŋt
+ʃup
+ta
+tatsax
+tayip
+te
+tens
+tes
+tex
+tik
+titsa
+tla
+tlap
+tlas
+tlat
+tle
+tlek
+tlek
+tlep
+tles
+tlet
+tli
+tli
+tlik
+tlis
+tlit
+tlo
+tlu
+tlu
+tlup
+tlut
+tokxas
+toms
+tomt
+tors
+towk
+trax
+trax
+tre
+tre
+tri
+tri
+tri
+trip
+trip
+tro
+trok
+trot
+truk
+truk
+tsa
+tsa
+tsakxa
+tsals
+tsalt
+tsañk
+tsañs
+tsañs
+tsant
+tsatep
+tsekex
+tseñt
+tseru
+tsetsa
+tsetþax
+tse&#39;u
+tsi
+tsi&#39;i
+tsik
+tsikxit
+tsilp
+tsimp
+tsimp
+tsink
+tsiñk
+tsip
+tsirx
+tsirx
+tsitþa
+tsiwi
+tsiws
+tsiwx
+tso
+tsols
+tsomp
+tsonp
+tsonx
+tsoñx
+tsoþep
+tsu
+tsu
+tsuk
+tsump
+tsuñe
+tsuñp
+tsunt
+tsusi
+tsuwt
+tumk
+tut
+twa
+twa
+twe
+twe
+twex
+twis
+twis
+twos
+twu
+twuk
+tya
+tye
+tyek
+tyes
+tyi
+tyik
+tyo
+tyo
+tyuk
+tyux
+tþa
+tþak
+tþanp
+tþañp
+tþañp
+tþaŋa
+tþaŋs
+tþat
+tþe
+tþelt
+tþemk
+tþenk
+tþeŋe
+tþex
+tþi
+tþi
+tþi
+tþimk
+tþims
+tþins
+tþint
+tþit
+tþitsot
+tþo
+tþo
+tþobo
+tþols
+tþonk
+tþoñk
+tþoŋs
+tþoŋx
+tþowt
+tþu
+tþu
+tþutþap
+tþuwx
+tþuxep
+tþuxi
+&#39;umx
+&#39;uns
+wa
+wa
+wahi
+welo
+weñp
+weñt
+wi
+wiño
+witut
+wiyop
+wok
+wonk
+woñot
+wont
+woŋt
+woru
+worx
+wos
+wotsex
+wotsup
+wox
+woyop
+wu
+wut
+xa
+xa
+xaŋt
+xatþa
+xert
+xex
+xirp
+xixis
+xo
+xo
+xors
+xowp
+xows
+xrak
+xrap
+xras
+xrat
+xrax
+xre
+xre
+xre
+xrek
+xrep
+xres
+xri
+xri
+xris
+xrit
+xrit
+xrix
+xro
+xro
+xro
+xros
+xrox
+xru
+xru
+xrut
+xrut
+xu
+xu
+xums
+xux
+xuya
+xwa
+xwa
+xwak
+xwap
+xwi
+xwi
+xwi
+xwix
+xwo
+xwo
+xwu
+xya
+xya
+xyi
+xyi
+xyik
+xyis
+xyos
+xyot
+xyu
+xyu
+xyup
+xyup
+xyut
+ya
+yahe
+yamt
+yaŋt
+yarat
+yawk
+yayo
+ye
+yet
+yewk
+yewx
+yeyu
+yi
+yilk
+yiŋak
+yirx
+yirx
+yit
+yiwk
+yolp
+york
+yort
+yotus
+yowet
+yowt
+yuk
+yuk
+yukxa
+þa
+þa
+þams
+þart
+þaþet
+þeñas
+þens
+þerp
+þimk
+þimt
+þimus
+þitþa
+þomt
+þone
+þoñk
+þube
+þuk
+þumx
+þunt
+þuŋus</code></pre>
+<div class="pagebreak">
+
+</div>
+<p class="source-note">
+Source: <code>PWT/raw.txt</code>
+</p>
+<h2 id="raw">raw</h2>
+<pre class="text"><code>huns
+miñx
+tyo
+&#39;owx
+wahi
+dye
+tþi
+ŋicot
+noŋx
+la
+tsonx
+xyi
+ŋank
+swis
+comx
+murek
+pri
+biŋx
+xaŋt
+þaþet
+dla
+tsiws
+bro
+xyu
+lewx
+runx
+mimt
+tro
+de
+kxo
+dalk
+twe
+ñalot
+ñoye
+ri
+josus
+xrit
+wa
+pyis
+yit
+huñs
+kles
+xros
+þone
+tþoñk
+kars
+tlek
+pwe
+rañx
+bra
+jowx
+soŋp
+nurx
+tre
+noʃu
+xyik
+slek
+þerp
+rokxe
+pukxax
+puwt
+trax
+remt
+nuŋp
+tsuwt
+gyat
+syu
+ʃuŋs
+tþobo
+ñews
+pla
+bwu
+nolx
+twa
+ŋiñp
+ŋop
+ñikxet
+jolk
+tþuxi
+ʃup
+tlut
+ret
+ñunt
+kxes
+rark
+pwi
+syo
+xro
+noñat
+rot
+tsuk
+ŋirk
+xrep
+pyis
+reñs
+xrut
+blit
+sli
+kuk
+ñes
+þimt
+kyuk
+xrat
+gutses
+narx
+slek
+ʃers
+toms
+puwa
+hos
+garp
+kxoko
+kax
+tþint
+tsoþep
+tsatep
+tyek
+weñp
+slu
+nap
+rañs
+bwa
+hagis
+hono
+tþitsot
+pyo
+kxaws
+ge
+dli
+hawi
+slos
+&#39;ewk
+tli
+hoŋk
+niñs
+tþanp
+gwos
+trax
+gri
+xa
+pwut
+hiŋi
+&#39;a
+ŋink
+mims
+nex
+kxinux
+ʃowk
+ŋiwx
+tsi
+yowt
+ha
+nump
+gitsa
+xyup
+tsip
+niŋs
+tsik
+swi
+kxiwp
+xrix
+sorat
+ñutþe
+kyux
+sli
+tumk
+suŋk
+dyot
+cekxe
+kle
+hax
+tsimp
+xux
+nilx
+xyu
+haxe
+&#39;ami
+solp
+xrek
+tsiwi
+ñañit
+kos
+blos
+ye
+swuk
+kxoŋx
+ŋins
+bok
+ʃirk
+ñatþu
+tþak
+tþoŋs
+hat
+xixis
+kamt
+ʃilx
+nart
+ñop
+kehi
+bruk
+bwo
+gak
+tsañs
+ŋuwk
+towk
+liñs
+kxols
+tsump
+hus
+yirx
+rons
+liŋx
+ne
+swop
+wiño
+ñolet
+miwt
+tsa
+ñons
+sye
+jo&#39;o
+kxi
+swis
+plep
+ʃot
+pyi
+ñuxek
+ŋoñt
+kxiŋs
+tsomp
+ŋedex
+bokxe
+joŋe
+xwi
+kxaxi
+culs
+perp
+tseru
+trok
+kxuʃik
+tlek
+hukxit
+kxirs
+tsalt
+kxuxux
+moŋp
+sye
+tlat
+nas
+ŋanep
+nemt
+tes
+bya
+binx
+xyot
+xru
+tlu
+bra
+ñet
+tle
+bumos
+gyip
+dyi
+tþonk
+juŋu
+swo
+twos
+krox
+prip
+ʃeños
+ñunx
+ʃanp
+ŋuñis
+kohe
+puda
+ya
+tþo
+kiŋk
+pyuk
+kxuŋs
+gru
+nax
+tyux
+pyis
+gro
+gas
+&#39;aŋp
+ñuñs
+tsunt
+henp
+glak
+syot
+kri
+ruñt
+kxoñp
+xro
+sya
+þumx
+kxamx
+xrap
+tþeŋe
+rumx
+ŋut
+ŋoja
+dwix
+miyap
+hirux
+tli
+pyos
+ro
+tri
+xo
+bwup
+rimk
+doñp
+tsirx
+hop
+glop
+kilp
+tse&#39;u
+cali
+cerk
+ʃet
+yet
+kxas
+li
+drut
+nole
+klep
+pyu
+yiwk
+yuk
+deŋp
+gu
+drap
+kes
+þams
+si
+þuk
+xatþa
+ŋetsu
+dli
+drot
+gles
+kxos
+tsant
+meñp
+simp
+has
+gwas
+tik
+te
+cacek
+bwi
+bens
+tayip
+pyox
+bya
+gye
+lils
+tomt
+tatsax
+jawk
+morx
+tri
+nax
+tþi
+xre
+bwos
+þimus
+riwx
+suña
+kxilx
+kxawx
+nok
+ʃoñep
+þuŋus
+kyu
+darp
+mut
+simp
+xums
+ŋetþe
+drot
+dyu
+kulp
+þimk
+ŋewt
+swu
+sak
+syes
+kxuñs
+juls
+goñi
+xa
+tseñt
+plu
+swi
+trip
+ñu
+sye
+ño
+duŋp
+ri
+nadi
+sit
+trip
+ñolos
+tþaŋs
+ño
+&#39;erk
+sirt
+gyo
+gwit
+kli
+yi
+&#39;e
+york
+bapi
+kxins
+druk
+gyek
+pasek
+ruyox
+pe
+ʃerx
+slu
+swe
+kocax
+mut
+dint
+lanp
+&#39;igak
+xya
+pwo
+ñitþup
+kyak
+hulk
+niwt
+yotus
+bunx
+capot
+ñulx
+woŋt
+blo
+gerk
+xwak
+ris
+pant
+gra
+soñk
+þa
+coms
+xows
+ñuru
+det
+hut
+wont
+tþañp
+krot
+dlop
+xwap
+me
+nuñx
+xuya
+kxu
+tya
+kxank
+remu
+wok
+pras
+lars
+slet
+bilux
+lu
+pyi
+gems
+ñutsop
+tþu
+but
+na
+&#39;enx
+tþins
+keŋt
+kya
+halx
+pri
+ŋomp
+twis
+jewep
+ñe
+sini
+dlos
+ri
+tþols
+ʃa
+lowx
+tlis
+ʃi
+his
+pat
+he
+bras
+bru
+syu
+sya
+xo
+witut
+dwak
+bwip
+wonk
+tlet
+ñep
+rukxe
+kxint
+swit
+xrak
+nuwp
+klup
+lo
+ple
+sa
+drap
+xert
+tla
+nowk
+tþoŋx
+lurk
+yawk
+tþuxep
+byu
+kxuñx
+glax
+wa
+kyek
+tsiñk
+nasox
+slu
+bwax
+yeyu
+lus
+ramp
+tsu
+huls
+tlik
+monk
+tsakxa
+swo
+rañp
+titsa
+tyuk
+nunut
+yewx
+kxowp
+tþi
+ʃuŋt
+lup
+&#39;anx
+soŋk
+duŋp
+twu
+no
+yuk
+ñuʃi
+ñet
+kxaŋp
+ŋotþe
+ñu
+plup
+ñerx
+lalt
+xors
+tsañk
+drot
+ŋux
+dyap
+gri
+blas
+doŋx
+kxurp
+heñx
+tsols
+tyik
+rank
+pyo
+slus
+pamt
+dadi
+glas
+kwo
+truk
+tlu
+tþuwx
+ma&#39;i
+pye
+swo
+tþenk
+bli
+panus
+bya
+xro
+plo
+slo
+tþims
+pik
+hax
+tsirx
+ʃelx
+relx
+woñot
+sop
+ñirs
+xex
+sopa
+xyis
+slo
+kxuwp
+ta
+pret
+xri
+lans
+pelp
+tso
+nolx
+keñe
+þens
+syos
+siñk
+bwik
+sonp
+prap
+swa
+ratþut
+dro
+xwa
+prex
+kxuŋs
+tsals
+dye
+nitsop
+yewk
+tlit
+naþat
+tens
+maŋp
+slap
+tþex
+tre
+tsusi
+xru
+xwi
+tlas
+wiyop
+ʃi
+hup
+wos
+ñalk
+klo
+wu
+kxuku
+tlo
+dyat
+bre
+poms
+ʃase
+nant
+dra
+riŋp
+xwi
+xris
+las
+þunt
+rewp
+lo
+dwi
+tþimk
+gans
+þoñk
+sawt
+ralk
+tsoñx
+tþa
+kuk
+luwis
+tþutþap
+tsitþa
+ŋiŋt
+ŋetþi
+ŋuk
+syi
+ro
+sutsa
+dro
+ke
+kxokxop
+yaŋt
+laxo
+ʃuge
+mert
+bwi
+tsuñp
+twuk
+leñx
+xri
+wotsup
+&#39;alk
+syot
+tsañs
+puñk
+rims
+wi
+cuns
+xras
+dye
+grap
+tut
+ŋenx
+tþelt
+kuwx
+buñp
+sye
+liŋk
+kyu
+gye
+xu
+lemt
+bye
+bwo
+ñiluk
+pru
+xwix
+gwu
+pwa
+bri
+le
+weñt
+ro
+ŋoŋk
+xirp
+tsa
+þube
+lagu
+ʃikxe
+garx
+tþu
+ʃamus
+dwa
+xowp
+cat
+bluk
+xrax
+xyut
+ño
+xre
+tyi
+ŋik
+yilk
+glak
+ñis
+kxikis
+kxiŋt
+ruñt
+jat
+dyes
+bwus
+curep
+kli
+tþat
+ŋoŋk
+welo
+lilk
+dya
+xrit
+klit
+nilt
+yowet
+nulk
+bli
+soñk
+gro
+kru
+tlap
+xyos
+þomt
+ka
+kxuni
+dlu
+ŋeñt
+selt
+tokxas
+reñx
+ʃinx
+þeñas
+coñk
+ñawx
+lado
+glok
+ma
+nesu
+bwex
+gwat
+swu
+ŋomox
+ŋap
+pya
+syu
+pyop
+ʃowus
+nox
+tri
+bris
+slup
+getþap
+nuns
+yort
+ma
+tsikxit
+lint
+tþo
+ñetþut
+dlo
+hux
+ʃatso
+kla
+xre
+ŋimis
+ŋuñp
+nelk
+kxoŋt
+tlup
+nuk
+kya
+tþemk
+tsekex
+slas
+gyas
+ñons
+kruk
+klat
+kxugit
+xres
+kras
+tsonp
+tsink
+tsimp
+kxiwk
+ŋolx
+þitþa
+lemp
+gwap
+&#39;uns
+tsuñe
+muwx
+ʃoto
+tsu
+hoŋs
+bwe
+bulx
+&#39;etses
+pwak
+yahe
+xrut
+tex
+lunt
+brok
+go
+kri
+&#39;umx
+tles
+woyop
+tþañp
+slot
+rep
+hi&#39;i
+pyi
+ñewe
+kxewt
+yolp
+swi
+pwap
+kwi
+ba
+ŋumt
+ñis
+tsiwx
+tlep
+plap
+gluk
+tors
+sla
+ʃeñk
+ñiñt
+corp
+twex
+&#39;ins
+xrox
+wut
+ñunx
+ñap
+buwx
+krup
+pwi
+bwa
+tþe
+suwt
+gyo
+le
+rotsa
+dimx
+twa
+nukxi
+pwap
+kwek
+rolip
+kxuñep
+xya
+ŋiŋt
+xu
+datso
+liwx
+tsetsa
+ʃila
+wotsex
+suk
+pruk
+woru
+drap
+trot
+tþit
+ba
+twe
+twis
+gwak
+worx
+yamt
+kxatsa
+þa
+ʃowp
+tyes
+xwa
+pra
+tþaŋa
+kxaŋx
+xwu
+domt
+kyu
+ʃeŋx
+xwo
+ñikxot
+gyi
+ŋaŋp
+he
+slux
+yarat
+xyup
+ʃonp
+kxip
+blok
+yukxa
+ñelk
+ñulup
+tyo
+tsi&#39;i
+ʃore
+kwap
+yirx
+jes
+gyik
+hiŋx
+bwa
+yiŋak
+tye
+pwi
+klup
+tþowt
+truk
+pla
+nis
+sowk
+tsetþax
+þart
+nos
+rux
+muŋt
+kxowt
+dra
+ñirk
+dorx
+tsilp
+xyi
+remp
+krep
+yayo
+xwo
+ʃap
+kxi
+ginp
+kxene
+ra
+wox</code></pre>
+<section id="field-notes-1" class="notes-page">
+<h2>Field Notes 1</h2>
+</section>
+<section id="field-notes-2" class="notes-page">
+<h2>Field Notes 2</h2>
+</section>
+<section id="field-notes-3" class="notes-page">
+<h2>Field Notes 3</h2>
+</section>
+</body>
+</html>

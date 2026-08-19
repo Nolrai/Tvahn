@@ -1,0 +1,32 @@
+@page { margin: 0.65in; }
+body {
+  color: #111;
+  font-family: "DejaVu Serif", Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.35;
+}
+h1, h2, h3, h4 { page-break-after: avoid; }
+h1 { font-size: 22pt; margin-top: 0; }
+h2 { font-size: 16pt; border-bottom: 1px solid #bbb; padding-bottom: 0.12in; margin-top: 0.3in; }
+h3 { font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; }
+th, td { border: 1px solid #ccc; padding: 3px 5px; vertical-align: top; }
+th { background: #eee; }
+pre {
+  white-space: pre-wrap;
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 9pt;
+  border-left: 3px solid #ccc;
+  padding-left: 0.12in;
+}
+code { font-family: "DejaVu Sans Mono", monospace; }
+img { max-width: 100%; height: auto; }
+.pagebreak { page-break-before: always; }
+.source-note { color: #555; font-size: 9pt; }
+.notes-page {
+  page-break-before: always;
+  min-height: 9in;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 0.31in, #ddd 0.32in);
+}
+.notes-page h2 { border: 0; }
+.glyphs { font-family: "Sahumank", "DejaVu Sans", sans-serif; }
